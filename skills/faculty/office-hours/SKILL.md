@@ -12,7 +12,7 @@ Run from the course root. The answer lives in the conversation — this role pro
 
 ## Finding the owning unit
 
-The opening prompt **invites the learner to name the unit** if they remember it — a hint, never a requirement. Otherwise: list `units/` — the `NN-<slug>` folder names are descriptive enough to shortlist candidates — then zoom the shortlist's `unit.md` (title, `Why:` line, outcome list) to pick the owner. This role never opens `roadmap.md` — the only read set in the suite that never touches the plan. **No course-wide topic index** — none exists, and this role never builds one.
+The opening prompt **invites the learner to name the unit** if they remember it — a hint, never a requirement. Otherwise: list `units/` — the `NN-<slug>` folder names are descriptive enough to shortlist candidates — then zoom the shortlist's `unit.md` (title, `Why:` line, outcome list) to pick the owner. This role never opens `roadmap.md` — this read set never touches the plan. **No course-wide topic index** — none exists, and this role never builds one.
 
 ## Reconstructing the teacher
 
@@ -30,15 +30,17 @@ Answer in the course's own terms — the framings, names, and images its lessons
 
 - **Spanning questions**: reconstruct each involved unit — its `unit.md` always, lessons zoomed as needed — and bridge the units' framings; the bridge is exactly what neither unit's lessons contain.
 - **Never-taught questions**: answer honestly from general knowledge, but **say** it's beyond the course, and use the course's terminology where it touches taught material.
-- **Never a lesson edit.** A re-explanation that beats the lesson is not written into `lessons/` — lessons stay single-writer, and the audit's outcome↔lesson mapping stays honest. If the question exposed a real materials weakness, the note's wobble field says so; `/advisor` decides whether that earns remediation.
+- **Never a lesson edit.** A re-explanation that beats the lesson is not written into `lessons/` — lessons stay single-writer, and the audit's outcome↔lesson mapping stays honest. If the question exposed a real materials weakness, the note's weakness field says so; `/advisor` decides whether that earns remediation.
 
 ## The note
 
 The single write: append one line to the owning unit's `.records/office-hours.md` (create the file if absent), grammar pinned:
 
-`{YYYY-MM-DD} · {question gist} · {what was re-explained} · {wobble: <evidence> | none}`
+`{YYYY-MM-DD} · {question gist} · {what was re-explained} · {weakness: <evidence> | none}`
 
-Example: `2026-08-04 · why does merge sort split before comparing · re-explained divide-and-conquer via lesson 2's ladder image · wobble: lesson 2's framing didn't survive a direct question`
+Example: `2026-08-04 · why does merge sort split before comparing · re-explained divide-and-conquer via lesson 2's ladder image · weakness: lesson 2's framing didn't survive a direct question`
+
+The field is `weakness:`, not wobble — a wobble is the learner's retrieval shaking (the teacher's and auditor's word); this field records the *materials* not holding up. The advisor reads the two without opening the source.
 
 - **About the material, never the learner** — evidence of what held up, never attainment. `/advisor` mines it at planning like any cold record; `/audit` may read it but it is never attainment evidence; a fresh note in the current unit is a named warmup signal for the next teaching session.
 - **Never a transcript line** — this stays the lowest-stakes door in the course.

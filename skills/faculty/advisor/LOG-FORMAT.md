@@ -1,6 +1,6 @@
 # log.md Format
 
-`.roadmap/log.md` is the advisor's append-only journal: one entry per pass, newest last. It is the ledger of what the advisor **decided** — the counterpart to `transcript.md`, the ledger of what the auditor **verified**. The two never mix: a waiver line in the transcript would fork "verified" into two meanings.
+`.roadmap/log.md` is the advisor's append-only journal: one entry per pass, newest last. It is the ledger of what the advisor **decided** — the counterpart to `transcript.md`, the ledger of what the auditor **verified**. **The two-ledger rule**: the two never mix — a waiver line in the transcript would fork "verified" into two meanings.
 
 ## Template
 

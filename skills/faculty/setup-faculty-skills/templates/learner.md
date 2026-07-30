@@ -1,7 +1,8 @@
 <!--
   learner.md — the learner profile: durable, course-transcending calibration facts.
   Hard cap: ~2K tokens. The cap forces curation — adding a line may mean compressing
-  another. Writers: teachers, at session exit (write-time triage: only insights with
+  another. Writers: the advisor's mission run seeds it once (the deep level-grilling);
+  thereafter teachers, at session exit (write-time triage: only insights with
   shelf life beyond the current topic belong here; topic-bound insights go to the
   unit's .records/). Read by every teaching-adjacent role.
   This file seeds forward: it is the one artifact that outlives a course.

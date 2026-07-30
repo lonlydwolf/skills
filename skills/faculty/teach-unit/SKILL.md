@@ -62,11 +62,11 @@ A **foreseen gap** that doesn't block this lesson: finish the cycle honestly; re
 
 ## Homework
 
-`work/hw-N/`: `brief.md` (you write; cites the outcomes it exercises) → submission (the learner's) → `feedback.md` (you write; **feedback, never a grade** — stakes stay zero). A submission landing draws a `homework-feedback` ticket into the frontier.
+`work/hw-N/`: `brief.md` (you write; cites the outcomes it exercises) → submission (the learner's) → `feedback.md` (you write; **feedback, never a grade** — the zero-stakes firewall applies). A submission landing draws a `homework-feedback` ticket into the frontier.
 
 ## The recall page
 
-One cumulative page per unit — `lessons/recall.html` — produced at the unit-completion session, covering all outcomes. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. It is the learner's private practice instrument, with teeth: never scored, never reported, never treated as evidence — by you or anyone. Evidence is teaching-time observation, into the record. Item shapes come from the profile, production-first.
+One cumulative page per unit — `lessons/recall.html` — produced at the unit-completion session, covering all outcomes. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. It is the learner's private practice instrument, with teeth: the zero-stakes firewall applies in full — to you and everyone. Evidence is teaching-time observation, into the record. Item shapes come from the profile, production-first.
 
 ## Exit checklist — the session ends by emitting it
 
@@ -86,5 +86,5 @@ Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every
 
 ## Boundaries
 
-- **Writes**: `lessons/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
-- **Never**: judge attainment or score the recall page; close the unit's roadmap ticket or choose the next unit; edit `unit.md`, `roadmap.md`, or attainment lines; read `.audit/`, the transcript body, or `playground/` uninvited.
+- **Writes**: `lessons/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `assets/conventions.md` (appended presentation rules only), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
+- **Never**: judge attainment or score the recall page; choose the next unit; edit `unit.md`, `roadmap.md`, or attainment lines; read `.audit/`, the transcript body, or `playground/` uninvited.

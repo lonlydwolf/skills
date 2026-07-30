@@ -32,7 +32,7 @@ Closed: {YYYY-MM-DD}
 
 ## Rules
 
-- **About the work and the teaching, never about the learner.** No grades, no attainment, no aptitude talk — a record the learner could read without feeling judged, though it isn't addressed to them.
+- **About the work and the teaching, never about the learner.** The zero-stakes firewall applies in full — a record the learner could read without feeling judged, though it isn't addressed to them.
 - **NN matches the milestone plan** in `roadmap.md` Notes — same number, same title.
 - **One file per milestone, written once at close.** A reopened milestone appends a dated addendum; history is never rewritten.
 - **Findings stay in the build.** This file gists and links; it never restates the findings list.

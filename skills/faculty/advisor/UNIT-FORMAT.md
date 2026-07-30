@@ -1,6 +1,6 @@
 # unit.md Format
 
-`units/NN-<slug>/unit.md` is the advisor's stamp: everything a fresh-context teacher needs to teach the unit, and the coverage contract the auditor verifies against. The advisor writes it at promotion; `teach-unit` and `audit` read it — **this file is the single definition for all three**, so writer and readers cannot drift.
+`units/NN-<slug>/unit.md` is the advisor's stamp: everything a fresh-context teacher needs to teach the unit, and the coverage contract the auditor verifies against. The advisor writes it at promotion; `teach-unit` and `audit` read it in full, `office-hours` zooms it — **this file is the single definition for every role that touches a unit**, so writer and readers cannot drift.
 
 Unit numbers are creation-order IDs, never teaching order. No renames, ever — the transcript, records, and index all reference these folders.
 
@@ -33,7 +33,7 @@ Lesson budget: {N–M lessons}
 
 ## Homework plan
 
-{1–2 briefs, floor of one. Each cites the outcomes it exercises; names the external-build milestone it feeds, if any.}
+{1–2 briefs, floor of one. Each cites the outcomes it exercises; names the external-build milestone it feeds, if any. Each brief lands at `units/NN-<slug>/work/hw-N/` — `work/` is per-unit, `N` numbered per unit from 1.}
 
 - {Brief} — outcomes: {…}
 

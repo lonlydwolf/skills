@@ -2,14 +2,14 @@
 
 Skills I use daily for learning.
 
-A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write from scratch.**
+A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write themselves.**
 
 **User-invoked**
 
 - `/setup-faculty-skills` — configures a course folder: scaffolding, minimal course `CLAUDE.md`, seeded learner profile, theme. Checks Matt's composed skills are installed. Run once per course; re-runs repair, never reset.
 - `/ask-lonlydwolf` — the router: tells you which skill fits your situation, so the course `CLAUDE.md` stays minimal.
 - `/advisor` — rolling curriculum planner: redraws the course roadmap after every taught unit and stamps the next `unit.md` in full. Sole curriculum decision-maker.
-- `/teach-unit` — teaches the current unit one lesson cycle per session from its stamped `unit.md`, fresh-context, from the course root. Ends **done** or **suspended** (`gap` or `over-budget`).
+- `/teach-unit` — teaches the current unit one lesson or homework cycle per session from its stamped `unit.md`, fresh-context, from the course root. Ends **done** or **suspended** (`gap` or `over-budget`).
 - `/audit` — adversarial, fresh-context check of a taught unit against its sources: correct, complete, no drift. Recommends, never re-plans.
 - `/mentor` — reviews the learner's own implementation via a hint ladder. Never writes it. Also runs standalone in any project, no course needed.
 - `/office-hours` — one door for questions about course material, past or current, answered in the owning unit's teacher voice. Never implementation help.
@@ -47,4 +47,4 @@ npx skills@latest add mattpocock/skills
 | `domain-modeling` | The course glossary (ubiquitous language) |
 | `prototype` | Teacher-built lesson widgets and demos |
 
-`/setup-faculty-skills` checks these five are present and stops with the install command if not — it never runs Matt's own setup. The rest of his suite installs harmlessly alongside and plays no role in a course folder.
+`/setup-faculty-skills` checks these five — plus `/ask-matt`, which the router points at — are present, and stops with the install command if not; it never runs Matt's own setup. The rest of his suite installs harmlessly alongside and plays no role in a course folder.

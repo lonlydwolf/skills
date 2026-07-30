@@ -25,11 +25,11 @@ Look at the current folder to understand its starting state. Read whatever exist
 - `AGENTS.md` and `CLAUDE.md` at the folder root — which exists? does it match the [agent-instructions.md](./templates/agent-instructions.md) template? This decides whether Section C runs at all.
 - `learner.md` at the folder root. This decides whether Section A runs at all.
 - `assets/` — which stylesheet is present, and the theme line in `assets/conventions.md`. This decides whether Section B runs at all.
-- Are the upstream skills this suite composes — `teach`, `grilling`, `research`, `domain-modeling`, `prototype` — installed? (each present as a skill folder alongside this one, or in your available skills.) any missing → print `npx skills@latest add mattpocock/skills` and **stop**.
+- Are the upstream skills this suite composes — `teach`, `grilling`, `research`, `domain-modeling`, `prototype` — plus `ask-matt`, which the router points at, installed? (each present as a skill folder alongside this one, or in your available skills.) any missing → print `npx skills@latest add mattpocock/skills` and **stop**.
 
 Found content that is neither this scaffold nor an empty folder — someone's project, stray files? Show the user what's there and **stop** until they rule.
 
-Explore is done when every section's run/skip is decided and the five upstream skills are confirmed — or the run has stopped.
+Explore is done when every section's run/skip is decided and the upstream skills are confirmed — or the run has stopped.
 
 ### 2. Present findings and ask
 
@@ -39,7 +39,7 @@ Every section obeys the same rule: lead with the recommended answer so the user 
 
 **Section A — Learner profile** — skip when `learner.md` exists.
 
-> Explainer: the "learner profile" is where durable insights about the learner live for this folder. Skills like `advisor`, `audit`, `mentor`, and `office-hours` read from it and `teach-unit` writes to it. Pick whether you want it fresh or copied forward from a previous course folder.
+> Explainer: the "learner profile" is where durable insights about the learner live for this folder. The advisor's mission run seeds it with the deep level-grilling; `teach-unit` curates it at every session exit; `advisor`, `teach-unit`, `mentor`, and `office-hours` read it. Pick whether you want it fresh or copied forward from a previous course folder.
 
 Default posture: fresh. Otherwise ask the user for the previous course folder path.
 

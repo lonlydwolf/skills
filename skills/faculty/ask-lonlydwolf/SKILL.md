@@ -26,6 +26,8 @@ You don't remember every skill, so ask.
 
 A `/teach-unit` that ends suspended (`gap` or `over-budget`) goes back to `/advisor` — the advisor owns the reroute.
 
+The goal itself moved? → `/advisor` — the goal-shift run. Only you can fire it; no role ever infers a new destination.
+
 **The tripwire.** If `/teach`'s mission conversation sprawls into "this is really six subjects", exit: start the main flow and carry what the conversation surfaced into the advisor's mission grilling. The exit is your act — nothing fires automatically.
 
 ## On call throughout
