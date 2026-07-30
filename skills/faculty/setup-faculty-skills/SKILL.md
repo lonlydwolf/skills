@@ -27,7 +27,7 @@ Look at the current folder to understand its starting state. Read whatever exist
 - `assets/` — which stylesheet is present, and the theme line in `assets/conventions.md`. This decides whether Section B runs at all.
 - Are the upstream skills this suite composes — `teach`, `grilling`, `research` — plus `ask-matt`, which the router points at, installed? (each present as a skill folder alongside this one, or in your available skills.) any missing → print `npx skills@latest add mattpocock/skills` and **stop**.
 
-Found content that is neither this scaffold nor an empty folder — someone's project, stray files? Show the user what's there and **stop** until they rule.
+Found content that is neither this scaffold, the skills-CLI machinery (`.agents/`, agent skill dirs like `.claude/`, `skills-lock.json` — always present when the suite is installed per-project), nor an empty folder — someone's project, stray files? Show the user what's there and **stop** until they rule.
 
 Explore is done when every section's run/skip is decided and the upstream skills are confirmed — or the run has stopped.
 
@@ -83,7 +83,7 @@ The day-zero tree — the gap when the folder is fresh:
 | `learner.md`              | verbatim copy from the previous course, trimmed to the cap — or fresh [learner.md](./templates/learner.md) (cap stated in its header)                                                                                        |
 | `HANDOFF.md`              | [HANDOFF.md](./templates/HANDOFF.md) — "no sessions yet" stub                                                                                                                                         |
 | `index.html`              | [index.html](./templates/index.html) — themed empty-state hub, `roadmap.html` link pre-placed at the top                                                                                              |
-| `assets/`                 | the chosen stylesheet from [themes/](./themes/), installed **as `assets/theme.css`** — the stable name every learner-facing page links; [conventions.md](./templates/conventions.md) carrying the theme + print-fallback lines; the three exercise templates from [exercises/](./exercises/) |
+| `assets/`                 | the chosen stylesheet from [themes/](./themes/), installed **as `assets/theme.css`** — the stable name every learner-facing page links; [conventions.md](./templates/conventions.md) carrying the theme + print-fallback lines; the three exercise templates from [exercises/](./exercises/), flat in `assets/` under their own names |
 | `playground/`, `units/`   | empty                                                                                                                                                                                                 |
 | `roadmap.md`, `.roadmap/` | **not created** — `/advisor`'s mission run creates them                                                                                                                                               |
 

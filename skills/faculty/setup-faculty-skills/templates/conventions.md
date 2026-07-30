@@ -2,8 +2,9 @@
   conventions.md — presentation conventions for everything the learner reads.
   Cap: ~2K tokens. Teacher-owned, slow-growing: a style correction from the user
   is recorded here once, then never re-litigated. The installer fills the
-  {{...}} placeholders at scaffold time; the theme lines change only via
-  /setup-faculty-skills.
+  {{...}} placeholders at scaffold time ({{PRINT_THEME}}: "Catppuccin Latte"
+  when the theme is catppuccin, "plain light" otherwise); the theme lines
+  change only via /setup-faculty-skills.
 -->
 
 # Conventions
@@ -17,7 +18,8 @@ is working files passed between teacher and learner, not course pages.
 - Theme: **{{THEME_NAME}}**. Settled at setup; never re-asked in a session.
 - Every learner-facing page links the course stylesheet at `assets/theme.css`
   (from a unit's `lessons/`, that is `../../../assets/theme.css`).
-- Print: {{PRINT_FALLBACK_LINE}}
+- Print: falls back to **{{PRINT_THEME}}** via the stylesheet's baked-in
+  `@media print` overrides — no second stylesheet.
 
 ## Pages
 
