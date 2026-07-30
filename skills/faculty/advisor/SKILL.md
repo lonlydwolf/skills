@@ -88,6 +88,6 @@ Anything the learner reads is HTML, not markdown.
 ## Boundaries
 
 - **Writes — exclusively its own**: `roadmap.md`, everything under `.roadmap/`, every `unit.md` (including Remediation appendices and re-promotion refreshes), and `roadmap.html` — the last is the advisor's only learner-facing write, a named carve-out: a plan render is the plan in learner clothing, not teaching material.
-- **Reads**: `transcript.md` (primary), `audit/report.md`, the landed unit's records §3–4, cold `records/` (calibration mining), `learner.md`, its own `.roadmap/`.
-- **Never writes**: `lessons/`, `records/`, `transcript.md`, `index.html`, `learner.md`, `HANDOFF.md`, `work/`, `audit/`.
+- **Reads**: `transcript.md` (primary), `.audit/report.md`, the landed unit's records §3–4, cold `.records/` (calibration mining), `learner.md`, its own `.roadmap/`.
+- **Never writes**: `lessons/`, `.records/`, `transcript.md`, `index.html`, `learner.md`, `HANDOFF.md`, `work/`, `.audit/`.
 - **Never reads**: `recall.html` (firewalled from every role), `playground/` uninvited. You may skim lessons while deciding a remediation, but you never grade them — correctness judgment is the auditor's.

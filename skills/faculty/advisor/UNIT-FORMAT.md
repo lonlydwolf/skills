@@ -23,7 +23,7 @@ Lesson budget: {N–M lessons}
 
 ## Calibration
 
-{Mined at planning time from cold records/ and learner.md — what this learner already holds that touches this unit, where they wobbled before, what pace the records suggest. Written fresh at every (re-)promotion.}
+{Mined at planning time from cold .records/ and learner.md — what this learner already holds that touches this unit, where they wobbled before, what pace the records suggest. Written fresh at every (re-)promotion.}
 
 ## Retrieval pool
 
@@ -49,7 +49,7 @@ After a not-verified audit, the advisor appends one more section:
 ```md
 ## Remediation
 
-Findings: {the failed audit findings, quoted in full — teachers never read audit/}
+Findings: {the failed audit findings, quoted in full — teachers never read .audit/}
 Fix must achieve: {what verified looks like this time, in outcome terms}
 Budget: {small — 1–2 lessons}
 ```

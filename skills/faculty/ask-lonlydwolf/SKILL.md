@@ -24,7 +24,7 @@ You don't remember every skill, so ask.
 3. **`/advisor`** — the mission run; creates the roadmap.
 4. **The loop**: `/advisor` plans a unit ⟷ `/teach-unit` teaches it → `/audit` checks it → back to `/advisor`, until the roadmap says *arrived*.
 
-A `/teach-unit` that ends "suspended: gap found" goes back to `/advisor` — the advisor owns the reroute.
+A `/teach-unit` that ends suspended (`gap` or `over-budget`) goes back to `/advisor` — the advisor owns the reroute.
 
 **The tripwire.** If `/teach`'s mission conversation sprawls into "this is really six subjects", exit: start the main flow and carry what the conversation surfaced into the advisor's mission grilling. The exit is your act — nothing fires automatically.
 
