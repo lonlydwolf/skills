@@ -4,14 +4,14 @@ Skills I use daily for learning.
 
 A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write from scratch.**
 
-> **Status: under construction.** The skills below are placeholders being authored one by one; descriptions are final intent, the skills are not yet usable.
+> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, and `advisor` are written; the rest are placeholders whose descriptions are final intent.
 
 **User-invoked**
 
 - `/setup-faculty-skills` — configures a course folder: scaffolding, minimal course `CLAUDE.md`, seeded learner profile, theme. Checks Matt's composed skills are installed. Run once per course; re-runs repair, never reset.
 - `/ask-lonlydwolf` — the router: tells you which skill fits your situation, so the course `CLAUDE.md` stays minimal.
-- `/advisor` — rolling curriculum planner: redraws the course roadmap after every taught unit and cuts the next unit ticket. Sole curriculum decision-maker.
-- `/teach-unit` — teaches one unit from its ticket, fresh-context, from the course root. Ends **done** or **suspended: gap found**.
+- `/advisor` — rolling curriculum planner: redraws the course roadmap after every taught unit and stamps the next `unit.md` in full. Sole curriculum decision-maker.
+- `/teach-unit` — teaches one unit from its stamped `unit.md`, fresh-context, from the course root. Ends **done** or **suspended: gap found**.
 - `/audit` — adversarial, fresh-context check of a taught unit against its sources: correct, complete, no drift. Recommends, never re-plans.
 - `/mentor` — reviews the learner's own implementation via a hint ladder. Never writes it.
 - `/office-hours` — one door for questions about course material, past or current, answered in the owning unit's teacher voice. Never implementation help.
