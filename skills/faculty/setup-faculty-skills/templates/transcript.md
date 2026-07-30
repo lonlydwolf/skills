@@ -8,6 +8,7 @@
       | resolved NN-<topic> — unit complete
       | suspended: gap — <gap named>
       | suspended: over-budget}
+    (the suspension reason enum {gap | over-budget} is owned by teach-unit's HANDOFF-FORMAT.md)
 
   Attainment line (/audit alone — written only on a verified or verified-with-findings
   verdict; withheld on not-verified, and it stays withheld when the advisor accepts

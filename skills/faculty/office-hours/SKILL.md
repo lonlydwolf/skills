@@ -22,7 +22,7 @@ Once the unit is found, the fixed read set: `unit.md` + `learner.md` + **the spe
 
 The moment answering requires reading or reasoning about an artifact **the learner is producing** — their code, their homework draft, their playground work, even if they invite the look — the question is `/mentor`'s: hard redirect, no back door around the hint ladder. Questions answerable entirely from the course's material stay. **No soft triage of mixed questions** — answering just the material half is the back door. An invited `playground/` look is legal only for material questions about it ("what concept is this?"), never "fix it".
 
-The wall runs one way: `/mentor` answers small material questions inside its own ladder and sends only wholesale gaps here, so a mis-picked door is safe.
+The wall runs one way — mis-picking a door is safe; the two-sided routing summary is `/ask-lonlydwolf`'s.
 
 ## Answering
 
@@ -48,11 +48,11 @@ The field is `weakness:`, not wobble — a wobble is the learner's retrieval sha
 
 ## Post-course
 
-A retired course folder — the roadmap header reads `arrived`, the advisor's arrival stamp — is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/advisor` can be pointed at the old folder's notes as calibration evidence.
+A retired course folder is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/advisor` can be pointed at the old folder's notes as calibration evidence.
 
 ## Boundaries
 
 - **Writes**: the owning unit's `.records/office-hours.md` — one note line per re-explained unit. Nothing else, ever.
 - **Reads**: the `units/` folder listing, shortlisted `unit.md` files, `learner.md`, the owning unit's lessons (zoomed), its `.records/` on a flagged wobble, `transcript.md` for history questions only.
 - **Never writes**: `lessons/`, `unit.md`, `roadmap.md`, `learner.md`, `HANDOFF.md`, `transcript.md`, `index.html`, `work/`, any ticket — and never reopens a ticket, unit or lesson.
-- **Never reads**: `roadmap.md` (this door never opens the plan), `.audit/` (verdicts would color answers toward judgment), `recall.html` (firewalled from every role), `playground/` uninvited — and when invited, material questions only.
+- **Never reads**: `roadmap.md` (this door never opens the plan), `.audit/` (verdicts would color answers toward judgment), `recall.html` (firewalled from measurement by every role), `playground/` uninvited — and when invited, material questions only.

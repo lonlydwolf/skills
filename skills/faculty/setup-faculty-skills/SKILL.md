@@ -1,6 +1,6 @@
 ---
 name: setup-faculty-skills
-description: Configure a course folder for the faculty skills — scaffold the workspace, seed the learner profile, settle the theme.
+description: Configure a course folder for the faculty skills — scaffold the workspace and learner profile, settle the theme.
 disable-model-invocation: true
 ---
 
@@ -25,7 +25,7 @@ Look at the current folder to understand its starting state. Read whatever exist
 - `AGENTS.md` and `CLAUDE.md` at the folder root — which exists? does it match the [agent-instructions.md](./templates/agent-instructions.md) template? This decides whether Section C runs at all.
 - `learner.md` at the folder root. This decides whether Section A runs at all.
 - `assets/` — which stylesheet is present, and the theme line in `assets/conventions.md`. This decides whether Section B runs at all.
-- Are the upstream skills this suite composes — `teach`, `grilling`, `research`, `domain-modeling`, `prototype` — plus `ask-matt`, which the router points at, installed? (each present as a skill folder alongside this one, or in your available skills.) any missing → print `npx skills@latest add mattpocock/skills` and **stop**.
+- Are the upstream skills this suite composes — `teach`, `grilling`, `research` — plus `ask-matt`, which the router points at, installed? (each present as a skill folder alongside this one, or in your available skills.) any missing → print `npx skills@latest add mattpocock/skills` and **stop**.
 
 Found content that is neither this scaffold nor an empty folder — someone's project, stray files? Show the user what's there and **stop** until they rule.
 
@@ -45,7 +45,7 @@ Default posture: fresh. Otherwise ask the user for the previous course folder pa
 
 **Section B — Theme** — skip when settled, unless the user came to change the theme. Settled: the stylesheet and the `assets/conventions.md` theme line both present and agreeing; anything less runs the section.
 
-Default: **catppuccin mocha** — but when a stylesheet is already on disk, recommend the theme it implies. Offer:
+Default: **catppuccin mocha** — but when a theme is already on disk, recommend the one the `assets/conventions.md` theme line names (the stylesheet installs under a stable name, so the conventions line, not the filename, identifies it). Offer:
 
 - **light**
 - **dark**
@@ -70,7 +70,7 @@ Write the gap, artifact by artifact. Each artifact obeys its ownership rule:
 | Artifact                                                                                                              | Rule                                                                      |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **Installer-owned** — `AGENTS.md` + `CLAUDE.md` pointer, the exercise templates, the stylesheet contents              | Create if missing; repair drift from template only after showing the diff |
-| **Course-owned, accumulating** — `learner.md`, `transcript.md`, `HANDOFF.md`, `index.html`, everything under `units/` | Seed if absent; an existing file is never touched                         |
+| **Course-owned, accumulating** — `learner.md`, `transcript.md`, `HANDOFF.md`, `index.html`, everything under `units/` | Scaffold if absent; an existing file is never touched                      |
 | **Settle-once** — the theme: which stylesheet, plus the adherence line in `assets/conventions.md`                     | Keep if settled; change only on explicit user request                     |
 
 The day-zero tree — the gap when the folder is fresh:
@@ -83,7 +83,7 @@ The day-zero tree — the gap when the folder is fresh:
 | `learner.md`              | verbatim copy from the previous course, trimmed to the cap — or fresh [learner.md](./templates/learner.md) (cap stated in its header)                                                                                        |
 | `HANDOFF.md`              | [HANDOFF.md](./templates/HANDOFF.md) — "no sessions yet" stub                                                                                                                                         |
 | `index.html`              | [index.html](./templates/index.html) — themed empty-state hub, `roadmap.html` link pre-placed at the top                                                                                              |
-| `assets/`                 | the chosen stylesheet from [themes/](./themes/); [conventions.md](./templates/conventions.md) carrying the theme + print-fallback lines; the three exercise templates from [exercises/](./exercises/) |
+| `assets/`                 | the chosen stylesheet from [themes/](./themes/), installed **as `assets/theme.css`** — the stable name every learner-facing page links; [conventions.md](./templates/conventions.md) carrying the theme + print-fallback lines; the three exercise templates from [exercises/](./exercises/) |
 | `playground/`, `units/`   | empty                                                                                                                                                                                                 |
 | `roadmap.md`, `.roadmap/` | **not created** — `/advisor`'s mission run creates them                                                                                                                                               |
 

@@ -6,10 +6,10 @@ A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and
 
 **User-invoked**
 
-- `/setup-faculty-skills` — configures a course folder: scaffolding, minimal course `CLAUDE.md`, seeded learner profile, theme. Checks Matt's composed skills are installed. Run once per course; re-runs repair, never reset.
-- `/ask-lonlydwolf` — the router: tells you which skill fits your situation, so the course `CLAUDE.md` stays minimal.
+- `/setup-faculty-skills` — configures a course folder: scaffolding, minimal course `AGENTS.md` (with a `CLAUDE.md` pointer), scaffolded learner profile, theme. Checks Matt's composed skills are installed. Run once per course; re-runs repair, never reset.
+- `/ask-lonlydwolf` — the router: tells you which skill fits your situation, so the course instructions file stays minimal.
 - `/advisor` — rolling curriculum planner: redraws the course roadmap after every taught unit and stamps the next `unit.md` in full. Sole curriculum decision-maker.
-- `/teach-unit` — teaches the current unit one lesson or homework cycle per session from its stamped `unit.md`, fresh-context, from the course root. Ends **done** or **suspended** (`gap` or `over-budget`).
+- `/teach-unit` — teaches the current unit one lesson or homework cycle per session from its stamped `unit.md`, fresh-context, from the course root. Ends **complete** or **suspended** (`gap` or `over-budget`).
 - `/audit` — adversarial, fresh-context check of a taught unit against its sources: correct, complete, no drift. Recommends, never re-plans.
 - `/mentor` — reviews the learner's own implementation via a hint ladder. Never writes it. Also runs standalone in any project, no course needed.
 - `/office-hours` — one door for questions about course material, past or current, answered in the owning unit's teacher voice. Never implementation help.
@@ -22,7 +22,8 @@ A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and
 
 ```
 Small subject:   Matt's /teach, alone.
-                 (If the mission talk sprawls into "six subjects" → /advisor.)
+                 (If the mission talk sprawls into "six subjects"
+                  → the main flow: /setup-faculty-skills, then /advisor.)
 
 Big subject:     /advisor ──▶ /teach-unit ──▶ /audit ──▶ /advisor ──▶ …
                  (alternating until the course map says: arrived)
@@ -44,7 +45,5 @@ npx skills@latest add mattpocock/skills
 | `teach` | The small-subject route — one nameable subject needs no course machinery |
 | `grilling` | The advisor's mission and planning interviews |
 | `research` | Gathering course resources; the audit's source-checking |
-| `domain-modeling` | The course glossary (ubiquitous language) |
-| `prototype` | Teacher-built lesson widgets and demos |
 
-`/setup-faculty-skills` checks these five — plus `/ask-matt`, which the router points at — are present, and stops with the install command if not; it never runs Matt's own setup. The rest of his suite installs harmlessly alongside and plays no role in a course folder.
+`/setup-faculty-skills` checks these three — plus `/ask-matt`, which the router points at — are present, and stops with the install command if not; it never runs Matt's own setup. The rest of his suite installs harmlessly alongside and plays no role in a course folder.

@@ -99,4 +99,4 @@ Findings land in the project's richest native medium; absent one, a rendered, se
 - **Writes**: `.mentor/` — its own (`log.md`, milestone records; standalone also `brief.md`) — and findings in the build's or project's own medium (PR review, findings file, or the standalone HTML report). Never a line of the implementation.
 - **Reads**: the build/project itself; in course mode `roadmap.md` Notes and `learner.md`; its own `.mentor/`.
 - **Never writes**: `transcript.md` (no attainment, ever — the registrar boundary), `lessons/`, `unit.md`, `roadmap.md`, `work/`, `learner.md`, `index.html`.
-- **Never reads**: `.audit/` (verdicts would color reviews toward judgment), `recall.html` (firewalled from every role), `playground/` uninvited.
+- **Never reads**: `.audit/` (verdicts would color reviews toward judgment), `recall.html` (firewalled from measurement by every role), `playground/` uninvited.

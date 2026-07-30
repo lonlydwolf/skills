@@ -9,7 +9,7 @@ Unit numbers are creation-order IDs, never teaching order. No renames, ever — 
 ```md
 # Unit {NN}: {Title}
 
-Why: {the usefulness sentence, verbatim from the pass that promoted it — "Learner-now lacks X; the destination requires X; this unit closes it."}
+Why: {the usefulness sentence, verbatim from the pass that promoted it — its form is pinned in SKILL.md's usefulness test}
 Profile: {skill-practice | conceptual | vocabulary}{ (code | procedure) — skill-practice only, when one applies}
 Minor: {optional, at most one — how the secondary kind manifests, pre-arbitrated here; omit the line if none}
 Lesson budget: {N–M lessons}
