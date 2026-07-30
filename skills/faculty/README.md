@@ -4,8 +4,6 @@ Skills I use daily for learning.
 
 A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write from scratch.**
 
-> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, `advisor`, `teach-unit`, `audit`, and `mentor` are written; `office-hours` is a placeholder whose description is final intent.
-
 **User-invoked**
 
 - `/setup-faculty-skills` — configures a course folder: scaffolding, minimal course `CLAUDE.md`, seeded learner profile, theme. Checks Matt's composed skills are installed. Run once per course; re-runs repair, never reset.
@@ -18,7 +16,7 @@ A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and
 
 **Model-invoked**
 
-- None yet — faculty sessions are entered deliberately, one skill per session.
+- None — by design. Faculty sessions are entered deliberately, one skill per session.
 
 ## The pipeline
 
