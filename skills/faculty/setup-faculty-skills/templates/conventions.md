@@ -8,7 +8,9 @@
 
 # Conventions
 
-Anything the learner reads is HTML — markdown is machine-facing.
+Anything the learner reads is HTML — markdown is machine-facing. One named
+exception: `work/` — homework correspondence (briefs, submissions, feedback)
+is working files passed between teacher and learner, not course pages.
 
 ## Theme
 

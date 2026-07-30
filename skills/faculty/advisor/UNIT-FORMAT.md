@@ -62,5 +62,5 @@ Budget: {small — 1–2 lessons}
 - **`Minor:` is pre-arbitrated, or absent.** At most one line, and it says how the secondary kind manifests — deciding that in-session would hand a what-decision to the teacher.
 - **The `Why:` line is earned, not written.** It is the usefulness sentence that passed at promotion, from current evidence — if you can't complete it, the unit doesn't get stamped.
 - **Sources are annotated, every entry.** A bare link is useless to a fresh context — "Use for: …" on every line.
-- **Re-promotion refreshes Calibration and Retrieval pool; Outcomes stay untouched.** A resumed unit's pool is top-loaded with its prerequisite's material — the resumed unit is that material's first spacing opportunity.
+- **Re-promotion refreshes Calibration and Retrieval pool; Outcomes stay untouched.** A resumed unit's pool is top-loaded with its prerequisite's material — the resumed unit is that material's first spacing opportunity. A gap-suspended unit's refreshed Calibration must declare the named gap closed — that line is what reopens the unit's `blocked` ticket at the first resumed session.
 - **`## Remediation` is appended, never woven in.** The original sections stand as the record of what was asked the first time.

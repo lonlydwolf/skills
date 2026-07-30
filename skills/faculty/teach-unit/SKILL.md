@@ -21,10 +21,11 @@ Find the unit from the fixed header line of `roadmap.md` — `Current unit: unit
 - `teaching` → proceed.
 - `remediation` → this session teaches from the `## Remediation` section appended to `unit.md` — fix the findings within its budget; never read `.audit/` itself.
 - `re-planning — do not claim` → **stop loudly.** The advisor is mid-pass; tell the user to finish `/advisor` first.
+- `arrived` → **stop.** The course is complete; there is nothing to teach. Point the user at `/office-hours` (the material) or `/mentor` (their own work).
 
-Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMAT.md](../advisor/UNIT-FORMAT.md) — the single definition; never restate its rules) → `learner.md` → `HANDOFF.md` → `assets/conventions.md` → frontier scan of the unit's `.tickets/`. **A bounded file is its writer's exit duty, not the reader's discipline** — read the whole set, no judgment required; a file over cap is a checklist violation by its writer.
+Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMAT.md](../advisor/UNIT-FORMAT.md) — the single definition; never restate its rules) → `learner.md` → `HANDOFF.md` → `assets/conventions.md` → the unit's `.records/office-hours.md` when present → frontier scan of the unit's `.tickets/` → **`work/` scan**: a submission with no `feedback.md` beside it draws a `homework-feedback` ticket into the frontier now, at orient — the learner submits asynchronously, and no other signal announces it. **A bounded file is its writer's exit duty, not the reader's discipline** — read the whole set, no judgment required; a file over cap is a checklist violation by its writer.
 
-If `HANDOFF.md` carries a suspension block naming the current unit, stop — the advisor hasn't re-planned yet; tell the user to run `/advisor`.
+If `HANDOFF.md` carries a suspension block naming the current unit, stop — the advisor hasn't re-planned yet; tell the user to run `/advisor`. If it declares the current unit complete instead, stop the same way — the unit awaits `/audit`, then `/advisor`; there is nothing here to teach.
 
 **Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 6), other units' folders, any `.audit/`, `playground/` uninvited, cold `.records/`, prior units' lessons.
 
@@ -36,6 +37,7 @@ Lesson and homework cycles live as tickets in the unit's `.tickets/` ([LESSON-TI
 
 - First session of a unit finds `.tickets/` empty → the extra duty is drafting the initial frontier from `unit.md`, including turning its homework plan into homework tickets (floor: one per unit).
 - **Claim before work**: set the ticket `claimed` before teaching. A leftover claimed ticket is an interrupted session — inspect, then adopt or reset it.
+- A `blocked` ticket reopens at a resumed unit's first session, when the refreshed `unit.md` Calibration declares its named gap closed; Calibration silent on the gap → stop, the re-promotion is incomplete — tell the user to run `/advisor`.
 - **Prep rides the ticket**: at draft time, fire a research subagent that verifies in its own context and writes back a capped distillate. Stale or missing prep at claim time → re-fire. Mid-session checks ("does this compile?") go to subagents too — if a check costs more tokens to perform than its answer costs to state, it doesn't belong in the teaching context.
 
 ## Teaching the lesson
@@ -62,7 +64,7 @@ A **foreseen gap** that doesn't block this lesson: finish the cycle honestly; re
 
 ## Homework
 
-`work/hw-N/`: `brief.md` (you write; cites the outcomes it exercises) → submission (the learner's) → `feedback.md` (you write; **feedback, never a grade** — the zero-stakes firewall applies). A submission landing draws a `homework-feedback` ticket into the frontier.
+`work/hw-N/`: `brief.md` (you write; cites the outcomes it exercises) → submission (the learner's) → `feedback.md` (you write; **feedback, never a grade** — the zero-stakes firewall applies). Submissions are found by the orient `work/` scan, which draws the `homework-feedback` ticket — no other actor watches `work/`.
 
 ## The recall page
 
@@ -82,7 +84,7 @@ The final act of every session — including suspended ones — is emitting this
 
 ## Unit complete — a checkable state, not a judgment
 
-Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every `unit.md` outcome maps to ≥1 resolved ticket ∧ the recall refresh is done. Declared in the transcript session line and `HANDOFF.md`. "Complete" means *delivered as planned* — nothing more; `/audit` and `/advisor` take it from there.
+Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every `unit.md` outcome maps to ≥1 resolved ticket ∧ no `work/` submission awaits feedback ∧ the recall refresh is done. Declared in the transcript session line and `HANDOFF.md`. "Complete" means *delivered as planned* — nothing more; `/audit` and `/advisor` take it from there.
 
 ## Boundaries
 

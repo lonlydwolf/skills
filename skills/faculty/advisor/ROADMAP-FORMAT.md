@@ -36,7 +36,7 @@ Current unit: units/{NN}-{slug} — {status}
 ## Rules
 
 - **The header line is the contract.** `Current unit: units/NN-<slug> — <status>` is the only line a teacher reads; everything below it is the advisor's workspace. It is always line 3, always this shape.
-- **The status vocabulary is closed**: `teaching` (including resumed units), `remediation`, `re-planning — do not claim`. Nothing else, ever — teachers dispatch on these strings.
+- **The status vocabulary is closed**: `teaching` (including resumed units), `remediation`, `re-planning — do not claim`, `arrived`. Nothing else, ever — teachers dispatch on these strings. `arrived` is terminal: written once by the advisor's arrival stamp (the last unit keeps its name in the header), never left — the folder is an archive from that line on.
 - **Frontier holds at most 2 lines — title + gap only.** No outcomes, no budgets, no homework plans: that detail exists nowhere but the current `unit.md`. A frontier line that has grown a sub-list is a violation, not diligence.
 - **Fog stays unordered and vague.** Numbering the fog, or slicing it into unit-sized pieces, is a promise the rolling plan must not make.
 - **Index, not store.** Decisions live in their planning tickets and `log.md`; Decisions-so-far gists and links, never restates. If a line needs a second sentence, it belongs elsewhere.

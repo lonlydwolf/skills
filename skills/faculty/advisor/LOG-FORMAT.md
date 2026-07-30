@@ -5,7 +5,7 @@
 ## Template
 
 ```md
-## {YYYY-MM-DD} — {mission | checkpoint: units/NN-<slug> landed | suspension: units/NN-<slug> | goal-shift}
+## {YYYY-MM-DD} — {mission | checkpoint: units/NN-<slug> landed | suspension: units/NN-<slug> | goal-shift | arrival}
 
 Evidence: {what this pass read — audit report, records §3–4 of the landed unit, transcript tail}
 

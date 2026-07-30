@@ -1,6 +1,6 @@
 # Session-record Format
 
-`units/NN-<slug>/.records/session-NN.md` — one file per session, written at exit step 2, including suspended sessions. This is the evidence unit of the whole suite: `/audit` samples **Observed** as attainment evidence; `/advisor` mines **Gaps** and **Signals for planning** at every checkpoint, from cold units, long after the writer is gone. The four headings are contractual — never renamed, merged, or reordered; prose is free beneath them.
+`units/NN-<slug>/.records/session-NN.md` — one file per session, written at exit step 2, including suspended sessions; `NN` = the count of session records already in the unit's `.records/`, plus one (per unit, from 01). This is the evidence unit of the whole suite: `/audit` samples **Observed** as attainment evidence; `/advisor` mines **Gaps** and **Signals for planning** at every checkpoint, from cold units, long after the writer is gone. The four headings are contractual — never renamed, merged, or reordered; prose is free beneath them.
 
 `.records/` also holds `handoff-archive.md` (displaced HANDOFF content), and `office-hours.md` when that role leaves a note — neither is a session record.
 

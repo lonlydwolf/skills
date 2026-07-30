@@ -22,10 +22,10 @@ Run from the course root. Every run starts and ends by the user's hand: the run 
 
 Every run is one pass: **orient → judge → re-plan → stamp → log.**
 
-1. **Orient** — read `roadmap.md` and the *new* evidence only: the landed unit's audit report (`.audit/NN-<slug>.md`), the landed unit's session records (§3 Gaps, §4 Signals for planning), any new `.mentor/milestone-NN.md` records (gap flags, struggle patterns), the tail of `transcript.md`. Set the roadmap header to `re-planning — do not claim` so a concurrent teacher session fails loudly instead of claiming into a moving plan.
+1. **Orient** — read `roadmap.md` and the *new* evidence only: the landed unit's audit report (`.audit/NN-<slug>.md`), the landed unit's session records (§3 Gaps, §4 Signals for planning), any new `.mentor/milestone-NN.md` records (gap flags, struggle patterns), office-hours notes newer than the last pass in any unit's `.records/office-hours.md` — weakness lines especially; a weakness in a finished unit is ruled on here or never — the tail of `transcript.md`. Set the roadmap header to `re-planning — do not claim` so a concurrent teacher session fails loudly instead of claiming into a moving plan.
 2. **Judge** — accept or reject each audit recommendation, with reasons; design the cure for a suspension; choose the remediation path for a not-verified unit — both branches in [Units coming back](#units-coming-back).
 3. **Re-plan** — apply the usefulness test to every frontier line; graduate fog that has sharpened; insert, demote, or strike units. If the course has a build, re-judge its milestone plan in Notes the same way — resequence or reslice with a log line; the mentor never does. Demotions and strikes are logged with why — nothing survives on inertia.
-4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate `roadmap.html`, set the header line to the new current unit, and delete any standing suspension block from `HANDOFF.md` — this pass has re-planned, so the block must not outlive it. Clearing `re-planning` happens here, not before.
+4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate `roadmap.html`, set the header line to the new current unit, and delete any standing suspension block from `HANDOFF.md` — this pass has re-planned, so the block must not outlive it. Clearing `re-planning` happens here, not before. When re-plan found nothing left to promote, the stamp is the arrival stamp instead ([Arrival](#arrival)).
 5. **Log** — append the pass entry to `.roadmap/log.md` ([LOG-FORMAT.md](LOG-FORMAT.md)).
 
 A checkpoint pass is **HITL-lite**: work the evidence alone, then present the plan delta for one confirm/adjust exchange with the user before stamping.
@@ -43,7 +43,7 @@ The first invocation — and the one exemption from the orient step's reading: t
 
 Territory questions you can't answer from the conversation become planning tickets in `.roadmap/issues/` ([PLANNING-TICKET-FORMAT.md](PLANNING-TICKET-FORMAT.md)); fire each research ticket as a `/research` subagent during the run, findings landing in `.roadmap/research/`. The mission record lives in ticket 01 (see the format doc); the distillate goes to `roadmap.md`.
 
-**End condition — the course is teachable**: `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet.
+**End condition — the course is teachable**: `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set, `roadmap.html` rendered (the scaffolded `index.html` already links it — the link must not be born dead), and the pass logged. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet.
 
 ## Frontier discipline and the usefulness test
 
@@ -70,6 +70,10 @@ A line that no longer closes a real gap is demoted to fog or struck, with a log 
 **Accept-the-risk.** You may decline remediation: record the acceptance and its reason in `.roadmap/log.md` (the two-ledger rule lives in [LOG-FORMAT.md](LOG-FORMAT.md)); the transcript attainment line stays withheld, permanently. Stakes stay zero and the course moves on; the unit's material rides retrieval pools as weak-priority. Only the shortcut is permanent, not the decline (mechanics in [LOG-FORMAT.md](LOG-FORMAT.md)).
 
 **Suspension re-queue (teacher found a blocking gap, or the unit ran over budget).** The parked unit freezes as-is, keeping its number and folder; teaching order is `roadmap.md`'s business. Between the suspension and this pass the roadmap header still reads `teaching` — the window is covered by `HANDOFF.md`'s suspension block ([HANDOFF-FORMAT.md](../teach-unit/HANDOFF-FORMAT.md) owns the mechanism). At the stamp, the header correction and the block's removal are both yours. For a `gap` suspension: the teacher named the gap, never the cure — the cure is yours. Cut a normal small prerequisite unit (full `unit.md`, 1–2 lesson budget, its own audit) whose `Why:` names the suspension it unblocks. **Resume is a re-promotion with refreshed stamps** ([UNIT-FORMAT.md](UNIT-FORMAT.md)). A suspended unit never resumes un-refreshed — that is a checklist violation. For an `over-budget` suspension, same pass, three cures: descope (strike outcomes, log why), split (the remainder becomes a fog line or unit), or cut a prerequisite if the overrun was a hidden gap.
+
+## Arrival
+
+A checkpoint may find nothing left: the landed unit's attainment line written — or its risk accepted — frontier empty, fog empty, and the destination sentence satisfied by current evidence — re-test it the way you'd test a `Why:` line; lingering fog or an unclosed destination means the course isn't done, it needs another unit. Arrival is a checkpoint like any other: present it as the plan delta and let the user confirm — then the **final stamp**: set the header status to `arrived` (the last unit keeps its name), regenerate `roadmap.html` as a journey-complete render (every unit done, no frontier — still journey, never judgment), and log the pass as `arrival`. No next unit is stamped; this is the one pass that ends without one. The folder retires as the archive `/office-hours` serves; a next journey is a new folder, seeded from `learner.md`.
 
 ## The goal-shift run
 

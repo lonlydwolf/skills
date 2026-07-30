@@ -48,7 +48,7 @@ The field is `weakness:`, not wobble — a wobble is the learner's retrieval sha
 
 ## Post-course
 
-A retired course folder is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/advisor` can be pointed at the old folder's notes as calibration evidence.
+A retired course folder — the roadmap header reads `arrived`, the advisor's arrival stamp — is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/advisor` can be pointed at the old folder's notes as calibration evidence.
 
 ## Boundaries
 
