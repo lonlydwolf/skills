@@ -15,7 +15,7 @@ Current unit: units/{NN}-{slug} — {status}
 
 ## Notes
 
-{Session cadence, deadline, the external build's location if the course has one (referenced, never contained), standing constraints.}
+{Session cadence, deadline, standing constraints. If the course has a build: its location (referenced, never contained) and its milestone plan — numbered `Milestone NN: {title}` lines the mentor reviews against.}
 
 ## Frontier
 

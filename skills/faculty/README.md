@@ -4,7 +4,7 @@ Skills I use daily for learning.
 
 A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write from scratch.**
 
-> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, `advisor`, `teach-unit`, and `audit` are written; the rest are placeholders whose descriptions are final intent.
+> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, `advisor`, `teach-unit`, `audit`, and `mentor` are written; `office-hours` is a placeholder whose description is final intent.
 
 **User-invoked**
 
@@ -13,7 +13,7 @@ A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and
 - `/advisor` — rolling curriculum planner: redraws the course roadmap after every taught unit and stamps the next `unit.md` in full. Sole curriculum decision-maker.
 - `/teach-unit` — teaches the current unit one lesson cycle per session from its stamped `unit.md`, fresh-context, from the course root. Ends **done** or **suspended** (`gap` or `over-budget`).
 - `/audit` — adversarial, fresh-context check of a taught unit against its sources: correct, complete, no drift. Recommends, never re-plans.
-- `/mentor` — reviews the learner's own implementation via a hint ladder. Never writes it.
+- `/mentor` — reviews the learner's own implementation via a hint ladder. Never writes it. Also runs standalone in any project, no course needed.
 - `/office-hours` — one door for questions about course material, past or current, answered in the owning unit's teacher voice. Never implementation help.
 
 **Model-invoked**

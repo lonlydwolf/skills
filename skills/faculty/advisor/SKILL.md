@@ -22,9 +22,9 @@ Run from the course root. Every run starts and ends by the user's hand: the run 
 
 Every run is one pass: **orient → judge → re-plan → stamp → log.**
 
-1. **Orient** — read `roadmap.md` and the *new* evidence only: the landed unit's audit report (`.audit/NN-<slug>.md`), the landed unit's session records (§3 Gaps, §4 Signals for planning), the tail of `transcript.md`. Set the roadmap header to `re-planning — do not claim` so a concurrent teacher session fails loudly instead of claiming into a moving plan.
+1. **Orient** — read `roadmap.md` and the *new* evidence only: the landed unit's audit report (`.audit/NN-<slug>.md`), the landed unit's session records (§3 Gaps, §4 Signals for planning), any new `.mentor/milestone-NN.md` records (gap flags, struggle patterns), the tail of `transcript.md`. Set the roadmap header to `re-planning — do not claim` so a concurrent teacher session fails loudly instead of claiming into a moving plan.
 2. **Judge** — accept or reject each audit recommendation, with reasons; design the cure for a suspension; choose the remediation path for a not-verified unit — both branches in [Units coming back](#units-coming-back).
-3. **Re-plan** — apply the usefulness test to every frontier line; graduate fog that has sharpened; insert, demote, or strike units. Demotions and strikes are logged with why — nothing survives on inertia.
+3. **Re-plan** — apply the usefulness test to every frontier line; graduate fog that has sharpened; insert, demote, or strike units. If the course has a build, re-judge its milestone plan in Notes the same way — resequence or reslice with a log line; the mentor never does. Demotions and strikes are logged with why — nothing survives on inertia.
 4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate `roadmap.html`, set the header line to the new current unit. Clearing `re-planning` happens here, not before.
 5. **Log** — append the pass entry to `.roadmap/log.md` ([LOG-FORMAT.md](LOG-FORMAT.md)).
 
@@ -39,7 +39,7 @@ The first invocation — and the one exemption from the orient step's reading: t
 1. **The destination — as capability, not topics.** A topic-list destination smuggles in a day-zero syllabus; push back on vagueness until the destination is a capability sentence (form and example in [ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)).
 2. **Stakes and shape.** Why now, any deadline, a sustainable session cadence.
 3. **Learner-now.** Deep level-grilling, once, into `learner.md`: background, goals, standing preferences — this informs unit picks and profile stamps for the whole course. Self-report plus shown evidence (the seeded `learner.md`, existing work). **Never a placement test** — nothing may exist for the learner to feel judged by. Miscalibration is cheap; the first checkpoint corrects it.
-4. **The external build.** If the course has a course-long build, record its location in `roadmap.md` Notes.
+4. **The external build.** If the course has a course-long build, record its location in `roadmap.md` Notes and cut its milestone plan there — numbered milestones, each sequenced after the units that teach what it needs. The mentor reviews against this plan and never resizes it.
 
 Territory questions you can't answer from the conversation become planning tickets in `.roadmap/issues/` ([PLANNING-TICKET-FORMAT.md](PLANNING-TICKET-FORMAT.md)); fire each research ticket as a `/research` subagent during the run, findings landing in `.roadmap/research/`. The mission record lives in ticket 01 (see the format doc); the distillate goes to `roadmap.md`.
 
@@ -88,6 +88,6 @@ Anything the learner reads is HTML, not markdown.
 ## Boundaries
 
 - **Writes — exclusively its own**: `roadmap.md`, everything under `.roadmap/`, every `unit.md` (including Remediation appendices and re-promotion refreshes), and `roadmap.html` — the last is the advisor's only learner-facing write, a named carve-out: a plan render is the plan in learner clothing, not teaching material.
-- **Reads**: `transcript.md` (primary), the landed unit's `.audit/NN-<slug>.md`, the landed unit's records §3–4, cold `.records/` (calibration mining), `learner.md`, its own `.roadmap/`.
-- **Never writes**: `lessons/`, `.records/`, `transcript.md`, `index.html`, `learner.md`, `HANDOFF.md`, `work/`, `.audit/`.
+- **Reads**: `transcript.md` (primary), the landed unit's `.audit/NN-<slug>.md`, the landed unit's records §3–4, cold `.records/` (calibration mining), `.mentor/milestone-NN.md` records, `learner.md`, its own `.roadmap/`.
+- **Never writes**: `lessons/`, `.records/`, `transcript.md`, `index.html`, `learner.md`, `HANDOFF.md`, `work/`, `.audit/`, `.mentor/`.
 - **Never reads**: `recall.html` (firewalled from every role), `playground/` uninvited. You may skim lessons while deciding a remediation, but you never grade them — correctness judgment is the auditor's.
