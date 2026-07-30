@@ -9,6 +9,8 @@
       | suspended: gap — <gap named>
       | suspended: over-budget}
 
-  Attainment line (/audit alone — shape pinned when audit is authored):
-    {YYYY-MM-DD} — units/NN-<slug> — attainment — …
+  Attainment line (/audit alone — written only on a verified or verified-with-findings
+  verdict; withheld on not-verified, and it stays withheld when the advisor accepts
+  the risk; the same bare tail for both writing rungs — findings live in the report):
+    {YYYY-MM-DD} — units/NN-<slug> — attainment — verified
 -->

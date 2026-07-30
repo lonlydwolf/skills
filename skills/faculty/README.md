@@ -4,7 +4,7 @@ Skills I use daily for learning.
 
 A course-agnostic teaching suite: an AI faculty that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write from scratch.**
 
-> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, `advisor`, and `teach-unit` are written; the rest are placeholders whose descriptions are final intent.
+> **Status: under construction.** The skills are being authored one by one — `setup-faculty-skills`, `ask-lonlydwolf`, `advisor`, `teach-unit`, and `audit` are written; the rest are placeholders whose descriptions are final intent.
 
 **User-invoked**
 
