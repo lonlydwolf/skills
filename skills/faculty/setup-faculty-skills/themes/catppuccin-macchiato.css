@@ -1,0 +1,160 @@
+/* Catppuccin Macchiato — course theme for the faculty skills.
+ * Self-contained: structure + palette in one file. Installed as assets/theme.css.
+ */
+
+:root {
+  --bg: #24273a;
+  --bg-alt: #1e2030;
+  --surface: #363a4f;
+  --border: #494d64;
+  --text: #cad3f5;
+  --muted: #a5adcb;
+  --heading: #cad3f5;
+  --link: #8aadf4;
+  --accent: #c6a0f6;
+  --code-bg: #1e2030;
+  --ok: #a6da95;
+  --warn: #eed49f;
+  --err: #ed8796;
+}
+
+/* Print falls back to Catppuccin Latte: dark ink on paper, same structure. */
+@media print {
+  :root {
+    --bg: #eff1f5;
+    --bg-alt: #e6e9ef;
+    --surface: #ccd0da;
+    --border: #bcc0cc;
+    --text: #4c4f69;
+    --muted: #6c6f85;
+    --heading: #4c4f69;
+    --link: #1e66f5;
+    --accent: #8839ef;
+    --code-bg: #e6e9ef;
+    --ok: #40a02b;
+    --warn: #df8e1d;
+    --err: #d20f39;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: 46rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  font-size: 1.0625rem;
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading);
+  line-height: 1.25;
+  margin: 2em 0 0.6em;
+}
+
+h1 { font-size: 1.8rem; margin-top: 0.5em; }
+h2 { font-size: 1.4rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+h3 { font-size: 1.15rem; }
+
+p, ul, ol { margin: 0.8em 0; }
+li { margin: 0.3em 0; }
+
+a { color: var(--link); }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { color: var(--heading); }
+
+code, kbd {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+}
+
+pre code { background: none; border: none; padding: 0; font-size: 0.875rem; }
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.25em 1.25em;
+  border-left: 4px solid var(--accent);
+  background: var(--bg-alt);
+  border-radius: 0 8px 8px 0;
+  color: var(--muted);
+}
+
+table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+th, td { border: 1px solid var(--border); padding: 0.5em 0.8em; text-align: left; }
+th { background: var(--bg-alt); color: var(--heading); }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5em 0; }
+
+img { max-width: 100%; }
+
+/* Cards — exercises, callouts */
+.card, .exercise {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5em 0;
+}
+
+.exercise > h3:first-child, .card > h3:first-child { margin-top: 0; }
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.1em 0.7em;
+  margin-bottom: 0.5em;
+}
+
+/* Reveal blocks — answers, model explanations */
+details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 1em 0;
+}
+
+details[open] { padding-bottom: 1rem; }
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.muted { color: var(--muted); }
+.ok { color: var(--ok); }
+.warn { color: var(--warn); }
+.err { color: var(--err); }
+
+@media print {
+  body { max-width: none; padding: 0; font-size: 11pt; }
+  a { color: var(--link); text-decoration: none; }
+  details { border: 1px dashed var(--border); }
+  .no-print { display: none; }
+}
