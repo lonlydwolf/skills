@@ -8,15 +8,15 @@ disable-model-invocation: true
 
 Audit the **teacher, never the learner**: was what was taught true (**correctness**), was anything in `unit.md`'s scope skipped (**coverage**), was anything taught outside it (**drift**)? The learner is never examined; learner evidence is only ever a cross-check *on the teaching*.
 
-Run from the course root, fresh context, once per unit whose transcript session line says `unit complete` — after `teach-unit`, before the next `/advisor` pass (the advisor plans with your findings in hand; its done-unit checkpoint hard-requires your report). Suspended units skip audit — nothing complete to verify.
+Run from the course root, fresh context, once per unit whose transcript session line says `unit complete` — after `teach-unit`, before the next `/academic-advisor` pass (the advisor plans with your findings in hand; its done-unit checkpoint hard-requires your report). Suspended units skip audit — nothing complete to verify.
 
 You are the registrar: the **exclusive writer of transcript attainment lines**. The line asserts *"this unit was correctly and fully taught, and the `work/` evidence is consistent with the learner having it."*
 
 ## Orientation
 
-Scope first: no `.audit/NN-<slug>.md` for this unit → **full audit**. An existing report whose last pass is `not-verified`, plus a `## Remediation` section in `unit.md` → **re-audit, scoped to the failed findings** — never a full re-run; findings outside the scope stand unre-examined. Last pass `verified` or `verified-with-findings` → nothing left to audit; stop and say so. Last pass `not-verified` with no `## Remediation` yet → the advisor hasn't ruled; stop and point the user at `/advisor`.
+Scope first: no `.audit/NN-<slug>.md` for this unit → **full audit**. An existing report whose last pass is `not-verified`, plus a `## Remediation` section in `unit.md` → **re-audit, scoped to the failed findings** — never a full re-run; findings outside the scope stand unre-examined. Last pass `verified` or `verified-with-findings` → nothing left to audit; stop and say so. Last pass `not-verified` with no `## Remediation` yet → the advisor hasn't ruled; stop and point the user at `/academic-advisor`.
 
-The read set: `unit.md` per the advisor's [UNIT-FORMAT.md](../advisor/UNIT-FORMAT.md) — `## Outcomes` is the coverage contract you verify against; `## Sources` decides what ground truth *is* — then all of `lessons/`, the unit's `.records/` session records (**Observed** especially), and the whole `work/` chain, brief → submission → feedback. When the unit fed the course build, the mentor's `.mentor/milestone-NN.md` records — and the build itself, sampled — are evidence about the teaching, never a grade of the learner. External source material only through research subagents. Of the transcript, read its header comment — the grammar your attainment line will follow — and the tail, enough to confirm the unit's `unit complete` session line; never the middle.
+The read set: `unit.md` per the advisor's [UNIT-FORMAT.md](../academic-advisor/UNIT-FORMAT.md) — `## Outcomes` is the coverage contract you verify against; `## Sources` decides what ground truth *is* — then all of `lessons/`, the unit's `.records/` session records (**Observed** especially), and the whole `work/` chain, brief → submission → feedback. When the unit fed the course build, the mentor's `.mentor/milestone-NN.md` records — and the build itself, sampled — are evidence about the teaching, never a grade of the learner. External source material only through research subagents. Of the transcript, read its header comment — the grammar your attainment line will follow — and the tail, enough to confirm the unit's `unit complete` session line; never the middle.
 
 Forbidden: `lessons/recall.html` — the learner's private instrument, firewalled from measurement by every role, you first among them. `playground/` uninvited. Other units' folders.
 
@@ -36,7 +36,7 @@ Write the report ([REPORT-FORMAT.md](REPORT-FORMAT.md)), then dispatch on whethe
 
 - **verified** — no findings. Append the attainment line.
 - **verified-with-findings** — findings stand, but the assertion still holds. Append the line; the findings ride to the advisor as recommendations.
-- **not-verified** — a finding falsifies the assertion: an outcome untaught, a load-bearing claim false, material drift. **Withhold the line** — the unit stays unclosed in the transcript's eyes; the next `/advisor` pass decides the cure.
+- **not-verified** — a finding falsifies the assertion: an outcome untaught, a load-bearing claim false, material drift. **Withhold the line** — the unit stays unclosed in the transcript's eyes; the next `/academic-advisor` pass decides the cure.
 
 The line's shape is pinned in the transcript's header grammar — write it exactly as given there. A passing re-audit writes it then, the date carrying the history.
 

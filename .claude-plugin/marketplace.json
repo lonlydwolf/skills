@@ -11,7 +11,7 @@
       "skills": [
         "./skills/faculty/setup-faculty-skills",
         "./skills/faculty/ask-lonlydwolf",
-        "./skills/faculty/advisor",
+        "./skills/faculty/academic-advisor",
         "./skills/faculty/teach-unit",
         "./skills/faculty/audit",
         "./skills/faculty/mentor",

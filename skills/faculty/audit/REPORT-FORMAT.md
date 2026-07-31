@@ -1,6 +1,6 @@
 # Audit-report Format
 
-`.audit/NN-<slug>.md`, at the course root — one report per unit, named for the unit's folder. `/audit` writes it; `/advisor` reads it and quotes failed findings verbatim into `unit.md`'s `## Remediation` — **teachers never read `.audit/`**, so every finding must survive being pasted somewhere else, alone.
+`.audit/NN-<slug>.md`, at the course root — one report per unit, named for the unit's folder. `/audit` writes it; `/academic-advisor` reads it and quotes failed findings verbatim into `unit.md`'s `## Remediation` — **teachers never read `.audit/`**, so every finding must survive being pasted somewhere else, alone.
 
 The file is append-only across passes: a re-audit appends a new pass section, newest last; the advisor reads the last pass. Finding IDs number continuously across passes — `## Remediation` and re-audit scopes cite them, so an ID never means two things.
 

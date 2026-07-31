@@ -30,7 +30,7 @@ Answer in the course's own terms — the framings, names, and images its lessons
 
 - **Spanning questions**: reconstruct each involved unit — its `unit.md` always, lessons zoomed as needed — and bridge the units' framings; the bridge is exactly what neither unit's lessons contain.
 - **Never-taught questions**: answer honestly from general knowledge, but **say** it's beyond the course, and use the course's terminology where it touches taught material.
-- **Never a lesson edit.** A re-explanation that beats the lesson is not written into `lessons/` — lessons stay single-writer, and the audit's outcome↔lesson mapping stays honest. If the question exposed a real materials weakness, the note's weakness field says so; `/advisor` decides whether that earns remediation.
+- **Never a lesson edit.** A re-explanation that beats the lesson is not written into `lessons/` — lessons stay single-writer, and the audit's outcome↔lesson mapping stays honest. If the question exposed a real materials weakness, the note's weakness field says so; `/academic-advisor` decides whether that earns remediation.
 
 ## The note
 
@@ -42,13 +42,13 @@ Example: `2026-08-04 · why does merge sort split before comparing · re-explain
 
 The field is `weakness:`, not wobble — a wobble is the learner's retrieval shaking (the teacher's and auditor's word); this field records the *materials* not holding up. The advisor reads the two without opening the source.
 
-- **About the material, never the learner** — evidence of what held up, never attainment. `/advisor` mines it at planning like any cold record; `/audit` may read it but it is never attainment evidence; a fresh note in the current unit is a named warmup signal for the next teaching session.
+- **About the material, never the learner** — evidence of what held up, never attainment. `/academic-advisor` mines it at planning like any cold record; `/audit` may read it but it is never attainment evidence; a fresh note in the current unit is a named warmup signal for the next teaching session.
 - **Never a transcript line** — this stays the lowest-stakes door in the course.
-- A spanning question files one line per re-explained unit. A never-taught question that keeps recurring is itself flag-worthy — note it to the most related unit for `/advisor`.
+- A spanning question files one line per re-explained unit. A never-taught question that keeps recurring is itself flag-worthy — note it to the most related unit for `/academic-advisor`.
 
 ## Post-course
 
-A retired course folder is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/advisor` can be pointed at the old folder's notes as calibration evidence.
+A retired course folder is a queryable archive; the contract holds there unchanged. Notes keep accumulating; if a next course is scaffolded from this `learner.md`, its `/academic-advisor` can be pointed at the old folder's notes as calibration evidence.
 
 ## Boundaries
 

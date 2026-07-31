@@ -1,6 +1,6 @@
 # Milestone Record Format
 
-`.mentor/milestone-NN.md` at the course root — one file per closed build milestone, written by `/mentor` at the milestone's close. Multi-role by design: `/advisor` mines it at planning and `/audit` may read it as evidence about the teaching, so the shape is contractual — those reads never guess.
+`.mentor/milestone-NN.md` at the course root — one file per closed build milestone, written by `/mentor` at the milestone's close. Multi-role by design: `/academic-advisor` mines it at planning and `/audit` may read it as evidence about the teaching, so the shape is contractual — those reads never guess.
 
 ## Template
 
@@ -27,7 +27,7 @@ Closed: {YYYY-MM-DD}
 
 ## Gaps
 
-{Unit-shaped gaps surfaced during the work, flagged for /advisor — the subject and the evidence, never the cure. `none` is a valid entry.}
+{Unit-shaped gaps surfaced during the work, flagged for /academic-advisor — the subject and the evidence, never the cure. `none` is a valid entry.}
 ```
 
 ## Rules

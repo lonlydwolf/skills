@@ -14,7 +14,7 @@ Scaffold the per-folder configuration that the faculty skills assume:
 
 Every per-course fact lives in a course-owned file this installer scaffolds — the learner in `learner.md`, the theme in `assets/conventions.md`, the workspace rules in the agent-instructions file. The faculty skills reference those files, never hard-code the facts.
 
-Run this once per course folder, before the first `/advisor` mission. Every later run **converges** the folder on the day-zero tree — read what exists, compute the gap, write only the gap. Repairs, never resets.
+Run this once per course folder, before the first `/academic-advisor` mission. Every later run **converges** the folder on the day-zero tree — read what exists, compute the gap, write only the gap. Repairs, never resets.
 
 ## Process
 
@@ -85,10 +85,10 @@ The day-zero tree — the gap when the folder is fresh:
 | `index.html`              | [index.html](./templates/index.html) — themed empty-state hub, `roadmap.html` link pre-placed at the top                                                                                              |
 | `assets/`                 | the chosen stylesheet from [themes/](./themes/), installed **as `assets/theme.css`** — the stable name every learner-facing page links; [conventions.md](./templates/conventions.md) carrying the theme + print-fallback lines; the three exercise templates from [exercises/](./exercises/), flat in `assets/` under their own names |
 | `playground/`, `units/`   | empty                                                                                                                                                                                                 |
-| `roadmap.md`, `.roadmap/` | **not created** — `/advisor`'s mission run creates them                                                                                                                                               |
+| `roadmap.md`, `.roadmap/` | **not created** — `/academic-advisor`'s mission run creates them                                                                                                                                               |
 
 Done when every artifact shown at confirm matches its approved content on disk, and nothing else on disk has changed.
 
 ### 5. Done
 
-Point the user at `/advisor` for the mission run — planning starts there.
+Point the user at `/academic-advisor` for the mission run — planning starts there.

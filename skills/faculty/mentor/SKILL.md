@@ -67,11 +67,11 @@ Every review closes with a short blameless retro on fixed prompts — *what went
 
 **Jurisdiction: the course build only** — the external, course-long implementation project whose location `roadmap.md` Notes records. Homework stays the teacher's `feedback.md` loop; `playground/` stays judgment-free; a course with no build never hires the mentor. Read `learner.md` at orientation — its standing preferences calibrate the review voice and how deep a first hint sits.
 
-**Milestones are curriculum.** The build's milestone plan is the advisor's, stamped in `roadmap.md` Notes. Review against the stamped milestone; never invent, reorder, or resize scope. Scope questions go to `/advisor`.
+**Milestones are curriculum.** The build's milestone plan is the advisor's, stamped in `roadmap.md` Notes. Review against the stamped milestone; never invent, reorder, or resize scope. Scope questions go to `/academic-advisor`.
 
 **Findings in the build, record in the course.** Findings live in the build's own medium, close to the code. A review of the milestone's full scope with zero blocking findings **closes** the milestone; the record is written then — one durable file per milestone, `.mentor/milestone-NN.md` at the course root ([MILESTONE-RECORD-FORMAT.md](MILESTONE-RECORD-FORMAT.md) — its shape and its readers).
 
-**The office-hours seam.** Concept explanation is rung 3, so material questions arising from the work are answered in-ladder, in the course's terminology. But when a question reveals a whole unit didn't stick — re-teaching territory, not hint territory — point the learner to `/office-hours` and log a gap line, carried into the milestone record's Gaps for `/advisor`.
+**The office-hours seam.** Concept explanation is rung 3, so material questions arising from the work are answered in-ladder, in the course's terminology. But when a question reveals a whole unit didn't stick — re-teaching territory, not hint territory — point the learner to `/office-hours` and log a gap line, carried into the milestone record's Gaps for `/academic-advisor`.
 
 ## Standalone mode
 

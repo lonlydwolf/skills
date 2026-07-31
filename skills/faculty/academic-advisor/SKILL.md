@@ -1,5 +1,5 @@
 ---
-name: advisor
+name: academic-advisor
 description: "Sole curriculum decision-maker: re-judges the plan after each taught unit and stamps the next unit in full."
 disable-model-invocation: true
 ---

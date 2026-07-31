@@ -21,12 +21,12 @@ You don't remember every skill, so ask.
 
 1. **Make a folder** — one course per folder; every session runs from its root.
 2. **`/setup-faculty-skills`** — once: scaffolds the workspace, seeds the learner profile, settles the theme.
-3. **`/advisor`** — the mission run; creates the roadmap.
-4. **The loop**: `/advisor` plans a unit ⟷ `/teach-unit` teaches it → `/audit` checks it → back to `/advisor`, until the roadmap says *arrived*.
+3. **`/academic-advisor`** — the mission run; creates the roadmap.
+4. **The loop**: `/academic-advisor` plans a unit ⟷ `/teach-unit` teaches it → `/audit` checks it → back to `/academic-advisor`, until the roadmap says *arrived*.
 
-A `/teach-unit` that ends suspended (`gap` or `over-budget`) goes back to `/advisor` — the advisor owns the reroute.
+A `/teach-unit` that ends suspended (`gap` or `over-budget`) goes back to `/academic-advisor` — the advisor owns the reroute.
 
-The goal itself moved? → `/advisor` — the goal-shift run. Only you can fire it; no role ever infers a new destination.
+The goal itself moved? → `/academic-advisor` — the goal-shift run. Only you can fire it; no role ever infers a new destination.
 
 **The tripwire.** If `/teach`'s mission conversation sprawls into "this is really six subjects", exit: start the main flow and carry what the conversation surfaced into the advisor's mission grilling. The exit is your act — nothing fires automatically.
 
