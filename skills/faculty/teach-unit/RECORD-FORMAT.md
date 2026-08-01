@@ -11,7 +11,8 @@
 
 ## Taught
 
-{ticket resolved or blocked, lesson artifact path, outcomes touched}
+{ticket resolved or blocked, lesson artifact path, outcomes touched; bespoke
+script, if the lesson carries any, named with its reason}
 
 ## Observed
 
@@ -34,4 +35,5 @@ at its next pass; the next session inherits the fade position from here}
 - **Observed is moments, never measures.** A concrete rebuild ("re-derived the closure environment unprompted") is evidence; a score is a violation of the zero-stakes firewall. Recall-page results never appear here.
 - **Every gap lands in Gaps**, whatever its size: inline-taught with a one-line note, foreseen with a forecast flag, blocking with its name. The advisor plans from this section; an unrecorded gap is invisible to the cure.
 - **Signals is written for a cold reader** — the advisor arrives at planning time with no session memory; "the learner is tired of Parsons problems" beats "engagement discussed."
+- **Bespoke script is declared or it isn't allowed.** A lesson page carrying its own inline script says so in Taught, with the reason it was subject matter rather than presentation ([PAGE-KIT.md](PAGE-KIT.md)). Undeclared script is a finding waiting for `/audit`; the declaration is what makes the carve-out reviewable at all.
 - **Records go cold with the unit.** Never edit a past session's record; the next session writes its own.

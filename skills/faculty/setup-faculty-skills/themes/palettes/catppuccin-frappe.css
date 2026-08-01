@@ -1,0 +1,26 @@
+/* Catppuccin Frappé — palette only, and only the screen palette. Concatenated by
+ * /setup-faculty-skills into the course's assets/theme.css: this file,
+ * then Catppuccin Latte wrapped in @media print, then base.css. The print
+ * fallback is not written here — it is the light palette, reused.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #303446;
+  --bg-panel: #292c3c;
+  --bg-reveal: #414559;
+  /* surface2, not surface1: surface1 sits at 1.7:1 on --bg and the box
+     barely closes. Borders are what make cards and callouts read as structure. */
+  --border: #626880;
+  --text: #c6d0f5;
+  --muted: #a5adce;
+  --heading: #c6d0f5;
+  --link: #8caaee;
+  --accent: #ca9ee6;
+  --accent-recall: #81c8be;
+  --code-bg: #292c3c;
+  --ok: #a6d189;
+  --warn: #e5c890;
+  --err: #e78284;
+}

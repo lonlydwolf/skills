@@ -16,4 +16,4 @@ Cued recall, both directions, spaced across future units via the retrieval pool 
 
 ## Named instruments
 
-The **deck** — `lessons/deck.html`, learner-facing like every practice instrument; the term/definition source the recall page regenerates from. Expanding spacing; successive relearning (recall to criterion this session, again across sessions).
+The **deck** — `lessons/deck.html` ([DECK-PAGE.md](../DECK-PAGE.md)), learner-facing like every practice instrument; the term/definition source the recall page regenerates from. Expanding spacing; successive relearning (recall to criterion this session, again across sessions).

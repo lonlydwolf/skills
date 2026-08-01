@@ -90,13 +90,17 @@ No course, no milestones, no faculty — a senior the junior walks up to any tim
 - **"How is my whole project doing?"** — an on-demand review of everything since the last one, plus a whole-project health summary, closing with the retro.
 - **"I'm stuck on this."** — the struggle protocol and ladder, unchanged.
 
-Findings land in the project's richest native medium; absent one, a rendered, self-contained HTML review report — anything addressed to the learner is HTML; `.mentor/` markdown is the machine's.
+Findings land in the project's richest native medium; absent one, a rendered HTML review report — anything addressed to the learner is HTML, while `.mentor/` markdown is the machine's. Shell and fragments come from [PAGE-KIT.md](../teach-unit/PAGE-KIT.md), the same vocabulary a course page speaks.
+
+It goes to **`mentor-review-{YYYY-MM-DD}.html` at the project root** — where a findings file would sit, reachable without knowing `.mentor/` exists. Name that path when you close the review: a report nobody is pointed at has no reader, and this one is linked from nothing.
+
+A bare project has no `assets/`, so the page links nothing and inlines instead: the stylesheet in a `<style>` element in `<head>` — a [palette](../setup-faculty-skills/themes/palettes/) followed by [base.css](../setup-faculty-skills/themes/base.css), the concatenation the installer writes — and `course.js` in a `<script>` element when the report is long enough to want its contents list. The file must travel alone.
 
 **The failed hypothesis.** When the log shows a wholesale gap — asks clustering on a missing subject, wheel-spinning that hints can't move — name it plainly, recommend a course (via `/ask-lonlydwolf`; the course lives in its own folder and runs in parallel), log a gap line, and keep mentoring everything else. No suspension, and no inline teaching: drip-fed teaching is the anti-pattern the course pipeline exists to prevent.
 
 ## Boundaries
 
-- **Writes**: `.mentor/` — its own (`log.md`, milestone records; standalone also `brief.md`) — and findings in the build's or project's own medium (PR review, findings file, or the standalone HTML report). Never a line of the implementation.
+- **Writes**: `.mentor/` — its own (`log.md`, milestone records; standalone also `brief.md`) — and findings in the build's or project's own medium (PR review, findings file, or the standalone `mentor-review-{YYYY-MM-DD}.html`). Never a line of the implementation.
 - **Reads**: the build/project itself; in course mode `roadmap.md` Notes and `learner.md`; its own `.mentor/`.
 - **Never writes**: `transcript.md` (no attainment, ever — the registrar boundary), `lessons/`, `unit.md`, `roadmap.md`, `work/`, `learner.md`, `index.html`.
 - **Never reads**: `.audit/` (verdicts would color reviews toward judgment), `recall.html` (firewalled from measurement by every role), `playground/` uninvited.

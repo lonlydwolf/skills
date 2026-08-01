@@ -1,0 +1,26 @@
+/* Catppuccin Macchiato — palette only, and only the screen palette. Concatenated by
+ * /setup-faculty-skills into the course's assets/theme.css: this file,
+ * then Catppuccin Latte wrapped in @media print, then base.css. The print
+ * fallback is not written here — it is the light palette, reused.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #24273a;
+  --bg-panel: #1e2030;
+  --bg-reveal: #363a4f;
+  /* surface2, not surface1: surface1 sits at 1.8:1 on --bg and the box
+     barely closes. Borders are what make cards and callouts read as structure. */
+  --border: #5b6078;
+  --text: #cad3f5;
+  --muted: #a5adcb;
+  --heading: #cad3f5;
+  --link: #8aadf4;
+  --accent: #c6a0f6;
+  --accent-recall: #8bd5ca;
+  --code-bg: #1e2030;
+  --ok: #a6da95;
+  --warn: #eed49f;
+  --err: #ed8796;
+}

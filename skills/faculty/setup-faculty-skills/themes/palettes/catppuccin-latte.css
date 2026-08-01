@@ -1,0 +1,36 @@
+/* Catppuccin Latte — palette only. Concatenated by /setup-faculty-skills into
+ * the course's assets/theme.css. Already light, so it needs no print fallback
+ * of its own — and it *is* the print fallback for the three catppuccin dark
+ * palettes, wrapped in @media print rather than copied into each of them.
+ */
+
+:root {
+  color-scheme: light;
+
+  --bg: #eff1f5;
+  --bg-panel: #e6e9ef;
+  --bg-reveal: #ccd0da;
+  /* overlay0, not surface1: on a light background surface1 is fainter still
+     (1.6:1), and this palette is also what prints for every catppuccin theme. */
+  --border: #9ca0b0;
+  /* Four values below are *not* upstream Catppuccin, and are not to be
+     "restored". Latte's accents are tuned for a code editor, and this palette
+     does two jobs an editor theme never does: it carries body prose, and it is
+     the print fallback for all three catppuccin dark themes — so these are the
+     numbers that land on paper for four of the six. Upstream measured against
+     --bg: --link 4.34, --ok 2.96, --warn 2.31, and teal 3.31 on --accent-recall.
+     Each is darkened along its own hue to just clear 4.5 on --bg-panel, the
+     darker of the two backgrounds they sit on. --muted moved too, but only to
+     subtext1, which is Catppuccin's own. */
+
+  --text: #4c4f69;
+  --muted: #5c5f77;
+  --heading: #4c4f69;
+  --link: #1c5fe6;
+  --accent: #8839ef;
+  --accent-recall: #10747a;
+  --code-bg: #e6e9ef;
+  --ok: #2e781e;
+  --warn: #945d0f;
+  --err: #d20f39;
+}

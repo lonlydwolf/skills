@@ -1,0 +1,591 @@
+/* base.css — the structural stylesheet for every learner-facing page.
+ *
+ * Paired with exactly one file from palettes/ and concatenated by
+ * /setup-faculty-skills into a single self-contained assets/theme.css. The
+ * course side keeps one stylesheet and one <link>; this file never ships alone.
+ *
+ * Structure lives here, colour lives in the palette. Improving a page is one
+ * edit here, not six. Per-course presentation preferences are not made by
+ * editing this file — they are recorded in assets/conventions.md.
+ *
+ * The markup this expects is in the page kit. Class names are additive and are
+ * never renamed: pages written against an older kit must keep rendering.
+ */
+
+:root {
+  --measure: 46rem;
+  --gutter: 1.25rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0 var(--gutter) 4rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  text-underline-offset: 0.15em;
+}
+
+body > header,
+body > main,
+body > footer,
+body > nav {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+
+/* Keyboard users land here first; pointer users never see it. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  position: static;
+  display: inline-block;
+  margin: 0.75rem 0;
+  padding: 0.35em 0.8em;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--link);
+}
+
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ── The page header ─────────────────────────────────────────────────────
+ * Every learner-facing page opens the same way: where you are, what this is,
+ * and what it is for. Navigation is up only — never to a sibling page.
+ */
+
+.page-header {
+  padding: 2.75rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.25rem;
+}
+
+.breadcrumb {
+  margin: 0 0 0.85rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.breadcrumb a { color: var(--muted); text-decoration-color: var(--border); }
+.breadcrumb a:hover { color: var(--link); }
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.011em;
+}
+
+.lede {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-size: 1.0625rem;
+}
+
+/* ── Contents ────────────────────────────────────────────────────────────
+ * Built by course.js from the page's <h2>s, and numbered exactly when the
+ * sections are. A page without script simply has no contents list; nothing
+ * else is lost.
+ *
+ * Narrow: a panel above the content. Wide: parked in the left margin and
+ * sticky, so a fifteen-screen lesson always says where you are.
+ */
+
+.toc {
+  margin: 0 0 2.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.9375rem;
+}
+
+/* Only script fills the nav, and only script removes it when a page is short.
+ * With script off the container survives empty, and its panel would sit
+ * between the header and the first section as furniture with nothing in it. */
+.toc:empty { display: none; }
+
+.toc h2 {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.toc h2::before { content: none; }
+
+.toc ol { margin: 0; padding: 0; list-style: none; counter-reset: toc; }
+.toc li { margin: 0.35rem 0; }
+
+.toc a {
+  display: block;
+  color: var(--muted);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+}
+
+/* The numbers, and the hanging indent that makes room for them — both keyed on
+ * the page's own <main>. A page whose sections are furniture drops `numbered`
+ * while keeping the nav, and a numbered contents list pointing at unnumbered
+ * headings is worse than an unnumbered one. The recall page is exactly that
+ * page, so this is not hypothetical. */
+body:has(main.numbered) .toc a {
+  padding-left: 1.9em;
+  text-indent: -1.9em;
+}
+
+body:has(main.numbered) .toc a::before {
+  counter-increment: toc;
+  content: counter(toc) ".";
+  display: inline-block;
+  width: 1.6em;
+  text-indent: 0;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.toc a:hover { color: var(--link); }
+
+/* Set by course.js as the page scrolls: where you are, not what you did. */
+.toc a.current {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+@media (min-width: 82rem) {
+  .toc {
+    position: fixed;
+    top: 3rem;
+    left: max(1.5rem, calc(50% - var(--measure) / 2 - 17.5rem));
+    width: 15.5rem;
+    max-height: calc(100vh - 6rem);
+    margin: 0;
+    overflow-y: auto;
+    background: transparent;
+    border: 0;
+    border-left: 1px solid var(--border);
+    border-radius: 0;
+    padding: 0.25rem 0 0.25rem 1.1rem;
+  }
+
+  .toc a { margin-left: -0.5em; padding-left: 0.5em; }
+  body:has(main.numbered) .toc a { padding-left: 2.4em; text-indent: -1.9em; }
+  .toc a.current { border-left-color: var(--accent); }
+}
+
+/* ── Type ────────────────────────────────────────────────────────────────*/
+
+h1, h2, h3, h4 {
+  color: var(--heading);
+  line-height: 1.25;
+  scroll-margin-top: 1.5rem;
+}
+
+h1 { font-size: 2rem; margin: 0.5em 0 0.6em; }
+
+h2 { font-size: 1.5rem; margin: 2.75rem 0 0.9rem; }
+
+/* A lesson's sections are numbered, and each opens on its own rule with real
+ * air above it. On a long page the boundary has to be unmissable while
+ * scrolling past — a hairline under the heading is not.
+ */
+main h2 {
+  counter-increment: section;
+  font-size: 1.6rem;
+  margin: 4.25rem 0 1.15rem;
+  padding-top: 1.6rem;
+  border-top: 2px solid var(--border);
+}
+
+/* Numbering is opt-in: a lesson's sections earn numbers, a hub's "Units"
+ * heading does not. The shell sets class="numbered" on pages that want it. */
+main.numbered h2::before {
+  content: counter(section) ".";
+  margin-right: 0.5em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+main > h2:first-child { margin-top: 1rem; }
+
+h3 { font-size: 1.15rem; margin: 2.25rem 0 0.6rem; }
+h4 { font-size: 1rem; margin: 1.5rem 0 0.5rem; }
+
+p, ul, ol { margin: 0.85em 0; }
+li { margin: 0.35em 0; }
+
+a { color: var(--link); }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { color: var(--heading); }
+
+/* Added by course.js so a heading can be linked; never authored by hand. */
+.heading-anchor {
+  margin-left: 0.4em;
+  font-size: 0.7em;
+  color: var(--muted);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+h2:hover > .heading-anchor,
+h3:hover > .heading-anchor,
+.heading-anchor:focus { opacity: 1; }
+
+/* ── Code ────────────────────────────────────────────────────────────────*/
+
+code, kbd {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+pre {
+  position: relative;
+  margin: 1.25em 0;
+  padding: 1.05rem 1.25rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+/* A terminal transcript and a Go source file read alike without this. */
+pre[data-lang]::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.15em 0.6em;
+  background: var(--bg-panel);
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 8px 0 8px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Real transcript lines run past the prose measure; give them the gutter. */
+@media (min-width: 62rem) {
+  pre { margin-inline: -1.25rem; }
+}
+
+/* ── Prose furniture ─────────────────────────────────────────────────────*/
+
+/* A pull quote: the one idea a section turns on. Not an aside — see .callout. */
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.1em 0 0.1em 1.25em;
+  border-left: 3px solid var(--accent);
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--heading);
+}
+
+blockquote p:first-child { margin-top: 0; }
+blockquote p:last-child { margin-bottom: 0; }
+
+/* An aside: true, useful, and off the main line of the argument. */
+aside.callout {
+  margin: 1.5em 0;
+  padding: 0.1em 0 0.1em 1.25em;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9688rem;
+}
+
+aside.callout p:first-child { margin-top: 0; }
+aside.callout p:last-child { margin-bottom: 0; }
+
+.table-wrap { overflow-x: auto; margin: 1.25em 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1.25em 0; }
+.table-wrap > table { margin: 0; }
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.5em 0.8em;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th, th { background: var(--bg-panel); color: var(--heading); }
+
+caption {
+  caption-side: bottom;
+  padding-top: 0.6em;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  text-align: left;
+}
+
+hr { border: none; border-top: 1px solid var(--border); margin: 3em 0; }
+
+/* height: auto or an image carrying width/height attributes distorts once
+ * max-width shrinks it. */
+img { max-width: 100%; height: auto; }
+
+/* ── Fragments ───────────────────────────────────────────────────────────
+ * Each reads as what it is, so the shape of a lesson is visible by scrolling
+ * it. Weight is the signal: an exercise is filled and edged because it asks
+ * for work now; retrieval is outlined because it is a stack to run through.
+ */
+
+main { counter-reset: exercise section; }
+
+.exercise {
+  margin: 2.25rem 0;
+  padding: 1.35rem 1.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px 10px 10px 4px;
+}
+
+.exercise > h3 {
+  margin-top: 0;
+  counter-increment: exercise;
+}
+
+.exercise > h3::before {
+  content: "Exercise " counter(exercise) " · ";
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* A card has three parts and they must not read alike: what you are asked to
+ * do, the line where you stop reading and attempt it, and the reveal. Rule
+ * off the heading, and set the attempt line apart in its own register.
+ */
+.exercise > h3,
+.recall > h3 {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.attempt {
+  margin: 1.5rem 0 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.exercise > .attempt + details,
+.recall > .attempt + .cues { margin-top: 0; }
+
+.recall {
+  margin: 2.25rem 0;
+  padding: 1.35rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-recall);
+  border-radius: 4px 10px 10px 4px;
+}
+
+.recall > h3 { margin-top: 0; }
+.recall .tag { color: var(--accent-recall); border-color: var(--accent-recall); }
+
+/* Generic container, kept for pages written against an earlier kit. */
+.card {
+  margin: 1.5em 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.card > h3:first-child, .exercise > h3:first-child { margin-top: 0; }
+
+.tag {
+  display: inline-block;
+  margin-bottom: 0.55em;
+  padding: 0.1em 0.7em;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* A state, named in words. Border style differs per state as well as colour,
+ * so the distinction survives greyscale printing and colour blindness. */
+.label {
+  display: inline-block;
+  padding: 0.1em 0.55em;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: 0.15em;
+}
+
+.label.ok { color: var(--ok); border-style: solid; }
+.label.warn { color: var(--warn); border-style: dashed; }
+.label.err { color: var(--err); border-style: double; border-width: 3px; }
+
+h3 > .label { margin-right: 0.5em; }
+h3 > .tag { margin: 0 0.5em 0 0; vertical-align: 0.1em; }
+
+/* ── Reveals ─────────────────────────────────────────────────────────────
+ * Recessive until opened: the attempt is the exercise, so a closed answer
+ * should not look like something to read.
+ */
+
+details {
+  margin: 1.25em 0;
+  padding: 0.55rem 0.9rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+details[open] {
+  background: var(--bg-reveal);
+  padding-bottom: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+summary::marker { color: var(--muted); }
+
+details > *:last-child { margin-bottom: 0; }
+
+/* A stack of cued cards — one instrument, not a run of separate boxes. */
+.cues {
+  margin: 1.25em 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cues > details {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+}
+
+.cues > details:first-of-type { border-top: 0; }
+.cues > details[open] { background: var(--bg-reveal); }
+
+.shuffle {
+  display: inline-block;
+  margin: 0.25rem 0 0;
+  padding: 0.3em 0.8em;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.shuffle:hover { color: var(--link); border-color: var(--link); }
+
+/* ── Footer ──────────────────────────────────────────────────────────────*/
+
+.page-footer {
+  margin-top: 3.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.muted { color: var(--muted); }
+.ok { color: var(--ok); }
+.warn { color: var(--warn); }
+.err { color: var(--err); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* ── Print ───────────────────────────────────────────────────────────────
+ * A printed lesson is for reading, so reveals open. The palette's own print
+ * block has already swapped dark ink onto paper.
+ */
+
+@media print {
+  body { padding: 0; font-size: 11pt; }
+
+  /* Paper sets its own measure — the reading column is for a screen. The old
+   * theme hung max-width on body and released it here; the measure has since
+   * moved onto body's children, so the release moves with it. */
+  body > header,
+  body > main,
+  body > footer,
+  body > nav { max-width: none; }
+
+  .skip-link, .toc, .heading-anchor, .shuffle, .no-print { display: none !important; }
+
+  a { text-decoration: none; }
+
+  pre { margin-inline: 0; }
+
+  /* Two spellings of the same thing: the legacy UA rule, and the modern
+   * ::details-content pseudo-element. Both are needed to cover browsers. */
+  details:not([open]) > *:not(summary) { display: block !important; }
+  details::details-content { content-visibility: visible !important; block-size: auto !important; }
+
+  details, details[open] {
+    background: transparent !important;
+    border: 1px dashed var(--border);
+  }
+
+  .exercise, .recall, .card, .cues, details, pre, table, blockquote {
+    break-inside: avoid;
+  }
+
+  h2, h3 { break-after: avoid; }
+}

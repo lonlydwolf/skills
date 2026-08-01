@@ -30,13 +30,17 @@ Forbidden: `lessons/recall.html` — the learner's private instrument, firewalle
 
 4. **Retention cross-check.** This unit's warmups retrieved prior-unit pool items; read every session's Observed for how those retrievals went. A wobble on an earlier unit's material is a finding on **this** audit — axis `retention`.
 
+5. **Bespoke script — cheap, and nobody else does it.** A lesson page may carry inline script only when the subject matter is something the learner manipulates, and only when the record's Taught section declares it with that reason ([PAGE-KIT.md](../teach-unit/PAGE-KIT.md)). Two findings live here: script present but undeclared, and script declared but presentational — a nicer reveal, a copy button — which belonged in `course.js`, where every course would have got it. Both are drift findings against the teaching, not the learner.
+
+Persistence or attempt-tracking in a `lessons/` page is a **correctness** finding, and it lands the verdict at **not-verified** on its own. The axis is right — a page that stores what a learner did makes the attainment line's assertion false, because what was taught included a measurement no role is permitted to make. The verdict has to be stated here rather than left to the rules below: a firewall breach is the one finding that must never ride to the advisor as a recommendation it can decline. `recall.html` is the one exception inside `lessons/` — it is forbidden to you, and stays forbidden: the firewall protects it from *you* as much as from the page. `index.html` and `roadmap.html` are outside your read set entirely, and guarded at their own writers' sites.
+
 ## Verdict — the line's assertion is the test
 
 Write the report ([REPORT-FORMAT.md](REPORT-FORMAT.md)), then dispatch on whether the attainment assertion survives the findings:
 
 - **verified** — no findings. Append the attainment line.
 - **verified-with-findings** — findings stand, but the assertion still holds. Append the line; the findings ride to the advisor as recommendations.
-- **not-verified** — a finding falsifies the assertion: an outcome untaught, a load-bearing claim false, material drift. **Withhold the line** — the unit stays unclosed in the transcript's eyes; the next `/academic-advisor` pass decides the cure.
+- **not-verified** — a finding falsifies the assertion: an outcome untaught, a load-bearing claim false, material drift, a firewall breach. **Withhold the line** — the unit stays unclosed in the transcript's eyes; the next `/academic-advisor` pass decides the cure.
 
 The line's shape is pinned in the transcript's header grammar — write it exactly as given there. A passing re-audit writes it then, the date carrying the history.
 

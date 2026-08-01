@@ -1,0 +1,26 @@
+/* Dark — palette only, and only the screen palette. Concatenated by
+ * /setup-faculty-skills into the course's assets/theme.css: this file,
+ * then plain light wrapped in @media print, then base.css. The print
+ * fallback is not written here — it is the light palette, reused.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --bg: #14161a;
+  --bg-panel: #1a1d22;
+  --bg-reveal: #22262c;
+  /* Deliberately heavier than a hairline: at 1.6:1 the box barely closed, and
+     borders are what make cards and callouts read as structure. */
+  --border: #4d5663;
+  --text: #e2e5e9;
+  --muted: #9aa2ad;
+  --heading: #e2e5e9;
+  --link: #7ab7ff;
+  --accent: #7ab7ff;
+  --accent-recall: #6fd3b8;
+  --code-bg: #1d2126;
+  --ok: #7ee2a8;
+  --warn: #e2c06e;
+  --err: #ff8a80;
+}

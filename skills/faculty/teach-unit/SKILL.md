@@ -29,7 +29,7 @@ If `HANDOFF.md` carries a suspension block naming the current unit, stop — the
 
 **Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 6), other units' folders, any `.audit/`, `playground/` uninvited, cold `.records/`, prior units' lessons.
 
-**Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; the asset template being instantiated.
+**Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; the page contract for the page being written ([DECK-PAGE.md](DECK-PAGE.md), [RECALL-PAGE.md](RECALL-PAGE.md)).
 
 ## The frontier — tickets are work orders, never decisions
 
@@ -50,7 +50,7 @@ The method core, every subject, every session: **end every lesson with retrieval
 
 **Warmups** — a short retrieval opener inside a lesson — fire on named signals only: shaky retrieval last session; a gap taught inline; the learner asking; a `HANDOFF.md` wobble flag; a fresh office-hours note in this unit's `.records/office-hours.md`. No signal → open cold. Warmups are teaching, never an exit duty.
 
-Artifacts: lessons number per unit in `lessons/`, learner-facing = HTML, every page linking the theme per `assets/conventions.md`. Instantiate `assets/` templates, never invent formats. Style is never re-litigated: presentation questions → `assets/conventions.md`; pedagogical taste → `learner.md`. A correction from the learner is an exit-duty edit to the right file, once.
+Artifacts: lessons number per unit in `lessons/`, learner-facing = HTML, composed from the shell and fragments in [PAGE-KIT.md](PAGE-KIT.md) — never invented freehand. No fragment fits → the kit is missing a shape: say so in the record rather than inventing one, and it grows once for every course. Style is never re-litigated: presentation questions → `assets/conventions.md`; pedagogical taste → `learner.md`. A correction from the learner is an exit-duty edit to the right file, once.
 
 ## Gaps, budget, suspension
 
@@ -68,7 +68,7 @@ A **foreseen gap** that doesn't block this lesson: finish the cycle honestly; re
 
 ## The recall page
 
-One cumulative page per unit — `lessons/recall.html` — produced at the unit-completion session, covering all outcomes. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. It is the learner's private practice instrument, with teeth: the zero-stakes firewall applies in full — to you and everyone. Evidence is teaching-time observation, into the record. Item shapes come from the profile, production-first.
+One cumulative page per unit — `lessons/recall.html` ([RECALL-PAGE.md](RECALL-PAGE.md)) — produced at the unit-completion session, covering all outcomes. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. It is the learner's private practice instrument, with teeth: the zero-stakes firewall applies in full — to you and everyone. Evidence is teaching-time observation, into the record. Item shapes come from the profile, production-first.
 
 ## Exit checklist — the session ends by emitting it
 
@@ -78,7 +78,7 @@ The final act of every session — including suspended ones — is emitting this
 2. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
 3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`
 4. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
-5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck)
+5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
 6. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
 7. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
 
@@ -88,5 +88,5 @@ Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every
 
 ## Boundaries
 
-- **Writes**: `lessons/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `assets/conventions.md` (appended presentation rules only), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
+- **Writes**: `lessons/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `assets/conventions.md` (presentation rules appended under `## Additions` only — the rest is the installer's), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
 - **Never**: judge attainment or score the recall page; choose the next unit; edit `unit.md`, `roadmap.md`, or attainment lines; read `.audit/`, the transcript body, or `playground/` uninvited.

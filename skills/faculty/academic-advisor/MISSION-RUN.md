@@ -21,4 +21,4 @@ Every subject — and every territory question that surfaces under one — leave
 
 ## End condition — the course is teachable
 
-Every one of the four subjects settled or ticketed, `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set, `roadmap.html` rendered (the scaffolded `index.html` already links it — the link must not be born dead), and the pass logged. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet; open non-blocking tickets never withhold the stamp.
+Every one of the four subjects settled or ticketed, `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set, `roadmap.html` rendered and the hub named (the scaffolded `index.html` already links the roadmap — the link must not be born dead — and its `<h1>`/`<title>` still read "Course" until this run sets them), and the pass logged. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet; open non-blocking tickets never withhold the stamp.

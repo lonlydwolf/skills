@@ -25,7 +25,7 @@ Every run is one pass: **orient → judge → re-plan → stamp → log.**
 1. **Orient** — read `roadmap.md` and the *new* evidence only: the landed unit's audit report (`.audit/NN-<slug>.md`), the landed unit's session records (§3 Gaps, §4 Signals for planning), any new `.mentor/milestone-NN.md` records (gap flags, struggle patterns), office-hours notes newer than the last pass in any unit's `.records/office-hours.md` — weakness lines especially; a weakness in a finished unit is ruled on here or never — the tail of `transcript.md`. Set the roadmap header to `re-planning — do not claim` so a concurrent teacher session fails loudly instead of claiming into a moving plan.
 2. **Judge** — accept or reject each audit recommendation, with reasons; design the cure for a suspension; choose the remediation path for a not-verified unit — the moment a unit lands not-verified or suspended, read and follow [UNITS-COMING-BACK.md](UNITS-COMING-BACK.md).
 3. **Re-plan** — apply the usefulness test to every frontier line; graduate fog that has sharpened; insert, demote, or strike units. If the course has a build, re-judge its milestone plan in Notes the same way — resequence or reslice with a log line; the mentor never does. Demotions and strikes are logged with why — nothing survives on inertia.
-4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate `roadmap.html`, set the header line to the new current unit, and delete any standing suspension or completion block from `HANDOFF.md` — this pass has re-planned, so neither block may outlive it. Clearing `re-planning` happens here, not before. When re-plan found nothing left to promote, the stamp is the arrival stamp instead ([Arrival](#arrival)).
+4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate `roadmap.html` and name the hub ([index.html](#indexhtml)), set the header line to the new current unit, and delete any standing suspension or completion block from `HANDOFF.md` — this pass has re-planned, so neither block may outlive it. Clearing `re-planning` happens here, not before. When re-plan found nothing left to promote, the stamp is the arrival stamp instead ([Arrival](#arrival)).
 5. **Log** — append the pass entry to `.roadmap/log.md` ([LOG-FORMAT.md](LOG-FORMAT.md)).
 
 A checkpoint pass is **HITL-lite**: work the evidence alone, then present the plan delta for one confirm/adjust exchange with the user before stamping.
@@ -60,17 +60,26 @@ Rare, user-invoked: the destination itself moved. Re-run the mission subjects th
 
 ## roadmap.html
 
-The learner's visual roadmap — regenerated from `roadmap.md` at every stamp phase. **A render, never a second source**: the advisor never edits it directly. It is linked from `index.html` (the installer scaffolds the link once). Three guardrails:
+The learner's visual roadmap — regenerated from `roadmap.md` at every stamp phase, from the template in [ROADMAP-PAGE.md](ROADMAP-PAGE.md). **A render, never a second source**: the advisor never edits it directly. It is linked from `index.html` (the installer scaffolds the link once). Three guardrails:
 
 - **Render the fog honestly.** Done units, the current unit, the frontier lines — then visible vagueness. Never a numbered promise-list of future units: the rolling design is taught by the render, not betrayed by it.
 - **Journey, never judgment.** No attainment status, no verified/withheld marks, no completion percentages. The zero-stakes firewall applies in full.
-- **Styled with the course theme** (`assets/theme.css`), like every learner-facing page.
+- **Styled with the course theme** (`assets/theme.css`), like every learner-facing page — shell and fragments from the page kit ([../teach-unit/PAGE-KIT.md](../teach-unit/PAGE-KIT.md)), the same vocabulary every page speaks.
 
 Anything the learner reads is HTML, not markdown.
 
+## index.html
+
+The hub is the teacher's — links and the `now` tag move at every session exit. This role writes exactly two things in it, both facts no other role can reach:
+
+- **The course's name** — `<h1>` and `<title>`, set from `roadmap.md`'s own title whenever you regenerate `roadmap.html`. The teacher reads one line of `roadmap.md` and the name is not on it, so a hub still reading "Course" is this role's omission. One rule covers both the first naming and any later rename.
+- **The `now` tag at arrival** — cleared in the final stamp ([ARRIVAL.md](ARRIVAL.md)). The teacher stops the moment the roadmap header reads `arrived`, so no other role can reach that moment.
+
+Nothing else: never its links, never its unit blocks, never its empty state.
+
 ## Boundaries
 
-- **Writes — exclusively its own**: `roadmap.md`, everything under `.roadmap/`, every `unit.md` (including Remediation appendices and re-promotion refreshes), and `roadmap.html` — the advisor's only learner-facing write, a named carve-out: a plan render is the plan in learner clothing, not teaching material. Two more named carve-outs: `learner.md`, written once at the mission run's level-grilling (thereafter the teachers' file), and `HANDOFF.md`, touched only to delete a stale suspension or completion block at the stamp (their removal is this role's, per [HANDOFF-FORMAT.md](../teach-unit/HANDOFF-FORMAT.md)).
-- **Reads**: `transcript.md` (primary), the landed unit's `.audit/NN-<slug>.md`, the landed unit's records §3–4, cold `.records/` (calibration mining), `.mentor/milestone-NN.md` records, `learner.md`, `HANDOFF.md` (the suspension or completion block — the covers for the between-passes windows), its own `.roadmap/`.
-- **Never writes**: `lessons/`, `.records/`, `transcript.md`, `index.html`, `work/`, `.audit/`, `.mentor/` — and `learner.md` / `HANDOFF.md` beyond their named carve-outs above.
+- **Writes — exclusively its own**: `roadmap.md`, everything under `.roadmap/`, every `unit.md` (including Remediation appendices and re-promotion refreshes), and `roadmap.html` — a named carve-out: a plan render is the plan in learner clothing, not teaching material. Three more named carve-outs: `index.html`, at the two moments in [index.html](#indexhtml) and nowhere else; `learner.md`, written once at the mission run's level-grilling (thereafter the teachers' file); and `HANDOFF.md`, touched only to delete a stale suspension or completion block at the stamp (their removal is this role's, per [HANDOFF-FORMAT.md](../teach-unit/HANDOFF-FORMAT.md)).
+- **Reads**: `transcript.md` (primary), the landed unit's `.audit/NN-<slug>.md`, the landed unit's records §3–4, cold `.records/` (calibration mining), `.mentor/milestone-NN.md` records, `learner.md`, `HANDOFF.md` (the suspension or completion block — the covers for the between-passes windows), `index.html` (only what its two carve-out writes need to see), its own `.roadmap/`.
+- **Never writes**: `lessons/`, `.records/`, `transcript.md`, `work/`, `.audit/`, `.mentor/` — and `index.html` / `learner.md` / `HANDOFF.md` beyond their named carve-outs above.
 - **Never reads**: `recall.html` (firewalled from measurement by every role), `playground/` uninvited. You may skim lessons while deciding a remediation, but you never grade them — correctness judgment is the auditor's.
