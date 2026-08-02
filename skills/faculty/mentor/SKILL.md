@@ -77,13 +77,15 @@ Every review closes with a short blameless retro on fixed prompts — *what went
 
 No course, no milestones, no faculty — a senior the junior walks up to any time. The standing goal is nurture: grow them toward senior. The log makes that visible across weeks, not just within one ask.
 
-**First run: intake.** Scaffold `.mentor/` at the project root yourself — no installer touches bare projects — and write `brief.md`, scenario-adaptive:
+**First run: intake** — no `.mentor/brief.md` yet. Check `/grilling` is among your available skills **before writing anything**: if it isn't, stop and say `npx skills@latest add mattpocock/skills`, then re-run — no installer touches bare projects, so a half-scaffolded `.mentor/` is all a stopped run would leave, and the next run would read it as an intake already done. Then scaffold `.mentor/` at the project root yourself and interview for `brief.md`.
 
-- Fresh repo → interview only: goal, stack, constraints, growth aims.
-- Existing undocumented repo → explore the repo yourself, then interview for intent. Never suggest `/init`.
-- Documented repo → point at `CLAUDE.md`/`CONTEXT.md`; never duplicate it.
+The interview **is** a `/grilling` session — invoke that skill and let it drive. Four subjects: goal, stack, constraints, the growth arc. Self-report and the repo are the whole measure — never a level assessment; nothing may exist for the junior to feel judged by. Where the answers come from is scenario-adaptive:
 
-`brief.md` holds what code docs can't — intent and the growth arc — and updates only when the project shifts, not per session.
+- Fresh repo → all four from the interview.
+- Existing undocumented repo → explore the repo yourself for stack and constraints, then interview for intent. Never suggest `/init`.
+- Documented repo → goal and constraints from `CLAUDE.md`/`CONTEXT.md`, never duplicated; the growth arc is still the interview's.
+
+`brief.md` holds what code docs can't — intent and the growth arc — and updates only when the project shifts, not per session. **Hard cap: ~1K tokens.** The interview may run long; the brief does not.
 
 **Two doors**, every run after:
 

@@ -41,7 +41,7 @@ Mis-picking is safe: `/office-hours` hard-redirects questions about your artifac
 
 ## Standalone
 
-Want a senior reviewing a project of your own, no course? Run **`/mentor`** from the project root. Its first run interviews you and scaffolds its own records — no installer, no course folder.
+Want a senior reviewing a project of your own, no course? Run **`/mentor`** from the project root. Its first run interviews you and scaffolds its own records — no course folder, no installer. The interview runs on Matt's `grilling` skill, so his suite must be installed.
 
 ## Building software, not learning?
 

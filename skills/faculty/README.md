@@ -43,7 +43,7 @@ npx skills@latest add mattpocock/skills
 | Matt's skill | Used for |
 |---|---|
 | `teach` | The small-subject route — one nameable subject needs no course machinery |
-| `grilling` | The advisor's mission and planning interviews |
+| `grilling` | The advisor's mission and planning interviews; the mentor's standalone intake |
 | `research` | Gathering course resources; the audit's source-checking |
 
 `/setup-faculty-skills` checks these three — plus `/ask-matt`, which the router points at — are present, and stops with the install command if not; it never runs Matt's own setup. The rest of his suite installs harmlessly alongside and plays no role in a course folder.
