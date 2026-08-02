@@ -75,7 +75,7 @@ The hub is the teacher's — links and the `now` tag move at every session exit.
 - **The course's name** — `<h1>` and `<title>`, set from `roadmap.md`'s own title whenever you regenerate `roadmap.html`. The teacher reads one line of `roadmap.md` and the name is not on it, so a hub still reading "Course" is this role's omission. One rule covers both the first naming and any later rename.
 - **The `now` tag at arrival** — cleared in the final stamp ([ARRIVAL.md](ARRIVAL.md)). The teacher stops the moment the roadmap header reads `arrived`, so no other role can reach that moment.
 
-Nothing else: never its links, never its unit blocks, never its empty state.
+Nothing else: never its links, never its unit blocks beyond the `now` tag at arrival, never its empty state.
 
 ## Boundaries
 

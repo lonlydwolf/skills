@@ -9,7 +9,11 @@
  * editing this file — they are recorded in assets/conventions.md.
  *
  * The markup this expects is in the page kit. Class names are additive and are
- * never renamed: pages written against an older kit must keep rendering.
+ * never renamed, because lesson pages are write-once: a page's markup is fixed
+ * at the day it was written. That is the whole of the guarantee, and it is
+ * narrower than it sounds — an old page keeps its styling, but its structure
+ * is fixed too, so a structural change here does not reach it. Improved
+ * styling is inherited; improved layout is not.
  */
 
 :root {
@@ -49,7 +53,10 @@ body > nav {
 .skip-link:focus {
   position: static;
   display: inline-block;
-  margin: 0.75rem 0;
+  /* The measure is on body's children, and this is not one of them: without
+   * the offset it focuses at the far left of the window while the content
+   * column is centred. Clamps to 0 below the measure. */
+  margin: 0.75rem max(0px, (100% - var(--measure)) / 2);
   padding: 0.35em 0.8em;
   background: var(--bg-panel);
   border: 1px solid var(--border);
@@ -422,7 +429,8 @@ main { counter-reset: exercise section; }
 .recall > h3 { margin-top: 0; }
 .recall .tag { color: var(--accent-recall); border-color: var(--accent-recall); }
 
-/* Generic container, kept for pages written against an earlier kit. */
+/* The generic block: one thing that needs an edge around it. roadmap.html's
+ * primary container — never for exercises or recall, which have their own. */
 .card {
   margin: 1.5em 0;
   padding: 1.25rem 1.5rem;
@@ -431,7 +439,7 @@ main { counter-reset: exercise section; }
   border-radius: 10px;
 }
 
-.card > h3:first-child, .exercise > h3:first-child { margin-top: 0; }
+.card > h3:first-child { margin-top: 0; }
 
 .tag {
   display: inline-block;

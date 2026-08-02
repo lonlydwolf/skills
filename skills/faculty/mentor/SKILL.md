@@ -96,7 +96,7 @@ Findings land in the project's richest native medium; absent one, a rendered HTM
 
 It goes to **`mentor-review-{YYYY-MM-DD}.html` at the project root** — where a findings file would sit, reachable without knowing `.mentor/` exists. Name that path when you close the review: a report nobody is pointed at has no reader, and this one is linked from nothing.
 
-A bare project has no `assets/`, so the page links nothing and inlines instead: the stylesheet in a `<style>` element in `<head>` — a [palette](../setup-faculty-skills/themes/palettes/) followed by [base.css](../setup-faculty-skills/themes/base.css), the concatenation the installer writes — and `course.js` in a `<script>` element when the report is long enough to want its contents list. The file must travel alone.
+A bare project has no `assets/`, so the page links nothing and inlines instead: the stylesheet in a `<style>` element in `<head>` — a [palette](../setup-faculty-skills/themes/palettes/) followed by [base.css](../setup-faculty-skills/themes/base.css), the concatenation the installer writes — and `course.js` in a `<script>` element. **Both, always** — the kit's Paths table states the same rule from the other side, and a page that inlines one asset conditionally makes the two halves of that contract disagree. The file must travel alone.
 
 **The failed hypothesis.** When the log shows a wholesale gap — asks clustering on a missing subject, wheel-spinning that hints can't move — name it plainly, recommend a course (via `/ask-lonlydwolf`; the course lives in its own folder and runs in parallel), log a gap line, and keep mentoring everything else. No suspension, and no inline teaching: drip-fed teaching is the anti-pattern the course pipeline exists to prevent.
 
