@@ -56,7 +56,7 @@ Budget: {small — 1–2 lessons}
 
 ## Rules
 
-- **~4K token cap, stretch to ~6K when warranted.** Over the cap is an advisor checklist violation — the stamp is orientation material for a budgeted fresh context, not a syllabus chapter.
+- **~4K token cap, stretch to ~6K when warranted.** Over the cap is a defect in this stamp — it is orientation material for a budgeted fresh context, not a syllabus chapter.
 - **No lesson slicing.** Writing lesson titles, lesson counts beyond the budget line, or a teaching sequence crosses into the teacher's *how*. Outcomes are the boundary; stop there.
 - **One primary profile, closed vocabulary.** `Profile:` takes exactly one of `skill-practice` / `conceptual` / `vocabulary` — each names a profile file in the `teach-unit` skill's `profiles/` directory, which is what the teacher dispatches on. The parenthetical sub-kind exists only for `skill-practice` — `(code)` or `(procedure)` — and is omitted when neither applies (math/proofs carries none). A unit that can't take a single primary is a split signal to the advisor — never a two-stamp case.
 - **`Minor:` is pre-arbitrated, or absent.** At most one line, and it says how the secondary kind manifests — deciding that in-session would hand a what-decision to the teacher.

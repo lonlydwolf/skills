@@ -12,7 +12,7 @@ Grill them in order:
 
 1. **The destination — as capability, not topics.** A topic-list destination smuggles in a day-zero syllabus; push back on vagueness until the destination is a capability sentence (form and example in [ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)).
 2. **Stakes and shape.** Why now, any deadline, a sustainable session cadence.
-3. **Learner-now.** Deep level-grilling, once, into `learner.md`: background, goals, standing preferences — this informs unit picks and profile stamps for the whole course. Self-report plus shown evidence (the seeded `learner.md`, existing work) is the whole measure — **never a placement test**: nothing may exist for the learner to feel judged by. Miscalibration is cheap; the first checkpoint corrects it.
+3. **Learner-now.** Deep level-grilling, once, into `learner.md`: background, goals, standing preferences — this informs unit picks and profile stamps for the whole course. Self-report plus shown evidence — a `learner.md` carried forward from an earlier course, existing work — is the whole measure — **never a placement test**: nothing may exist for the learner to feel judged by. Miscalibration is cheap; the first checkpoint corrects it.
 4. **The external build.** If the course has a course-long build, record its location in `roadmap.md` Notes and cut its milestone plan there — numbered milestones, each sequenced after the units that teach what it needs. The mentor reviews against this plan and never resizes it.
 
 ## Settled or ticketed

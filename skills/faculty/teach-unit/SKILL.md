@@ -92,7 +92,7 @@ The final act of every session — including suspended ones — is emitting this
 
 1. Resolve (or mark blocked) the claimed ticket — what landed, what wobbled
 2. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
-3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold for the next page too, add it to `look.md` and show them the exact line you added — filed per the rule in that file's own header, which you read at orient
+3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold next time, add it to `look.md`, filed per the rule in that file's own header
 4. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
 5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
 6. Open every page this session wrote or touched, the hub included: each link on it resolves, and each meets the accessibility floor — a `lang` attribute, a `<main>` landmark, a skip link. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
