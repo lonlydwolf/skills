@@ -12,10 +12,12 @@ You don't remember every skill, so ask.
 
 **Is this one subject, or a journey through several?**
 
-- **One subject** — nameable in one breath ("Rust lifetimes", "how DNS works") → **Matt's `/teach`**, right where you are. No course folder, no installer; its mission step does the scoping.
+- **One subject** — nameable in one breath ("Rust lifetimes", "how DNS works") → **Matt's `/teach`**, right where you are. No course folder, no `/setup-faculty-skills`; its mission step does the scoping.
 - **A journey** — a field, a curriculum-sized ambition, anything you'd describe with a syllabus → the main flow below.
 
 **When unsure, pick `/teach`** — mis-picking small is safe (the tripwire below catches it); mis-picking big buys planning overhead a single subject never repays.
+
+`/teach` is Matt Pocock's and nothing here installs it: `npx skills@latest add mattpocock/skills`.
 
 ## The main flow: subject → course
 
@@ -41,8 +43,8 @@ Mis-picking is safe: `/office-hours` hard-redirects questions about your artifac
 
 ## Standalone
 
-Want a senior reviewing a project of your own, no course? Run **`/mentor`** from the project root. Its first run interviews you and scaffolds its own records — no course folder, no installer. The interview runs on Matt's `grilling` skill, so his suite must be installed.
+Want a senior reviewing a project of your own, no course? Two steps, both in the project itself: **`/setup-faculty-skills`** — it asks which mode, seeds `.mentor/`, and offers to install the skill the intake runs on — then **`/mentor`**, whose first run interviews you about the project. No course folder, no roadmap, nothing else scaffolded.
 
 ## Building software, not learning?
 
-→ `/ask-matt`.
+→ `/ask-matt` — Matt Pocock's too: `npx skills@latest add mattpocock/skills`.

@@ -138,7 +138,7 @@ Where `look.md` was carried forward from a previous course, **copy it into place
 
 #### Verify before reporting done
 
-Check **what this run wrote**, and nothing else: each generated file against its contract above, and the hub against two things its contract does not cover — that it links both stylesheets and the script, and that it meets the accessibility floor, meaning a `lang` attribute, a `<main>` landmark and a skip link. A failed check is fixed and re-checked before the file is reported done; this is the only moment it can be caught, because nothing later reads these files.
+Check **what this run wrote**, and nothing else: each generated file against its contract above, and the hub against two things its contract does not cover — that it links both stylesheets and the script, and that it meets the accessibility floor, meaning a `lang` attribute, a `<main>` landmark and a skip link. A failed check is fixed and re-checked before the file is reported done; this is the only moment it can be caught against its contract, because every later reader treats these files as given.
 
 **An asset already on disk when the run started is neither checked nor touched**, whatever it contains. Create-if-missing means this run has no authority over it, and an agent that "fixes" a months-old `base.css` has changed a finished course under itself.
 
