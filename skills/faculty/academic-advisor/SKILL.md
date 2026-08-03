@@ -15,7 +15,7 @@ Run from the course root. Every run starts and ends by the user's hand: the run 
 ## Which run is this?
 
 - **No `roadmap.md` yet** → the mission run (first invocation, once): read and follow [MISSION-RUN.md](MISSION-RUN.md).
-- **The user says the goal itself moved** → the goal-shift run.
+- **The user says the goal itself moved** → [the goal-shift run](#the-goal-shift-run).
 - **Otherwise** → a checkpoint pass. This is the routine case: a unit just landed — the audit wrote its report (unit done), or the teacher suspended it (no audit).
 
 ## The pass shape
@@ -28,7 +28,7 @@ Every run is one pass: **orient → judge → re-plan → stamp → log.**
 4. **Stamp** — author the next `unit.md` in full ([UNIT-FORMAT.md](UNIT-FORMAT.md)), update `roadmap.md` ([ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)), regenerate [roadmap.html](#roadmaphtml) and name the hub ([index.html](#indexhtml)), set the header line to the new current unit, and delete any standing suspension or completion block from `HANDOFF.md` — this pass has re-planned, so neither block may outlive it. Clearing `re-planning` happens here, not before. When re-plan found nothing left to promote, the stamp is the arrival stamp instead ([Arrival](#arrival)). If the user corrected how something looks and the correction would hold next time, add it to `look.md`, filed per the rule in that file's own header.
 5. **Log** — append the pass entry to `.roadmap/log.md` ([LOG-FORMAT.md](LOG-FORMAT.md)).
 
-A checkpoint pass is **HITL-lite**: work the evidence alone, then present the plan delta for one confirm/adjust exchange with the user before stamping.
+A checkpoint pass works the evidence alone, then presents the plan delta for one confirm/adjust exchange with the user before stamping.
 
 A checkpoint for a done unit expects the audit report to exist. If it is missing, say "run `/audit` first" and stop. Teach → audit → advisor, never teach → teach.
 
@@ -37,8 +37,10 @@ A checkpoint for a done unit expects the audit report to exist. If it is missing
 Three resolutions, hard-edged:
 
 - **Current unit** — full `unit.md`. Exactly one is ever current.
-- **Frontier lines** — the next 1–2 units: title plus the gap closed, nothing more.
+- **Frontier lines** — the next units: a title and the gap each closes, nothing more.
 - **Fog** — coarse themes, unordered, deliberately vague.
+
+How many frontier lines there may be is [ROADMAP-FORMAT.md](ROADMAP-FORMAT.md#rules)'s.
 
 **Fog or frontier line?** The test is whether you can state the gap sentence now — not whether the unit is next. If you can't yet say what gap it closes, it stays fog; don't pre-slice fog into unit-sized pieces.
 
@@ -48,7 +50,7 @@ Three resolutions, hard-edged:
 
 A line that no longer closes a real gap is demoted to fog or struck, with a log line saying why. The sentence that passes is stamped into the unit's `Why:` line.
 
-**Planning is not teaching.** The pull to write lesson titles is the signal you've crossed into the teacher's *how* — stop at outcomes. Writing unit 9's outcomes at unit 3 is equally a violation: that detail belongs to no artifact that exists yet.
+**Planning is not teaching.** The pull to write a lesson is the signal you've crossed into the teacher's *how*; where the boundary sits exactly is [UNIT-FORMAT.md](UNIT-FORMAT.md#rules)'s. Writing unit 9's outcomes at unit 3 is equally a violation, and that half is this file's: that detail belongs to no artifact that exists yet.
 
 ## Arrival
 

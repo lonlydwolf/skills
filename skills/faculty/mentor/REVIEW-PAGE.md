@@ -24,6 +24,12 @@ The test is sufficiency:
 Reading alone is what sets the length. There is no exchange to fall back on, so
 a finding that assumes wrong is a finding lost.
 
+That test is unbounded and settled by judgment, where `RECALL-PAGE.md`'s
+*one `<h2>` per outcome* can simply be checked. The difference is deliberate and
+not a defect to tidy: this is the one page in the suite whose reader is being
+**reviewed** rather than taught, and the zero-stakes firewall — which is what
+makes the teaching contracts restrictive — is a rule about teaching.
+
 ## Scope
 
 What this review covered and where it stopped — the branch, the commit range, or

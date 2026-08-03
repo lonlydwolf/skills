@@ -105,7 +105,7 @@ Write the gap, artifact by artifact. Each obeys its ownership rule:
 
 The link check searches the **whole course**, not just the pages: a font or an image is linked from `base.css`. Say at confirm why a linked orphan was kept. Outside `.assets/` this skill never deletes anything.
 
-Where things live: `.assets/` at the course root, `units/NN/.assets/` per unit. The advisor's own are in `.roadmap/assets/`, the mentor's in `.mentor/assets/`.
+Where things live: `.assets/` at the course root, `units/NN-<slug>/.assets/` per unit. The advisor's own are in `.roadmap/assets/`, the mentor's in `.mentor/assets/`.
 
 The day-zero course tree — the gap when the folder is fresh:
 
