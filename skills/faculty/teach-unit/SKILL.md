@@ -23,13 +23,13 @@ Find the unit from the fixed header line of `roadmap.md` — `Current unit: unit
 - `re-planning — do not claim` → **stop loudly.** The advisor is mid-pass; tell the user to finish `/academic-advisor` first.
 - `arrived` → **stop.** The course is complete; there is nothing to teach. Point the user at `/office-hours` (the material) or `/mentor` (their own work).
 
-Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMAT.md](../academic-advisor/UNIT-FORMAT.md) — the single definition; never restate its rules) → `learner.md` → `HANDOFF.md` → `assets/conventions.md` → the unit's `.records/office-hours.md` when present → frontier scan of the unit's `.tickets/` → **`work/` scan**: a submission with no `feedback.md` beside it draws a `homework-feedback` ticket into the frontier now, at orient — the learner submits asynchronously, and no other signal announces it. **A bounded file is its writer's exit duty, not the reader's discipline** — read the whole set, no judgment required; a file over cap is a checklist violation by its writer.
+Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMAT.md](../academic-advisor/UNIT-FORMAT.md) — the single definition; never restate its rules) → `learner.md` → `HANDOFF.md` → `look.md`, the user's own words on how they want pages to look → the unit's `.records/office-hours.md` when present → frontier scan of the unit's `.tickets/` → **`work/` scan**: a submission with no `feedback.md` beside it draws a `homework-feedback` ticket into the frontier now, at orient — the learner submits asynchronously, and no other signal announces it. **A bounded file is its writer's exit duty, not the reader's discipline** — read the whole set, no judgment required; a file over cap is a checklist violation by its writer.
 
 If `HANDOFF.md` carries a suspension block naming the current unit, stop — the advisor hasn't re-planned yet; tell the user to run `/academic-advisor`. If it carries a completion block naming the current unit instead, stop the same way — the unit awaits `/audit`, then `/academic-advisor`; there is nothing here to teach.
 
-**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 6), other units' folders, any `.audit/`, `playground/` uninvited, cold `.records/`, prior units' lessons.
+**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 7), other units' folders, any `.audit/`, `playground/` uninvited, cold `.records/`, prior units' lessons.
 
-**Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; the page contract for the page being written ([DECK-PAGE.md](DECK-PAGE.md), [RECALL-PAGE.md](RECALL-PAGE.md)).
+**Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; its contract, where the session writes the recall page or a deck ([RECALL-PAGE.md](RECALL-PAGE.md), [DECK-PAGE.md](DECK-PAGE.md)); and, before writing any page at all, the course's own assets — see *Teaching the lesson* below. A session that writes no page reads none of the assets.
 
 ## The frontier — tickets are work orders, never decisions
 
@@ -42,15 +42,31 @@ Lesson and homework cycles live as tickets in the unit's `.tickets/` ([LESSON-TI
 
 ## Teaching the lesson
 
-The method core, every subject, every session: **end every lesson with retrieval, production-first** — key on subject and prior knowledge, never a claimed learning style. Spacing reaches backward — warmup material comes from the `unit.md` retrieval pool. Worked examples fade toward independent performance. Self-explanation prompts ("explain why this step is here") ride beside production. Feedback lives in the artifact — answer keys and worked solutions ship with the exercise, so the loop closes without you.
+The method core, every subject, every session: **end every lesson with retrieval, production-first** — key on subject and prior knowledge, never a claimed learning style. Spacing reaches backward — warmup material comes from the `unit.md` retrieval pool. Worked examples fade toward independent performance. Self-explanation prompts ("explain why this step is here") ride beside production.
 
-**Profile dispatch is contractual**: if `unit.md` carries a `Profile:` stamp, read `profiles/<name>.md` from this skill's directory before drafting any exercise. One primary profile shapes every lesson; at most one `Minor:` line, pre-arbitrated by the advisor. The profiles never restate the core.
+What an exercise ships with it: **feedback lives in the artifact** — answer keys and worked solutions travel with the task, so the loop closes without you — and they stay **behind a reveal until the learner has attempted**, because an answer in view turns a page that should be worked into a page that gets read. What sits behind that reveal names **the common near-miss**, not only the right answer: the mistake is the part that teaches, and it lands at the one moment the learner is looking. And every task says **where to work** — `playground/` for anything that runs, paper for anything that doesn't.
+
+**Profile dispatch is contractual**: `unit.md` always carries a `Profile:` stamp — read `profiles/<name>.md` from this skill's directory before drafting any exercise. One primary profile shapes every lesson; at most one `Minor:` line, pre-arbitrated by the advisor. The profiles never restate the core.
 
 **Your one dial is fade position** — where on the worked-example ↔ independent-performance line to start and how fast to move, driven live by retrieval evidence. The learner is rebuilding, not new: start further along than for a true novice. First session of a unit: a 2–3 question retrieval probe on *this* topic sets the dial — teaching-time observation, never scored, into the record's Observed section. Later sessions inherit the fade position from records; re-probe only on a `HANDOFF.md` wobble flag. Everything else — profile, ladder, item shapes, minor — is fixed by the stamp.
 
 **Warmups** — a short retrieval opener inside a lesson — fire on named signals only: shaky retrieval last session; a gap taught inline; the learner asking; a `HANDOFF.md` wobble flag; a fresh office-hours note in this unit's `.records/office-hours.md`. No signal → open cold. Warmups are teaching, never an exit duty.
 
-Artifacts: lessons number per unit in `lessons/`, learner-facing = HTML, composed from the shell and fragments in [PAGE-KIT.md](PAGE-KIT.md) — never invented freehand. No fragment fits → the kit is missing a shape: say so in the record rather than inventing one, and it grows once for every course. Style is never re-litigated: presentation questions → `assets/conventions.md`; pedagogical taste → `learner.md`. A correction from the learner is an exit-duty edit to the right file, once.
+Lessons number per unit in `lessons/`.
+
+Read `.assets/palette.css` and `.assets/base.css` before you write a page, and build from what is already there. They are this course's vocabulary, and nothing else states it. Read `.assets/course.js` as well — whatever behaviour a page can rely on is in that file and nowhere else — and whatever this unit has already put in `units/NN-<slug>/.assets/`.
+
+`.assets/` sits at the course root; `units/NN-<slug>/.assets/` is this unit's own, and you are its only writer. `unit.css` **extends** the shared vocabulary; `unit.js` holds bespoke script. Each is created when a page first needs it and extended **forward only** — add to it, never change what is there, and never touch a finished unit's. Earlier lessons already link these files and are not rewritten to match.
+
+Every page links both stylesheets and the script; every page under `lessons/` links `unit.css` third where the unit has one, and `unit.js` where it uses it. A missing link fails silently — the page still renders, and the learner simply never gets what that file carried.
+
+An exercise carries a tag saying what the learner does: **Write**, **Trace**, **Fix**, **Explain**, or **Recall**. Five words, closed — a lesson written months from now names the same acts this one does. A **stack** is a group of cues under one heading, each answered from memory before it is revealed.
+
+A block of code says what it is: the language, or that it is a terminal transcript. Unlabelled, the learner cannot tell whether to type it in or go find it in the project.
+
+Style is never re-litigated — exit step 3 files a correction, once.
+
+**Bespoke script** — a lesson page may carry script of its own, inline, or in `units/NN-<slug>/.assets/unit.js` where a second lesson needs the same mechanism, on one bar: the **subject matter** is something the learner manipulates to see a behaviour. Never presentation; presentation is the course's `course.js`, which this role does not write. No persistence, no network, and never on `lessons/recall.html`. Declared in the session record with its reason ([RECORD-FORMAT.md](RECORD-FORMAT.md)) — undeclared script is a finding waiting for `/audit`.
 
 ## Gaps, budget, suspension
 
@@ -68,7 +84,7 @@ A **foreseen gap** that doesn't block this lesson: finish the cycle honestly; re
 
 ## The recall page
 
-One cumulative page per unit — `lessons/recall.html` ([RECALL-PAGE.md](RECALL-PAGE.md)) — produced at the unit-completion session, covering all outcomes. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. It is the learner's private practice instrument, with teeth: the zero-stakes firewall applies in full — to you and everyone. Evidence is teaching-time observation, into the record. Item shapes come from the profile, production-first.
+One cumulative page per unit — `lessons/recall.html` ([RECALL-PAGE.md](RECALL-PAGE.md)) — produced at the unit-completion session. On a re-completion (a remediation, or a resumed unit) it is **refreshed, not appended**: touched items are reworded and varied; a quiz whose answers the learner has already produced is spent. Evidence about the learner is teaching-time observation into the record, never anything this page produced — the firewall holds against you as hard as against anyone.
 
 ## Exit checklist — the session ends by emitting it
 
@@ -76,11 +92,12 @@ The final act of every session — including suspended ones — is emitting this
 
 1. Resolve (or mark blocked) the claimed ticket — what landed, what wobbled
 2. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
-3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`
+3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold for the next page too, add it to `look.md` and show them the exact line you added — filed per the rule in that file's own header, which you read at orient
 4. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
 5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
-6. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
-7. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
+6. Open every page this session wrote or touched, the hub included: each link on it resolves, and each meets the accessibility floor — a `lang` attribute, a `<main>` landmark, a skip link. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
+7. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
+8. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
 
 ## Unit complete — a checkable state, not a judgment
 
@@ -88,5 +105,5 @@ Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every
 
 ## Boundaries
 
-- **Writes**: `lessons/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `assets/conventions.md` (presentation rules appended under `## Additions` only — the rest is the installer's), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
-- **Never**: judge attainment or score the recall page; choose the next unit; edit `unit.md`, `roadmap.md`, or attainment lines; read `.audit/`, the transcript body, or `playground/` uninvited.
+- **Writes**: `lessons/`, `units/NN-<slug>/.assets/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `look.md` (a correction appended in the user's own words), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
+- **Never**: judge attainment or score the recall page; choose the next unit; write the course's shared `.assets/`; edit `unit.md`, `roadmap.md`, or attainment lines; read `.audit/`, the transcript body, or `playground/` uninvited.

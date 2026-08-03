@@ -10,6 +10,8 @@ Worked example first, every step annotated for *why* (subgoal labels) — then t
 
 Completion (partial solution, supply the missing steps) → find-the-flaw (a wrong proof / buggy code / broken procedure to diagnose) → full independent production. **Interleave problem types** across the set — picking the technique is the skill blocked drills never train. Fade position on the ladder moves on retrieval evidence, nothing else.
 
+The solution shipped with an exercise names **the one or two ideas it turns on** — an answer key alone shows the steps and not the reason for them. On the find-the-flaw rung the flaw *is* the near-miss, staged before the attempt instead of after it.
+
 ## Recall-item shapes
 
 State the definition / theorem / command from memory; short full production ("prove X", "write the function", "run the recovery"); which-technique-applies-and-why discrimination items. Production over recognition, always.

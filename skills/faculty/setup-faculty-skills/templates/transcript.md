@@ -3,7 +3,7 @@
 
   Two line shapes, and only these — this grammar is the contract; writers never improvise:
 
-  Teacher session line (one per session, teach-unit exit step 6):
+  Teacher session line (one per session, teach-unit exit step 7):
     {YYYY-MM-DD} — units/NN-<slug> — session {NN} — {resolved NN-<topic>
       | resolved NN-<topic> — unit complete
       | suspended: gap — <gap named>

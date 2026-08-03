@@ -10,6 +10,8 @@ Exposition broken by embedded stop-and-answer-before-scrolling prompts — never
 
 Elaborative interrogation ("why would this be true?") → generate-your-own-example of the abstraction → apply-to-a-new-case → contrasting cases (two confusable neighbors, "which does this scenario instantiate, and why").
 
+A reveal here ships more than a model answer: **what a strong answer must contain**. A learner comparing their own words to a model cannot tell which parts were load-bearing and which were phrasing, so name the one thing that shows the idea is really held.
+
 ## Recall-item shapes
 
 Free-recall explanation ("explain X to a colleague in three sentences"); discrimination between confusable concepts; near-transfer application. Retrieval targets **meaning, never phrasing** — verbatim cloze of the text's own sentences is banned.
