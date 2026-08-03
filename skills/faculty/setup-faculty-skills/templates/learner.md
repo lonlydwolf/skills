@@ -5,7 +5,7 @@
   thereafter teachers, at session exit (write-time triage: only insights with
   shelf life beyond the current topic belong here; topic-bound insights go to the
   unit's .records/). Read by every teaching-adjacent role.
-  This file seeds forward: it is the one artifact that outlives a course.
+  This file seeds forward: it outlives a course.
 -->
 
 # Learner profile

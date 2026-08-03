@@ -5,7 +5,9 @@ All sessions run from the course root. Unsure which skill fits? Run `/ask-lonlyd
 
 ## Conventions
 
-Anything the learner reads is HTML, themed and formatted per `assets/conventions.md` — except `work/` homework correspondence, the rule's one named exception (see conventions).
+- Anything the learner reads is HTML — except `work/` homework correspondence, the rule's one named exception.
+- **Navigation is up only**: a breadcrumb at the top and a back-link at the foot, both pointing at the page above. Never a link to a sibling page. `index.html` is the course's one index. A lesson is finished when it is written, so a forward link would mean editing a page that is already done.
+- Presentation lives in the stylesheets, never in a `style` attribute — an inline colour survives a re-theme and then disagrees with the rest of the course. A page needing a shape the stylesheets don't have adds a class to the stylesheet its own role owns.
 
 ## Iron rules
 

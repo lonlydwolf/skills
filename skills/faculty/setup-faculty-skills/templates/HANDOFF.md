@@ -7,4 +7,4 @@
 
 # Handoff
 
-Rewritten by each teacher at session end. No sessions yet.
+No sessions yet.
