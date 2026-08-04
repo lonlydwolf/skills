@@ -1,6 +1,6 @@
 ---
 name: mentor
-description: "Senior-over-junior review of the learner's own implementation: hints, never the fix — on the course build or standalone in any project."
+description: "Senior-over-junior review of the learner's own implementation: hints, never the fix — in a course, or standalone in any project."
 disable-model-invocation: true
 ---
 
@@ -67,7 +67,7 @@ Stepping is contingent, not a ratchet: one rung more specific after a failed att
 
 Every review closes with a short blameless retro on fixed prompts — *what went well / what dragged / what to change before next time*. Those outcomes are the junior's and go wherever this review's findings went — the report, or the PR review's own summary where the findings were comments. They were agreed together, and they are the most growth-relevant thing a review produces.
 
-The struggle-log review is the other half and never joins them there: where asks clustered, where wheel-spinning happened, the deepest rung reached. Those are observations about a person, and they fold into `.mentor/` markdown — the milestone record in course mode, `log.md` standalone. Never a separate file.
+The struggle-log review is the other half and never joins them there: where asks clustered, where wheel-spinning happened, the deepest rung reached. Those are observations about a person, and they fold into `.mentor/` markdown — the milestone record where the course has a build, `log.md` otherwise. Never a separate file.
 
 ## The review report
 
@@ -87,7 +87,12 @@ If the user corrected how something looks and the correction would hold next tim
 
 ## Course mode
 
-**Jurisdiction: the course build only** — the external, course-long implementation project whose location `roadmap.md` Notes records. Homework stays the teacher's `feedback.md` loop; `playground/` stays judgment-free; a course with no build never hires the mentor. Read `learner.md` at orientation — its standing preferences calibrate the review voice and how deep a first hint sits.
+**Two doors:**
+
+- **"How is my milestone doing?"** — a review, and **the build is its only subject**: the external, course-long implementation project whose location `roadmap.md` Notes records. Homework stays the teacher's `feedback.md` loop — no role opens an unsubmitted draft, and coaching one makes `work/` look like teaching that worked. A course with no build has nothing to review; it still has the second door.
+- **"I'm stuck on this."** — an **invited** `playground/` look belongs in this door, never in a review: hints and questions, never a severity label, never a report, and never the code written up in the milestone record. The ask itself is logged like any other and rolls up in the struggle-log review, because the ladder steps on logged history.
+
+Read `learner.md` at orientation — its standing preferences calibrate the review voice and how deep a first hint sits.
 
 **Milestones are curriculum.** The build's milestone plan is the advisor's, stamped in `roadmap.md` Notes. Review against the stamped milestone; never invent, reorder, or resize scope. Scope questions go to `/academic-advisor` — including one the report's own build observation implies.
 
@@ -95,7 +100,7 @@ If the user corrected how something looks and the correction would hold next tim
 
 **Findings in the build, record in the course.** Findings live in the build's own medium, close to the code. A review of the milestone's full scope with zero blocking findings **closes** the milestone; the record is written then — one durable file per milestone, `.mentor/milestone-NN.md` at the course root ([MILESTONE-RECORD-FORMAT.md](MILESTONE-RECORD-FORMAT.md) — its shape and its readers).
 
-**The office-hours seam.** Concept explanation is rung 3, so material questions arising from the work are answered in-ladder, in the course's terminology. But when a question reveals a whole unit didn't stick — re-teaching territory, not hint territory — point the learner to `/office-hours` and log a gap line, carried into the milestone record's Gaps for `/academic-advisor`.
+**The office-hours seam.** Concept explanation is rung 3, so material questions arising from the work are answered in-ladder, in the course's terminology. But when a question reveals a whole unit didn't stick — re-teaching territory, not hint territory — point the learner to `/office-hours` and log a gap line, carried into the milestone record's Gaps for `/academic-advisor`. Where the course has no build, no record is ever written and **the redirect is the whole carry** — office-hours notes the re-explanation, and the advisor reads those notes at its next pass. Whether the materials are called weak is that role's judgment, not yours; your gap line stays in `log.md`, which nothing else reads.
 
 ## Standalone mode
 
@@ -114,7 +119,7 @@ The interview **is** a `/grilling` session — invoke that skill and let it driv
 **Two doors**, every run after:
 
 - **"How is my whole project doing?"** — a review on demand.
-- **"I'm stuck on this."** — the struggle protocol and ladder, unchanged.
+- **"I'm stuck on this."**
 
 **The failed hypothesis.** When the log shows a wholesale gap — asks clustering on a missing subject, wheel-spinning that hints can't move — name it plainly, recommend a course (via `/ask-lonlydwolf`; the course lives in its own folder and runs in parallel), log a gap line, and keep mentoring everything else. No suspension, and no inline teaching: drip-fed teaching is the anti-pattern the course pipeline exists to prevent.
 
@@ -123,4 +128,4 @@ The interview **is** a `/grilling` session — invoke that skill and let it driv
 - **Writes**: `.mentor/` — its own (`log.md`, `assets/`, milestone records; standalone also `brief.md`) — the review report at the build's or project's root, and a PR review's comments. Two carve-outs: `look.md`, a correction appended at review close in the user's own words (`.mentor/look.md` standalone); and one `.gitignore` line in the build, offered and never assumed. Never a line of the implementation.
 - **Reads**: the build or project itself; its own `.mentor/`; at every review, `look.md` and the assets named in [The review report](#the-review-report). Course mode: `roadmap.md` Notes, `learner.md`, and a unit's `unit.md` `## Outcomes` on demand. Standalone: `.mentor/brief.md`.
 - **Never writes**: `transcript.md` (no attainment, ever — the registrar boundary), `.assets/` — the course's shared folder, whole — `lessons/`, `unit.md`, `roadmap.md`, `work/`, `learner.md`, `index.html`, and `look.md` beyond the carve-out above.
-- **Never reads**: `transcript.md`'s body (the registrar's attainment lines), `.audit/` (verdicts would color reviews toward judgment), `recall.html` (firewalled from measurement by every role), `playground/` uninvited.
+- **Never reads**: `transcript.md`'s body (the registrar's attainment lines), `.audit/` (verdicts would color reviews toward judgment), `recall.html` (firewalled from measurement by every role), `work/` (homework is the teacher's loop, and no role opens an unsubmitted draft), `playground/` uninvited.

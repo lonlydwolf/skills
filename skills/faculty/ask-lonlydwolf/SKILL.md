@@ -36,10 +36,12 @@ The goal itself moved? → `/academic-advisor` — the goal-shift run. Only you 
 
 **Is this about something you made, or about the material?**
 
-- **Something you made** — homework, the course build, anything you want eyes on → **`/mentor`**. Reviews and guides your work; never writes it, never grades it.
+- **Something you made** — the course build, or `playground/` → **`/mentor`**. Reviews and guides your work; never writes it, never grades it. A `playground/` look is conversation only: hints, never a write-up.
 - **The material** — a concept from any unit, current or past, even after the course ends → **`/office-hours`**. Explains in the teaching's own terms; never quizzes or assesses you.
 
-Mis-picking is safe: `/office-hours` hard-redirects questions about your artifacts to `/mentor`; `/mentor` answers small material questions inside its hint ladder and sends only wholesale gaps to `/office-hours`.
+**Homework is the exception**, and deliberately so: nobody looks at a draft, because homework is the leg you walk alone. Submit it, and your teacher's `feedback.md` comes back through `/teach-unit`.
+
+Mis-picking is safe: `/office-hours` hard-redirects questions about your build or `playground/` to `/mentor`; `/mentor` answers small material questions inside its hint ladder and sends only wholesale gaps to `/office-hours`.
 
 ## Standalone
 

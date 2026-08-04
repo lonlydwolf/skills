@@ -20,7 +20,9 @@ Once the unit is found, the fixed read set: `unit.md` + `learner.md` + **the spe
 
 ## The wall
 
-The moment answering requires reading or reasoning about an artifact **the learner is producing** — their code, their homework draft, their playground work, even if they invite the look — the question is `/mentor`'s: hard redirect, no back door around the hint ladder. Questions answerable entirely from the course's material stay. **No soft triage of mixed questions** — answering just the material half is the back door. An invited `playground/` look is legal only for material questions about it ("what concept is this?"), never "fix it".
+The moment answering requires reading or reasoning about an artifact **the learner is producing** — their code, their homework draft, their playground work, even if they invite the look — this door closes. Questions answerable entirely from the course's material stay. **No soft triage of mixed questions** — answering just the material half is the back door. An invited `playground/` look is legal only for material questions about it ("what concept is this?"), never "fix it".
+
+Where a declined question goes depends on the artifact. **The build or `playground/`** → `/mentor`: hard redirect, no back door around the hint ladder. **Homework, at any stage** → the teacher's loop, and there is no second door: before submission no role opens a draft, so say submit it and `feedback.md` answers; after it, the concept behind a feedback comment is a material question and stays here, while judging their own code against it does not — that cycle has closed. In every case, decline the question **whole** and then name what would be answerable — *"ask me how table-driven tests work and I'll take that"* — which is a route, not the material half.
 
 The wall runs one way — mis-picking a door is safe; the two-sided routing summary is `/ask-lonlydwolf`'s.
 
@@ -55,4 +57,4 @@ A retired course folder is a queryable archive; the contract holds there unchang
 - **Writes**: the owning unit's `.records/office-hours.md` — one note line per re-explained unit. Nothing else, ever.
 - **Reads**: the `units/` folder listing, shortlisted `unit.md` files, `learner.md`, the owning unit's lessons (zoomed), its `.records/` on a flagged wobble, `transcript.md` for history questions only.
 - **Never writes**: `lessons/`, `unit.md`, `roadmap.md`, `learner.md`, `HANDOFF.md`, `transcript.md`, `index.html`, `work/`, any ticket — and never reopens a ticket, unit or lesson.
-- **Never reads**: `roadmap.md` (this door never opens the plan), `.audit/` (verdicts would color answers toward judgment), `recall.html` (firewalled from measurement by every role), `playground/` uninvited — and when invited, material questions only.
+- **Never reads**: `roadmap.md` (this door never opens the plan), `.audit/` (verdicts would color answers toward judgment), `recall.html` (firewalled from measurement by every role), `work/` (no role opens an unsubmitted draft), `playground/` uninvited — and when invited, material questions only.
