@@ -16,6 +16,6 @@
 
 Nothing on this page counts or scores — no tally of units done, no progress bar, no grade. That turns the folder into a report card and puts the learner's own course in front of them as a score. `transcript.md` is never linked: it carries attainment lines.
 
-Day zero is an **empty state**: the roadmap link, and a line saying the advisor plans first. The `<h1>` and `<title>` read the literal `Course` — the advisor's sentinel, which it sets from `roadmap.md`'s title at the first stamp and keeps in step after, so a hub still reading `Course` once a course has been stamped is the advisor's omission.
+Day zero is an **empty state**: the roadmap link, and a line saying the advisor plans first. The page title and its top heading read the literal `Course` — the advisor's sentinel, which it sets from `roadmap.md`'s title at the first stamp and keeps in step after, so a hub still reading `Course` once a course has been stamped is the advisor's omission.
 
 Where `look.md` was carried forward from a previous course, read it before writing: it already holds the user's stated preferences, and this is the first page written after it lands. A fresh `look.md` has nothing to say.

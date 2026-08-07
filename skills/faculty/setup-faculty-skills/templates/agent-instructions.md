@@ -5,9 +5,11 @@ All sessions run from the course root. Unsure which skill fits? Run `/ask-lonlyd
 
 ## Conventions
 
-- Anything the learner reads is HTML — except `work/` homework correspondence, the rule's one named exception.
+- Anything the learner reads is HTML — except `work/` homework correspondence and `HANDOVER.md`, which travels beyond the course: the rule's two named exceptions.
 - **Navigation is up only**: a breadcrumb at the top and a back-link at the foot, both pointing at the page above. Never a link to a sibling page. `index.html` is the course's one index. A lesson is finished when it is written, so a forward link would mean editing a page that is already done.
 - Presentation lives in the stylesheets, never in a `style` attribute — an inline colour survives a re-theme and then disagrees with the rest of the course. A page needing a shape the stylesheets don't have adds a class to the stylesheet its own role owns.
+- **Before writing any page**: read `.assets/palette.css` and `.assets/base.css` and build from what is already there — they are this course's vocabulary, and nothing else states it. Read `.assets/course.js` — whatever behaviour a page can rely on is in that file and nowhere else — and `look.md`, the user's own words on how they want pages to look.
+- **After writing any page**: open it and confirm each link on it resolves — a missing stylesheet or script link fails silently, the page renders anyway — and that it meets the **accessibility floor**: the page declares its document language, marks its main content as a landmark, and offers a skip link.
 
 ## Iron rules
 

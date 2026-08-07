@@ -5,11 +5,11 @@ The content contract for a unit's cumulative recall page —
 re-completion refreshes it are in [SKILL.md](SKILL.md#the-recall-page); this
 file says what the page must hold.
 
-**One `<h2>` per outcome**, in `unit.md`'s order, each holding one or more
-retrieval stacks. Outcomes are the page's spine because the page's promise is
-*everything this unit made true* — a learner who works it through has retrieved
-against every outcome, and a missing `<h2>` is a visible hole rather than a
-silent one.
+**One top-level section per outcome**, in `unit.md`'s order, each holding one or
+more retrieval stacks. Outcomes are the page's spine because the page's promise
+is *everything this unit made true* — a learner who works it through has
+retrieved against every outcome, and a missing section is a visible hole rather
+than a silent one.
 
 **Item shapes come from the unit's profile**, production-first
 ([profiles/](profiles/)). A cued stack is the floor, not the whole vocabulary: a

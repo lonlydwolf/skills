@@ -28,5 +28,5 @@ Blocked by: {NN, NN — or omit the line if none}
 - **Ticket when the question is sharp; fog when it isn't.** The test is whether you can state the question precisely now — not whether you can answer it now.
 - **Claim before work, resolve with an answer.** Set `Status: claimed` before working a ticket; on resolution, append `## Answer`, set `Status: resolved`, and add the one-line gist to `roadmap.md` Decisions-so-far.
 - **Research findings live in `.roadmap/research/`, linked from the ticket.** The ticket holds the gist and the pointer; the findings file holds the detail. Pasting findings into the ticket makes two copies to drift.
-- **Blocked-by is honest, not decorative.** List only tickets that genuinely gate this one; a ticket with no blockers is claimable now.
+- **A ticket with no `Blocked by:` line is claimable now.**
 - **Two types only.** `research` (a fact outside the course folder, resolvable by a `/research` subagent) or `grilling` (a decision worked through the `/grilling` skill with the user). Planning has no prototype or task tickets — if manual work is blocking the plan, that's a Notes line in `roadmap.md`, not a ticket type.

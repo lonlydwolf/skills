@@ -10,7 +10,7 @@ Exposition broken by embedded stop-and-answer-before-scrolling prompts — never
 
 ## Exercise ladder
 
-Invent-with-contrasting-cases first: two confusable neighbors and the **inventing directive** — search the cases for the common deep structure ("which does this scenario instantiate, and why"; showing-and-explaining the cases is the version that doesn't work) — then the **consolidation reveal**: the exposition explicitly compares the learner's invention to the canonical answer, and that comparison is the instrument's largest moderator, not a courtesy. Then generate-your-own-example of the abstraction → apply-to-a-new-case.
+Where the outcome takes invention-first: invent-with-contrasting-cases leads — two confusable neighbors and the **inventing directive** — search the cases for the common deep structure ("which does this scenario instantiate, and why"; showing-and-explaining the cases is the version that doesn't work) — then the **consolidation reveal**: the exposition explicitly compares the learner's invention to the canonical answer, and that comparison is the instrument's largest moderator, not a courtesy. Then generate-your-own-example of the abstraction → apply-to-a-new-case. A routine-application outcome enters the ladder here — its telling-first opening already delivered the model.
 
 A reveal here ships more than a model answer: **what a strong answer must contain**. A learner comparing their own words to a model cannot tell which parts were load-bearing and which were phrasing, so name the one thing that shows the idea is really held.
 

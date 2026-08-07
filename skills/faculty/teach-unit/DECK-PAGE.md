@@ -6,7 +6,7 @@ regenerates from, and the central artifact of the vocabulary profile
 ([profiles/vocabulary.md](profiles/vocabulary.md)).
 
 **Both directions, always.** Two stacks over the same terms with the cues
-reversed, one `<h2>` each — term→meaning, then meaning→term. A deck that only
+reversed, one section heading each — term→meaning, then meaning→term. A deck that only
 runs term→meaning teaches recognition, which is the floor. The two shuffle
 independently, so a second pass is not the first pass in order.
 

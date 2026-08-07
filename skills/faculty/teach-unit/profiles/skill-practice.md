@@ -10,7 +10,7 @@ Worked example first, every step annotated for *why* — **subgoal labels live o
 
 ## Exercise ladder
 
-Completion (partial solution, supply the missing steps) → find-the-flaw (a wrong proof / buggy code / broken procedure to diagnose) → full independent production. **Interleave problem types** across the set — picking the technique is telling confusables apart, the case the core's interleaving rule licenses. Fade position on the ladder moves on retrieval evidence, nothing else.
+Completion (partial solution, supply the missing steps) → find-the-flaw (a wrong proof / buggy code / broken procedure to diagnose) → full independent production. **Interleave problem types** across the set once each type has had its blocked practice — picking the technique is telling confusables apart, the case the core's interleaving rule licenses; a set exercising a single technique has nothing to interleave. Fade position on the ladder moves on retrieval evidence, nothing else.
 
 The solution shipped with an exercise names **the one or two ideas it turns on** — an answer key alone shows the steps and not the reason for them. On the find-the-flaw rung the flaw *is* the near-miss, staged before the attempt instead of after it.
 

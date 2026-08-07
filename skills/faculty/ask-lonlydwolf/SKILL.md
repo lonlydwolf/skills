@@ -6,8 +6,6 @@ disable-model-invocation: true
 
 # Ask lonlydwolf
 
-You don't remember every skill, so ask.
-
 ## The door test
 
 **Is this one subject, or a journey through several?**
@@ -37,7 +35,7 @@ The goal itself moved? → `/academic-advisor` — the goal-shift run. Only you 
 - **A question about the material** — a concept from any unit, current or past, even after the course ends → **`/office-hours`**. Explains in the teaching's own terms; never quizzes or assesses you.
 - **A message that didn't land** → **`/wait-what`**, mid-session in any role: stop, and the last explanation is re-pitched plainer.
 
-**Something you made — the course build, `playground/`, a homework draft — has no review door during the journey**, and deliberately so: your own work is never a question door's evidence. It is the leg you walk alone. What consolidates it is the teacher's homework loop — submit, and `feedback.md` comes back through `/teach-unit`; nobody looks at a draft — and, for the build, the journey's end: the handover written at arrival says who picks your work up next.
+**Something you made — the course build, `playground/`, a homework draft — has no review door during the journey**, and deliberately so: your own work is never a question door's evidence. It is the leg you walk alone. What consolidates it is the teacher's homework loop — submit, and `feedback.md` comes back through `/teach-unit`; nobody looks at a draft — and, for the build, the journey's end: the handover written at arrival travels with your work to whoever picks it up next.
 
 Mis-picking is still safe: bring a build question to `/office-hours` and it declines it whole and names the material question inside it that it can take. You lose nothing but the detour.
 

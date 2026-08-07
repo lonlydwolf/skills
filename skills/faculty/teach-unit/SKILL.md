@@ -27,7 +27,7 @@ Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMA
 
 If `HANDOFF.md` carries a suspension block naming the current unit, stop — the advisor hasn't re-planned yet; tell the user to run `/academic-advisor`. If it carries a completion block naming the current unit instead, stop the same way — the unit awaits `/audit`, then `/academic-advisor`; there is nothing here to teach.
 
-**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 7), other units' folders, any `.audit/`, `playground/` uninvited, cold `.records/`, prior units' lessons.
+**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 7), other units' folders, any `.audit/`, `playground/` uninvited, this unit's past session records (`HANDOFF.md` carries what you inherit), prior units' lessons.
 
 **Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; its contract, where the session writes the recall page or a deck ([RECALL-PAGE.md](RECALL-PAGE.md), [DECK-PAGE.md](DECK-PAGE.md)); and, before writing any page at all, the course's own assets — see *Teaching the lesson* below. A session that writes no page reads none of the assets.
 
@@ -58,9 +58,9 @@ What an exercise ships with it: **feedback lives in the artifact** — answer ke
 
 **Warmups** — a short retrieval opener inside a lesson — fire whenever the unit's retrieval pool has **live** items; empty pool → open cold. This is where long-term retention is built: the delay before an item's next retrieval is the active ingredient. The signals are the *selector*, deciding which pool items go first: shaky retrieval last session; a gap taught inline; the learner asking; a `HANDOFF.md` wobble flag; a fresh office-hours note in this unit's `.records/office-hours.md` — read its ground line: `covered` plus an Nth ask selects the pool item its topic slot names; `not covered` plus a first ask selects nothing, that is fog, not forgetting. No signal → the pool's own order, oldest-weakest first. Warmups are teaching, never an exit duty.
 
-Lesson pages are `lessons/NN-<slug>.html`, numbered per unit from `01`.
+Lesson pages are `units/NN-<slug>/lessons/NN-<slug>.html`, numbered per unit from `01`.
 
-Read `.assets/palette.css` and `.assets/base.css` before you write a page, and build from what is already there. They are this course's vocabulary, and nothing else states it. Read `.assets/course.js` as well — whatever behaviour a page can rely on is in that file and nowhere else — and whatever this unit has already put in `units/NN-<slug>/.assets/`.
+The page-writing conventions — read the shared assets first, then the link check and the accessibility floor after writing — are the course's `AGENTS.md` Conventions. Read as well whatever this unit has already put in `units/NN-<slug>/.assets/`.
 
 `.assets/` sits at the course root; `units/NN-<slug>/.assets/` is this unit's own, and you are its only writer. `unit.css` **extends** the shared vocabulary; `unit.js` holds bespoke script. Each is created when a page first needs it and extended **forward only** — add to it, never change what is there, and never touch a finished unit's. Earlier lessons already link these files and are not rewritten to match.
 
@@ -84,7 +84,7 @@ Style is never re-litigated — exit step 3 files a correction, once.
 
 A **foreseen gap** that doesn't block this lesson: finish the cycle honestly; record the forecast as a flag in the resolved ticket and the record's Gaps section. Suspension is only for "cannot proceed honestly now."
 
-**The suspension message carries the internalization package** — the decline grammar is the Iron rule in `agent-instructions.md`; what is this site's own is the choice conveyed: what to do next — take the gap to `/office-hours` now, run `/academic-advisor` now or later — **never whether the suspension happens**. Counterfeit: a conveyed choice that re-opens the rule ("we could keep going if you like").
+**The suspension message carries the internalization package** — the decline grammar is the Iron rule in the course's `AGENTS.md`; what is this site's own is the choice conveyed: what to do next — take the gap to `/office-hours` now, run `/academic-advisor` now or later — **never whether the suspension happens**. Counterfeit: a conveyed choice that re-opens the rule ("we could keep going if you like").
 
 **Budget**: `unit.md` declares it; the frontier never silently outgrows it. Headroom: **one** extra lesson beyond the budget, reason recorded — same spirit for homework (may add one where teaching shows the need, never drop the plan). Two-plus extra needed → the unit was mis-planned → suspend with reason `over-budget`.
 
@@ -108,12 +108,12 @@ The final act of every session — including suspended ones — is emitting this
 2. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
 3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold next time, add it to `look.md`, filed per the rule in that file's own header. Four rules bind the `learner.md` half:
    - **Every entry carries its provenance**, whatever its heading: observed entries name the moment and session ("re-derived the closure environment unprompted — u03 s02"), Background entries their source ("self-report, mission run"). Staleness becomes visible, not policed
-   - **What works / What doesn't / Watch for hold observations only.** Counterfeit: a preference the learner stated once, written as if observed
+   - **What works / What doesn't / Watch for hold observations only — or a mission-run claim still carrying its `claimed` provenance.** Counterfeit: a preference the learner stated once, written as if observed
    - **Pace is never inferred from background or prior knowledge** — only from observed cross-session evidence
    - **Domain-level knowledge claims live in `unit.md` Calibration**, which the advisor rewrites fresh each unit; `learner.md` keeps the durable history fact, not the current-knowledge claim
 4. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
 5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
-6. Open every page this session wrote or touched, `index.html` included: each link on it resolves, and each meets the accessibility floor — a `lang` attribute, a `<main>` landmark, a skip link. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
+6. Open every page this session wrote or touched, `index.html` included: each link on it resolves, and each meets the accessibility floor named in the course's `AGENTS.md` Conventions. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
 7. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
 8. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
 
@@ -123,12 +123,13 @@ Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every
 
 ## Boundaries
 
-- **Writes**: `lessons/`, `units/NN-<slug>/.assets/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `look.md` (a correction appended in the user's own words), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
-- **Never** — each row with the counterfeit that most nearly passes for compliance:
+- **Writes**: the unit's `lessons/`, `units/NN-<slug>/.assets/`, the unit's `.tickets/` and `.records/`, `work/` briefs and feedback, `look.md` (a correction appended in the user's own words), `learner.md` (curated triage only), `HANDOFF.md` (full rewrite at exit), `index.html`, `transcript.md` (append session lines only).
+- **Never writes or does** — each row with the counterfeit that most nearly passes for compliance:
   - judge attainment or score the recall page. Counterfeit: a "moment" that is secretly a measure — "answered 4 of 5 pool items"
   - choose the next unit. Counterfeit: a Signals line naming the cure — "ready for unit 05"
   - write the course's shared `.assets/`. Counterfeit: "extending" `base.css` or `course.js` with something "any unit could use"
   - edit `unit.md`, `roadmap.md`, or attainment lines. Counterfeit: "correcting" a stale Calibration fact mid-teaching — a stale stamp is the advisor's to fix
-  - read `.audit/`. Counterfeit: "checking the Remediation quote is complete"
-  - read the transcript body. Counterfeit: "a few recent lines for cadence"
-  - read `playground/` uninvited. Counterfeit: there is no light touch — capture is surveillance
+- **Never reads** — same convention:
+  - `.audit/`. Counterfeit: "checking the Remediation quote is complete"
+  - the transcript body. Counterfeit: "a few recent lines for cadence"
+  - `playground/` uninvited. Counterfeit: there is no light touch — capture is surveillance
