@@ -28,7 +28,7 @@ when you want them with `npx skills update`.
 
 | Category | What it is |
 | --- | --- |
-| [**Faculty**](./skills/faculty/README.md) | A course-agnostic AI teaching suite that plans, teaches, audits, and mentors a course — built on one iron rule: **the AI never writes what the learner couldn't write themselves.** |
+| [**Faculty**](./skills/faculty/README.md) | A course-agnostic AI teaching suite that plans, teaches, audits, and holds office hours for a course — built on one iron rule: **the AI never writes what the learner couldn't write themselves.** |
 
 More categories may land in time.
 
