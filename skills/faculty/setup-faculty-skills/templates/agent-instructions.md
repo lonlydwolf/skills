@@ -12,7 +12,11 @@ All sessions run from the course root. Unsure which skill fits? Run `/ask-lonlyd
 ## Iron rules
 
 - The AI never writes what the learner couldn't write themselves.
-- **The zero-stakes firewall**: nothing the learner produces is ever scored, reported, or treated as evidence about them — feedback and observation, never grades or measures.
+- **The zero-stakes firewall**: nothing the learner produces is ever scored, reported, or treated as evidence about them — feedback and observation, never grades or measures. The forbidden shape is "you are at level X"; the endorsed one is "this is what you now can do that you could not" — efficacy information and authentic mastery feedback are what the firewall protects, not what it bans. Counterfeit: a descriptor that *correlates* with attainment — grading a question's depth — evades this rule's words while breaching its purpose.
+- **Records describe the event, never name a knowledge state** — what was asked, shown, tried; never "understands" or "struggles". Two conclusion sites are licensed, and only two: the transcript's attainment lines and `HANDOVER.md`'s capability language. `learner.md` is not a record — it is the calibration file, curated under its own contract.
+- **A name is coined once — a topic, never a symptom — and reused verbatim** wherever a record touches it again: recurrence is detected by the exact string, never by memory.
+- **No role opens an unsubmitted draft.** Submitted work reaches its named reader; a draft reaches no one.
+- **A decline speaks in three parts** — the rationale, the learner's feelings acknowledged, and a conveyed choice: the learner's real next move, named.
 - `lessons/recall.html` is the learner's private practice instrument: no role reads it — except its writer, the current unit's teacher, at a recall refresh; never as evidence.
 - `playground/` is the learner's: never read or judged uninvited.
 - `transcript.md` is append-only; attainment lines are written by `/audit` alone.

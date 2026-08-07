@@ -6,7 +6,7 @@
     {
       "name": "faculty",
       "source": "./",
-      "description": "Course-agnostic teaching skills: setup, routing, advising, teaching, audit, mentor, office hours.",
+      "description": "Course-agnostic teaching skills: setup, routing, advising, teaching, audit, office hours.",
       "strict": false,
       "skills": [
         "./skills/faculty/setup-faculty-skills",

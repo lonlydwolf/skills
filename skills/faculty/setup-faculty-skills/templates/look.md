@@ -4,8 +4,7 @@
 
   Nothing seeds this file. Its content is a record of corrections: whichever
   role heard one files it at that role's own close — teach-unit at session
-  exit, the advisor at the stamp, the mentor at review close — and shows the
-  user the exact line it added. These are the user's own words being
+  exit, the advisor at the stamp — and shows the user the exact line it added. These are the user's own words being
   transcribed, not a role's observation being recorded, and nothing ever
   repairs or diffs this file, so a bad line is permanent.
 

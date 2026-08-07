@@ -22,7 +22,7 @@ You don't remember every skill, so ask.
 ## The main flow: subject → course
 
 1. **Make a folder** — one course per folder; every session runs from its root.
-2. **`/setup-faculty-skills`** — once: scaffolds the workspace, seeds the learner profile, settles the theme.
+2. **`/setup-faculty-skills`** — once: scaffolds the workspace and the learner profile, settles the theme.
 3. **`/academic-advisor`** — the mission run; creates the roadmap.
 4. **The loop**: `/academic-advisor` plans a unit ⟷ `/teach-unit` teaches it → `/audit` checks it → back to `/academic-advisor`, until the roadmap says *arrived*.
 
@@ -34,18 +34,12 @@ The goal itself moved? → `/academic-advisor` — the goal-shift run. Only you 
 
 ## On call throughout
 
-**Is this about something you made, or about the material?**
+- **A question about the material** — a concept from any unit, current or past, even after the course ends → **`/office-hours`**. Explains in the teaching's own terms; never quizzes or assesses you.
+- **A message that didn't land** → **`/wait-what`**, mid-session in any role: stop, and the last explanation is re-pitched plainer.
 
-- **Something you made** — the course build, or `playground/` → **`/mentor`**. Reviews and guides your work; never writes it, never grades it. A `playground/` look is conversation only: hints, never a write-up.
-- **The material** — a concept from any unit, current or past, even after the course ends → **`/office-hours`**. Explains in the teaching's own terms; never quizzes or assesses you.
+**Something you made — the course build, `playground/`, a homework draft — has no review door during the journey**, and deliberately so: your own work is never a question door's evidence. It is the leg you walk alone. What consolidates it is the teacher's homework loop — submit, and `feedback.md` comes back through `/teach-unit`; nobody looks at a draft — and, for the build, the journey's end: the handover written at arrival says who picks your work up next.
 
-**Homework is the exception**, and deliberately so: nobody looks at a draft, because homework is the leg you walk alone. Submit it, and your teacher's `feedback.md` comes back through `/teach-unit`.
-
-Mis-picking is safe: `/office-hours` hard-redirects questions about your build or `playground/` to `/mentor`; `/mentor` answers small material questions inside its hint ladder and sends only wholesale gaps to `/office-hours`.
-
-## Standalone
-
-Want a senior reviewing a project of your own, no course? Two steps, both in the project itself: **`/setup-faculty-skills`** — it asks which mode, seeds `.mentor/`, and offers to install the skill the intake runs on — then **`/mentor`**, whose first run interviews you about the project. No course folder, no roadmap, nothing else scaffolded.
+Mis-picking is still safe: bring a build question to `/office-hours` and it declines it whole and names the material question inside it that it can take. You lose nothing but the detour.
 
 ## Building software, not learning?
 

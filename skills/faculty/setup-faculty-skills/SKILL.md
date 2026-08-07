@@ -1,19 +1,16 @@
 ---
 name: setup-faculty-skills
-description: Configure a folder for the faculty skills — scaffold the workspace, settle the theme, generate the shared assets. A full course, or the mentor standalone.
+description: Configure a course folder for the faculty skills — scaffold the workspace, settle the theme, generate the shared assets.
 disable-model-invocation: true
 ---
 
 # Setup Faculty Skills
 
-Scaffold the per-folder configuration the faculty skills assume. Two modes:
-
-- **Full course** — the day-zero course tree, the learner profile, the shared assets
-- **Mentor standalone** — `/mentor` inside someone's real repo: `.mentor/` and its assets, no course tree
+Scaffold the per-folder configuration the faculty skills assume: the day-zero course tree, the learner profile, the shared assets.
 
 Every per-folder fact lives in a file this installer scaffolds — the learner in `learner.md`, the user's presentation preferences in `look.md`, the theme in `.assets/palette.css`'s own header, the workspace rules in the agent-instructions file. The faculty skills reference those files; they never hard-code the facts.
 
-Run this once per folder, before the first `/academic-advisor` mission or the first `/mentor` review. Every later run **converges** the folder on the tree in step 4 — read what exists, compute the gap, write only the gap.
+Run this once per course folder, before the first `/academic-advisor` mission. Every later run **converges** the folder on the tree in step 4 — read what exists, compute the gap, write only the gap.
 
 ## Process
 
@@ -21,21 +18,17 @@ Run this once per folder, before the first `/academic-advisor` mission or the fi
 
 Look at the folder as it is. Read whatever exists; don't assume.
 
-**The mode comes first**, because everything below depends on it. An empty folder, or one already holding a course scaffold → full course. A folder holding someone's real project — source files, a package manifest, its own agent instructions → **ask** which: a course here, or the mentor standalone? Never infer it; a project folder is a legitimate place for a course.
+**Confirm the folder first.** An empty folder, or one already holding a course scaffold → proceed. A folder holding someone's real project — source files, a package manifest, its own agent instructions → **ask** whether they mean a course here. Never infer it; a project folder is a legitimate place for a course, but scaffolding one into a repo uninvited is not.
 
-**Full course** — read, and let each answer decide whether its section runs:
+Read, and let each answer decide whether its section runs:
 
 - `AGENTS.md` and `CLAUDE.md` at the root — does the file match the [agent-instructions.md](./templates/agent-instructions.md) template? It has a template, so a stale copy looks exactly like a current one until you diff it. → the agent-instructions section
 - `learner.md` and `look.md` at the root → their sections
 - `.assets/palette.css`, `.assets/base.css`, `.assets/course.js` — **presence is the whole test**. `palette.css`'s header names the theme. → the theme section
 - anything else in `.assets/` — an orphan; see step 4
-- are `grilling` and `research` installed? (each present as a skill folder alongside this one, or in your available skills) A missing one is a gap item, not a stop.
+- are `grilling`, `research` and `wait-what` installed? (each present as a skill folder alongside this one, or in your available skills) A missing one is a gap item, not a stop.
 
-**Mentor standalone** — the same read against a smaller tree: `.mentor/look.md`; `.mentor/assets/palette.css`'s header; whether `.mentor/assets/base.css` and `course.js` are present; whether the repo's `.gitignore` already carries `.mentor/` and `mentor-review-*.html`; and whether `grilling` is installed.
-
-Standalone reads no `learner.md` and has **no orphan rule** — `.mentor/assets/` is owned per file rather than per folder, because the mentor adds to it too.
-
-Explore is done when the mode is settled, every section's run/skip is decided, the upstream skills have been checked, and any orphan in `.assets/` is inventoried.
+Explore is done when the folder is confirmed, every section's run/skip is decided, the upstream skills have been checked, and any orphan in `.assets/` is inventoried.
 
 ### 2. Present findings and ask
 
@@ -43,19 +36,19 @@ Summarise what's present and what's missing. Then take the sections in order —
 
 Every section obeys the same rule: lead with the recommended answer so the user can accept it in a word, and give a short explainer only where the choice genuinely branches. The step is done when every section is answered or skipped.
 
-**Learner profile** — full course only; skip when `learner.md` exists.
+**Learner profile** — skip when `learner.md` exists.
 
-> Explainer: the learner profile is where durable insights about the learner live for this folder. The advisor's mission run seeds it with the deep level-grilling; `teach-unit` curates it at every session exit; the advisor, `teach-unit`, `mentor` and `office-hours` read it. Fresh, or copied forward from a previous course folder?
+> Explainer: the learner profile is where durable insights about the learner live for this folder. The advisor's mission run seeds it with the deep level-grilling; `teach-unit` curates it at every session exit; the advisor, `teach-unit` and `office-hours` read it. Fresh, or copied forward from a previous course folder?
 
 Default posture: fresh. Otherwise ask for the previous course folder's path.
 
-**Look** — both modes; skip when the file exists (`look.md`, or `.mentor/look.md` standalone). A separate question from the learner profile, deliberately: who someone is as a learner and how they want their pages to look are different things, so carrying one does not imply the other.
+**Look** — skip when `look.md` exists. A separate question from the learner profile, deliberately: who someone is as a learner and how they want their pages to look are different things, so carrying one does not imply the other.
 
 > Explainer: `look.md` records your own corrections about how pages should look, in your words, so a later session doesn't have to be told twice. Fresh, or copied forward?
 
 Default posture: fresh. **Ask nothing else here.** Never ask what the pages should look like: taste about a page that does not exist yet is guesswork, and a day-zero guess would then bind every page. Fresh means the two-heading template with nothing under them, and an empty `look.md` is the normal state of a first course.
 
-**Theme** — both modes; skip when the theme choice is settled, unless the user came to change it. Settled: `palette.css` exists and its header names a theme.
+**Theme** — skip when the theme choice is settled, unless the user came to change it. Settled: `palette.css` exists and its header names a theme.
 
 Recommend **catppuccin mocha** — or, where a palette is already on disk, the theme its header names. Offer six, and accept anything:
 
@@ -67,7 +60,7 @@ The theme decides one thing: the **palette**. Structure is shared, so changing i
 
 A dark theme prints as a light one, and that is **derived, not asked** — state it in a line at confirm and move on: *"it's dark, so pages print as a light Nord — same hues, light ground."* Catppuccin prints Latte; a light theme has nothing to swap.
 
-**Agent instructions file** — full course only; runs only where exploration found ambiguity. Otherwise this rule resolves it silently:
+**Agent instructions file** — runs only where exploration found ambiguity. Otherwise this rule resolves it silently:
 
 - neither `AGENTS.md` nor `CLAUDE.md` exists → plan the default: `AGENTS.md` as the real file, `CLAUDE.md` holding `@AGENTS.md`, so both agents read one source
 - the default pair already in place, or exactly one file matching the template → use what's there
@@ -75,21 +68,18 @@ A dark theme prints as a light one, and that is **derived, not asked** — state
 
 Content is all these bullets decide. The **file set** is still the tree's, so a missing `CLAUDE.md` pointer is a gap like any other even where the `AGENTS.md` beside it matches the template.
 
-Standalone writes neither: that repo has its own, and proposing to rewrite someone's project instructions is not this skill's business.
-
 ### 3. Confirm and edit
 
 Show a draft of what will be written — the gap, never the whole tree. Gap empty → report the scaffold healthy and stop. On day zero the gap is everything: the tree summary, plus the agent-instructions draft in full, since it is the file they'll live with. On a repair run it may be one file.
 
-Three gap items are worth naming, and each is **declinable** here like any other:
+Two gap items are worth naming, and each is **declinable** here like any other:
 
-- **the upstream install** — `npx skills@latest add mattpocock/skills -s grilling,research -y` in a course, `-s grilling` standalone. It fetches code from the network onto the user's machine, so it is confirmed, never assumed.
-- **the `.gitignore` lines** (standalone) — `.mentor/` and `mentor-review-*.html`. Default to ignoring both: `.mentor/log.md` is a dated struggle log, the one artifact in the suite that must never become a record someone else reads.
+- **the upstream install** — `npx skills@latest add mattpocock/skills -s grilling,research,wait-what -y`. `grilling` and `research` are the two the roles themselves invoke; `wait-what` is the learner's own — the mid-session "that didn't land, re-pitch it" command. It fetches code from the network onto the user's machine, so it is confirmed, never assumed.
 - **orphan deletions** — see step 4.
 
 Write only on their explicit go-ahead. **One exception, and only one**: the palette is judged after it is written rather than before. It is a colour scheme — there is nothing to approve until it is on screen — and a re-theme costs one small file.
 
-Step 3 is done when the user has seen every gap item, the three above included, and has taken or declined each.
+Step 3 is done when the user has seen every gap item, the two above included, and has taken or declined each.
 
 ### 4. Write
 
@@ -105,7 +95,7 @@ Write the gap, artifact by artifact. Each obeys its ownership rule:
 
 The link check searches the **whole course**, not just the pages: a font or an image is linked from `base.css`. Say at confirm why a linked orphan was kept. Outside `.assets/` this skill never deletes anything.
 
-Where things live: `.assets/` at the course root, `units/NN-<slug>/.assets/` per unit. The advisor's own are in `.roadmap/assets/`, the mentor's in `.mentor/assets/`.
+Where things live: `.assets/` at the course root, `units/NN-<slug>/.assets/` per unit. The advisor's own are in `.roadmap/assets/`.
 
 The day-zero course tree — the gap when the folder is fresh:
 
@@ -121,8 +111,6 @@ The day-zero course tree — the gap when the folder is fresh:
 | `.assets/`                | `palette.css`, `base.css`, `course.js` — generated against **The assets** below                           |
 | `playground/`, `units/`   | empty                                                                                                    |
 | `roadmap.md`, `.roadmap/` | **not created** — `/academic-advisor`'s mission run creates them                                          |
-
-The standalone tree, written into a repo that is already someone else's: `.mentor/look.md` carried or fresh; `.mentor/assets/` holding the same three generated files against the same three contracts; and two lines appended to the repo's `.gitignore`. Nothing else.
 
 #### The assets
 
@@ -150,4 +138,4 @@ Step 4 is done when every gap item confirmed in step 3 has been carried out — 
 
 ### 5. Done
 
-Full course → point the user at `/academic-advisor` for the mission run; planning starts there. Standalone → point them at `/mentor`.
+Point the user at `/academic-advisor` for the mission run; planning starts there.
