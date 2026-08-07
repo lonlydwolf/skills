@@ -10,8 +10,10 @@ truth. Every render carries it: under the **seed** rule a hand edit propagates
 into every later render, so the page's own defence against being edited is
 load-bearing rather than decorative.
 
-The page title is `Roadmap — {{COURSE_NAME}}`. The lede says what the page is: a
-map of the journey, not a report card — nothing here measures the learner.
+The page title is `Roadmap — {course name}`. The lede says what the page is: a
+map of the journey, not a report card — nothing here measures the learner. It
+also says plainly what finishing means: delivery, not certification — the build
+after arrival is where capability shows itself.
 
 ## Never an inventory
 
@@ -31,9 +33,8 @@ judgment wearing a plan's clothes.
 
 ## What it holds
 
-Where the course is going, and the build that proves it · where it is now and
-why this unit · what the earlier units made possible · what's next · the fog ·
-the build, its version-one scope and its milestones · the shape it holds itself
+Where the course is going · where it is now and why this unit · what the
+earlier units made possible · what's next · the fog · the shape it holds itself
 to. Each follows `roadmap.md`; a section with nothing behind it is left out
 rather than left empty.
 
@@ -47,7 +48,6 @@ page at the stamp, never hand-moved.
 ## Arrival
 
 The final stamp renders the page journey-complete: the destination in the past
-tense with the thing that proves it, the whole accumulated why, the decisions
-that got there, and the build as it shipped. The `now` tag goes too — no unit is
-current in an arrived course. Still journey, never judgment — see
-[ARRIVAL.md](ARRIVAL.md).
+tense with the capabilities that prove it, the whole accumulated why, and the
+decisions that got there. The `now` tag goes too — no unit is current in an
+arrived course. Still journey, never judgment — see [ARRIVAL.md](ARRIVAL.md).

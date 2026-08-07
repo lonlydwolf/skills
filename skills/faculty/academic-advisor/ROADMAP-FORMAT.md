@@ -15,7 +15,7 @@ Current unit: units/{NN}-{slug} — {status}
 
 ## Notes
 
-{Session cadence, deadline, standing constraints. Manual work blocking the plan, since planning has no task ticket. If the course has a build: its location (referenced, never contained), what version one is and what it refuses, and its milestone plan — numbered `Milestone NN: {title}` lines the mentor reviews against.}
+{Session cadence, deadline, standing constraints. Manual work blocking the plan, since planning has no task ticket.}
 
 ## Frontier
 

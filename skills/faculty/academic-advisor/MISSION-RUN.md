@@ -6,14 +6,13 @@ The advisor's first invocation, once per course — and the one exemption from t
 
 The interview **is** a `/grilling` session — invoke that skill and let it drive the question-at-a-time interview. If `/grilling` is not among your available skills, stop and say "re-run `/setup-faculty-skills`" — the run starts when the skill is present.
 
-## The four subjects
+## The three subjects
 
 Grill them in order:
 
-1. **The destination — as capability, not topics.** A topic-list destination smuggles in a day-zero syllabus; push back on vagueness until the destination is a capability sentence (form and example in [ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)).
-2. **Stakes and shape.** Why now, any deadline, a sustainable session cadence.
-3. **Learner-now.** Deep level-grilling, once, into `learner.md`: background, goals, standing preferences — this informs unit picks and profile stamps for the whole course. Self-report plus shown evidence — a `learner.md` carried forward from an earlier course, existing work — is the whole measure — **never a placement test**: nothing may exist for the learner to feel judged by. Miscalibration is cheap; the first checkpoint corrects it.
-4. **The external build.** If the course has a course-long build, record its location in `roadmap.md` Notes and cut its milestone plan there — numbered milestones, each sequenced after the units that teach what it needs. The mentor reviews against this plan and never resizes it.
+1. **The destination — as capability, not topics.** A topic-list destination smuggles in a day-zero syllabus; push back on vagueness until the destination is a capability sentence (form and example in [ROADMAP-FORMAT.md](ROADMAP-FORMAT.md)). A course-long build lives here as capability language — "well enough to build X" — and nowhere else: the build does not exist at mission time, so there is no location to record and no plan to cut. What the journey owes the build is settled at arrival, in the handover.
+2. **Stakes and shape.** Why now, any deadline, a sustainable session cadence. Close with one planning exchange — when, where, and how the sessions will happen — inside the grilling: a single exchange, never a programme of goals and reviews.
+3. **Learner-now.** Deep level-grilling, once, into `learner.md`: self-report seeds `## Background`; a stated preference may additionally land under What works / What doesn't, provenance-marked — "claimed, mission run" — never written as observation; observations are the teachers', earned at session exits. Self-report plus shown evidence — a `learner.md` carried forward from an earlier course, existing work — is the whole measure — **never a placement test**: nothing may exist for the learner to feel judged by. Miscalibration is cheap; the first checkpoint corrects it.
 
 ## Settled or ticketed
 
@@ -21,4 +20,4 @@ Every subject — and every territory question that surfaces under one — leave
 
 ## End condition — the course is teachable
 
-Every one of the four subjects settled or ticketed, `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set, `roadmap.html` rendered and the hub named (the scaffolded `index.html` already links the roadmap — the link must not be born dead — and its `<h1>`/`<title>` still read "Course" until this run sets them), and the pass logged. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet; open non-blocking tickets never withhold the stamp.
+Every one of the three subjects settled or ticketed, `roadmap.md` written, the mission ticket answered, unit 1's `unit.md` stamped, the header set, `roadmap.html` rendered and the hub named (the scaffolded `index.html` already links the roadmap — the link must not be born dead — and its `<h1>`/`<title>` still read "Course" until this run sets them), and the pass logged. Stamp unit 1 with modest outcomes and a loose budget — there are no cold records to mine yet; open non-blocking tickets never withhold the stamp.

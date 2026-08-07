@@ -5,9 +5,11 @@
 ## Template
 
 ```md
-## {YYYY-MM-DD} — {mission | checkpoint: units/NN-<slug> landed | suspension: units/NN-<slug> | goal-shift | arrival}
+## {YYYY-MM-DD} — {mission | checkpoint: units/NN-<slug> landed | checkpoint: nothing landed | suspension: units/NN-<slug> | goal-shift | arrival}
 
-Evidence: {what this pass read — audit report, records §3–4 of the landed unit, transcript tail}
+Evidence: {what this pass read — audit report, records §3–4 of the landed unit, fresh office-hours notes, transcript tail}
+
+Landing check: {each cure accepted last pass, confirmed in its permanent product — the pool line, the Remediation append, the page | none accepted last pass}
 
 Audit recommendations:
 - {recommendation} — accepted: {what changes} | rejected: {why}
@@ -23,7 +25,8 @@ Accepted risk: {finding declined, why; the transcript line stays withheld}
 
 - **Append-only.** Entries are never edited or deleted — a corrected decision is a new entry that says so. The journal's value is that it can't be rewritten.
 - **One entry per pass, every pass.** A pass that changed nothing still logs — "no delta; frontier re-tested, holds" is evidence the test ran.
-- **Entry types map to triggers.** A pass triggered by a suspension logs as `suspension:` even though it runs as a checkpoint; `checkpoint:` is reserved for a landed, audited unit.
+- **Entry types map to triggers.** A pass triggered by a suspension logs as `suspension:` even though it runs as a checkpoint; `checkpoint: units/NN-<slug> landed` is reserved for a landed, audited unit; a quiet-course pass — nothing landed, the silence rule's territory — logs `checkpoint: nothing landed`.
+- **The landing check is against products, never the log.** The previous entry says what was accepted; whether it landed is read in the products the template line names. A log confirming itself is the one thing this line must never become.
 - **Every audit recommendation gets a verdict with a reason.** Accepted or rejected, never silently dropped — this is where "recommendations flow to the advisor" becomes checkable.
 - **Every demotion or strike says why.** "No longer closes a gap: {the evidence}" — nothing leaves the plan on inertia, and nothing leaves it unexplained.
 - **Accept-the-risk lives here, permanently.** Ordering the once-declined remediation later is a new entry, not an edit.
