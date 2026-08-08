@@ -14,6 +14,8 @@ Run from the course root, fresh context. Every session has the same shape:
 
 **orient → frontier scan → claim → teach → exit checklist.**
 
+Every lesson or remediation session contains at least one **learner exchange** — the learner delivering something in-chat, this session: returned probe answers, a warmup answered, a calibration answer, a produced attempt. It is as never-skippable as the calibration probe: without one the claimed ticket cannot resolve, and evidence about the learner counts only when the learner delivers it in-chat — material found on disk is a read, not an exchange. The homework feedback pass is the one exempt cycle (the learner already spoke through the submission); an honest suspension exits with `n/a — suspended before exchange`.
+
 ## Orientation — hard budget ≤ 15K tokens
 
 Find the unit from the fixed header line of `roadmap.md` — `Current unit: units/NN-<slug> — <status>` — the *only* part of `roadmap.md` you read. Dispatch on the status (the line shape and its closed vocabulary are [ROADMAP-FORMAT.md](../academic-advisor/ROADMAP-FORMAT.md)'s):
@@ -27,7 +29,7 @@ Then the fixed read set, in order: `unit.md` (read per the advisor's [UNIT-FORMA
 
 If `HANDOFF.md` carries a suspension block naming the current unit, stop — the advisor hasn't re-planned yet; tell the user to run `/academic-advisor`. If it carries a completion block naming the current unit instead, stop the same way — the unit awaits `/audit`, then `/academic-advisor`; there is nothing here to teach.
 
-**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 7), other units' folders, any `.audit/`, `playground/` uninvited, this unit's past session records (`HANDOFF.md` carries what you inherit), prior units' lessons.
+**Forbidden orientation reads**: the `transcript.md` body (you only append; its header grammar serves exit step 8), other units' folders, any `.audit/`, `playground/` uninvited, this unit's past session records (`HANDOFF.md` carries what you inherit), prior units' lessons.
 
 **Zoom-on-demand once teaching is underway** — paid by this lesson's need, never standing mandate: the immediately previous lesson; this unit's fresh `.records/`; the sources `unit.md` names for the lesson at hand; its contract, where the session writes the recall page or a deck ([RECALL-PAGE.md](RECALL-PAGE.md), [DECK-PAGE.md](DECK-PAGE.md)); and, before writing any page at all, the course's own assets — see *Teaching the lesson* below. A session that writes no page reads none of the assets.
 
@@ -46,7 +48,7 @@ Lesson and homework cycles live as tickets in the unit's `.tickets/` ([LESSON-TI
 The method core, every subject, every session, is the **Two-Dial doctrine**. Learning runs on two strengths — **storage strength** (how well something is anchored) and **retrieval strength** (how accessible it is right now) — and the conditions that make performance feel fluent in the session often build the least storage. Hence two dials, with the boundary between them: **reduce extraneous difficulty always; add desirable difficulty in proportion to what this learner can already succeed at** — a difficulty the learner lacks the background to overcome is an undesirable one.
 
 - **Dial 1 — extraneous difficulty, always down.** The named instances: **hedges** — which are also your uncertainty signal: verify (the prep subagent exists) and write plainly, or teach the point as an explicitly open question — never just prune the hedge; **asides** — a cost against comprehension, affordable on a short page for a fluent learner, first cut on a dense one; **written mazes** — the re-started explanation, the "in other words" chain: one clean pass, not two muddled ones.
-- **Dial 2 — desirable difficulty, in proportion.** **End every lesson with retrieval, production-first** — the **end-of-lesson probe** — key on subject and prior knowledge, never a claimed learning style. That closing probe is for setting the fade dial, observing, and giving material the first successful retrieval that makes it pool-eligible — long-term retention is the warmup's job, not this instrument's. Spacing reaches backward — warmup material comes from the `unit.md` retrieval pool. Worked examples fade toward independent performance. Self-explanation prompts ("explain why this step is here") ride beside production. **Interleave when the learner's job is telling confusable things apart, and only after each type has had its blocked practice; block otherwise.**
+- **Dial 2 — desirable difficulty, in proportion.** **End every lesson with retrieval, production-first** — the **end-of-lesson probe** — key on subject and prior knowledge, never a claimed learning style. That closing probe is for setting the fade dial, observing, and giving material the first successful retrieval that makes it pool-eligible — long-term retention is the warmup's job, not this instrument's. A closed-book probe worked between sessions earns its observations at the next session's opener, when the learner returns the answers in-chat — the return is that session's learner exchange, and the answers arrive by no other route. Spacing reaches backward — warmup material comes from the `unit.md` retrieval pool. Worked examples fade toward independent performance. Self-explanation prompts ("explain why this step is here") ride beside production. **Interleave when the learner's job is telling confusable things apart, and only after each type has had its blocked practice; block otherwise.**
 
 **Every lesson page opens by stating what it makes the learner able to do**, tied to the `unit.md` outcome it serves, and closes by reviewing against that statement — the end-of-lesson probe frames the review.
 
@@ -54,7 +56,7 @@ What an exercise ships with it: **feedback lives in the artifact** — answer ke
 
 **Profile dispatch is contractual**: `unit.md` always carries a `Profile:` stamp — read `profiles/<name>.md` from this skill's directory before drafting any exercise. One primary profile shapes every lesson; at most one `Minor:` line, pre-arbitrated by the advisor. The profiles never restate the core.
 
-**Your one dial is fade position** — where on the worked-example ↔ independent-performance line to start and how fast to move, driven live by retrieval evidence. Start where `unit.md` **Calibration** says, confirmed by the probe: first session of a unit, a 2–3 question **calibration probe** on *this* topic sets the dial — teaching-time observation, never scored, into the record's Observed section, and **never skippable to save budget: judging is free and wrong.** Your own difficulty estimate is the untrustworthy input here — expertise biases it directionally: formal-looking material reads as easy, verbal-looking as hard, and expert difficulty rankings track actual difficulty at τ = 0 — so prefer measured evidence (probe, records, Calibration) wherever it exists. Counterfeit: "the learner is rebuilding, so this will be easy" — the global prior overriding the per-unit measurement. Later sessions inherit the fade position from records; re-probe only on a `HANDOFF.md` wobble flag. Everything else — profile, ladder, item shapes, minor — is fixed by the stamp.
+**Your one dial is fade position** — where on the worked-example ↔ independent-performance line to start and how fast to move, driven live by retrieval evidence. Start where `unit.md` **Calibration** says, confirmed by the probe: first session of a unit, a 2–3 question **calibration probe** on *this* topic sets the dial — teaching-time observation, never scored, into the record's Observed section, and **never skippable to save budget: judging is free and wrong.** Your own difficulty estimate is the untrustworthy input here — expertise biases it directionally: formal-looking material reads as easy, verbal-looking as hard, and expert difficulty rankings track actual difficulty at τ = 0 — so prefer measured evidence (probe, records, Calibration) wherever it exists. Counterfeit: "the learner is rebuilding, so this will be easy" — the global prior overriding the per-unit measurement. Later sessions inherit the fade position from records; re-probe only on a `HANDOFF.md` wobble flag — inheritance covers the dial, never the exchange duty, and a re-probe is itself a learner exchange: the learner answering in-chat this session. Counterfeit: staging the wobble on the page as material and calling the flag discharged. Everything else — profile, ladder, item shapes, minor — is fixed by the stamp.
 
 **Warmups** — a short retrieval opener inside a lesson — fire whenever the unit's retrieval pool has **live** items; empty pool → open cold. This is where long-term retention is built: the delay before an item's next retrieval is the active ingredient. The signals are the *selector*, deciding which pool items go first: shaky retrieval last session; a gap taught inline; the learner asking; a `HANDOFF.md` wobble flag; a fresh office-hours note in this unit's `.records/office-hours.md` — read its ground line: `covered` plus an Nth ask selects the pool item its topic slot names; `not covered` plus a first ask selects nothing, that is fog, not forgetting. No signal → the pool's own order, oldest-weakest first. Warmups are teaching, never an exit duty.
 
@@ -70,7 +72,7 @@ An exercise carries a tag saying what the learner does: **Write**, **Trace**, **
 
 A block of code says what it is: the language, or that it is a terminal transcript. Unlabelled, the learner cannot tell whether to type it in or go find it in the project.
 
-Style is never re-litigated — exit step 3 files a correction, once.
+Style is never re-litigated — exit step 4 files a correction, once.
 
 **Bespoke script** — a lesson page may carry script of its own, inline, or in `units/NN-<slug>/.assets/unit.js` where a second lesson needs the same mechanism, on one bar: the **subject matter** is something the learner manipulates to see a behaviour. Never presentation; presentation is the course's `course.js`, which this role does not write. No persistence, no network, and never on `lessons/recall.html`. Declared in the session record with its reason ([RECORD-FORMAT.md](RECORD-FORMAT.md)) — undeclared script is a finding waiting for `/audit`.
 
@@ -104,18 +106,19 @@ One cumulative page per unit — `lessons/recall.html` ([RECALL-PAGE.md](RECALL-
 
 The final act of every session — including suspended ones — is emitting this checklist, each item marked `✓ + artifact path` or `n/a + reason`. Never silently skipped: no emitted checklist → the session is interrupted, not finished. Fixed order, dependencies last:
 
-1. Resolve (or mark blocked) the claimed ticket — what landed, what wobbled
-2. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
-3. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold next time, add it to `look.md`, filed per the rule in that file's own header. Four rules bind the `learner.md` half:
+1. Learner exchange this session — ✓ + what the learner delivered in-chat, or `n/a` + the closed vocabulary: `homework-feedback pass` | `suspended before exchange`. A probe staged on the page is not an exchange, and a previous lesson's returned answers belong to the session that received them in-chat, never this one
+2. Resolve (or mark blocked) the claimed ticket — what landed, what wobbled
+3. Write the session record → `.records/` ([RECORD-FORMAT.md](RECORD-FORMAT.md))
+4. Triage insights: durable → `learner.md` (compress to stay under its cap); topic-bound → `.records/`; presentation → `look.md` — if the user corrected how something looks and the correction would hold next time, add it to `look.md`, filed per the rule in that file's own header. Four rules bind the `learner.md` half:
    - **Every entry carries its provenance**, whatever its heading: observed entries name the moment and session ("re-derived the closure environment unprompted — u03 s02"), Background entries their source ("self-report, mission run"). Staleness becomes visible, not policed
    - **What works / What doesn't / Watch for hold observations only — or a mission-run claim still carrying its `claimed` provenance.** Counterfeit: a preference the learner stated once, written as if observed
    - **Pace is never inferred from background or prior knowledge** — only from observed cross-session evidence
    - **Domain-level knowledge claims live in `unit.md` Calibration**, which the advisor rewrites fresh each unit; `learner.md` keeps the durable history fact, not the current-knowledge claim
-4. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
-5. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
-6. Open every page this session wrote or touched, `index.html` included: each link on it resolves, and each meets the accessibility floor named in the course's `AGENTS.md` Conventions. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
-7. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
-8. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
+5. Recall page: refresh `lessons/recall.html` — completion session only; every other session marks `n/a — not final session`
+6. Update `index.html` — link the session's new learner-facing artifacts (lesson page, recall refresh, deck), and move the `now` tag when the current unit changed. It is the course's only navigation surface: unlinked is unreachable. Never a count, a bar, or a completion tick
+7. Open every page this session wrote or touched, `index.html` included: each link on it resolves, and each meets the accessibility floor named in the course's `AGENTS.md` Conventions. A page whose stylesheet or script link is wrong renders anyway, so nothing else will catch it. A session that wrote no page marks `n/a — no page written`
+8. Append one session line to `transcript.md`, shaped per the grammar in its header comment — your only transcript access
+9. **Rewrite `HANDOFF.md` last** ([HANDOFF-FORMAT.md](HANDOFF-FORMAT.md))
 
 ## Unit complete — a checkable state, not a judgment
 
@@ -132,4 +135,4 @@ Declared at exit when: frontier empty ∧ no fog left in the unit plan ∧ every
 - **Never reads** — same convention:
   - `.audit/`. Counterfeit: "checking the Remediation quote is complete"
   - the transcript body. Counterfeit: "a few recent lines for cadence"
-  - `playground/` uninvited. Counterfeit: there is no light touch — capture is surveillance
+  - `playground/` uninvited. An **invitation is the learner's own in-chat ask, this session, about specific material** — work being owed there is never one, and a path-set search whose sweep crosses this row (or any never-read row) is a read. An invited look is declared in the session record, quoting the ask ([RECORD-FORMAT.md](RECORD-FORMAT.md)). Counterfeits: there is no light touch — capture is surveillance; "answers were due and I knew where they'd be" — owed is not invited

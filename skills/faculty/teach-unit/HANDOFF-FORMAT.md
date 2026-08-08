@@ -33,5 +33,5 @@ Unit: units/NN-<slug>
 ## Rules
 
 - **Rewritten, never appended.** Each session's rewrite is total; the cap forces curation. Over-cap is a checklist violation by the writer.
-- **Soft context only.** Anything durable belongs in `learner.md` (triage, exit step 3); anything topic-bound in `.records/`; anything plan-shaped in the frontier. HANDOFF holds what none of those can: how it *felt*.
+- **Soft context only.** Anything durable belongs in `learner.md` (triage, exit step 4); anything topic-bound in `.records/`; anything plan-shaped in the frontier. HANDOFF holds what none of those can: how it *felt*.
 - **The suspension and completion blocks are load-bearing** — the advisor relies on HANDOFF being in every teacher's fixed reads to stop claims into a parked or finished unit. Never omit the right block on a suspended or completing exit; never leave one standing after the advisor re-plans (removal of both is the advisor's, at the stamp).
