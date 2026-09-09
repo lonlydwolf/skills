@@ -67,7 +67,7 @@ Planning drafts may be refined. Once activated, the published contract is immuta
 
 Lifecycle status belongs in `roadmap.md`. Progress and verdicts remain in evaluation and review records.
 
-A replacement contract includes a pointer to the old unit's immutable `supersession.md`, which records the defect, replacement path, and criterion-by-criterion prior-evidence disposition. Preserve the original contract and evidence.
+A replacement contract includes a pointer to the old unit's immutable `supersession.md`. When recording a unit replacement, use [SUPERSESSION-FORMAT.md](./SUPERSESSION-FORMAT.md) for the immutable supersession record and prior-evidence disposition. Preserve the original contract and evidence.
 
 ## Completion check
 
