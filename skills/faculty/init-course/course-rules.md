@@ -45,6 +45,16 @@ in the ledger; the specific misconception and teaching method belong in
 role-owned records. Keep learner observations, feedback, instructional
 methods, curriculum content, and exact evidence-file paths in those records.
 
-Before saving, check Last Transition, Operational Blocker, and Required
-Action. Retain only information needed to identify the workflow state,
-any impediment to valid progression, and the next action.
+## Publish and verify course state
+
+1. **Prepare the routing state.** Check Last Transition, Operational Blocker,
+   and Required Action against the workflow-only boundary above. A contract
+   blocker identifies the affected unit or gate and the kind of impediment;
+   its criteria and detailed contradiction remain in the source artifacts.
+2. **Save with a fresh timestamp.** Immediately before every ledger write,
+   obtain the current UTC time with a tool. Set Last Active to that observed
+   time in `YYYY-MM-DD HH:MM` format. This field uses UTC throughout the course.
+3. **Verify the saved ledger.** Read back the final saved `AGENTS.md`. Confirm
+   the rules pointer, state and route are valid, Last Active matches the clock
+   observation, and the three workflow fields satisfy step 1. Correct any
+   mismatch and repeat the save and verification before announcing the handoff.
