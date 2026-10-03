@@ -6,7 +6,7 @@ You can help by reporting a problem, suggesting an improvement, correcting docum
 
 Open an [issue](https://github.com/lonlydwolf/skills/issues) with:
 
-- The skill and release version involved.
+- The skill involved and when you last installed or updated it (include a source revision if known).
 - Your app, app version and task environment.
 - What you expected and what happened.
 - Steps to reproduce the problem, with a small example when possible.
@@ -32,4 +32,4 @@ Keep commits focused on one logical change. Follow the existing title convention
 
 Write documentation for readers discovering the repository for the first time. Explain necessary product concepts and use direct links to the relevant files. Use commas, colons, parentheses or separate sentences instead of em dashes.
 
-Release packaging and publication are handled by maintainers. A pull request should explain any version, package or course-migration implications so the release can include them.
+Maintainers publish accepted source updates. Explain how your change affects installation or existing courses, and include migration instructions when needed.

@@ -49,13 +49,13 @@ Librarian appends research entries, preserves earlier sources, distinguishes att
 
 Roommate uses the context supplied by the learner inside or outside a course. It follows curiosity, tangents, pauses and endings, checks an analogy's structure and limits before inference, and leaves formal course state unchanged.
 
-## Distribution and release boundaries
+## Installation and portability
 
-Maintain source files under `skills/faculty/`. Both desktop plugins contain initialization and all six roles, generated from the same maintained files and using one version. The desktop targets are ChatGPT Work and Claude Cowork or equivalent local-task controls.
+The seven maintained skill directories under `skills/faculty/` are the distributed source. Users install them from the published repository with `npx skills@latest add lonlydwolf/skills` and choose a supported tool. The [catalog](../../../.claude-plugin/marketplace.json) names the Faculty group and points to each skill directory.
 
-Beta downloads use GitHub Releases. ChatGPT uses a supplied local catalog, and Claude uses a custom plugin upload. The repository also provides a skills-installer route. The official ChatGPT directory listing is reserved for final release after real-use feedback.
+Initialization requires all seven skills to be available together. Installing files and executing the course workflow are separate concerns. The chosen tool must support explicit skill selection, course-folder file access, fresh sessions, research commissioned through Librarian and appropriate inspection of saved materials. See [Installation](INSTALL.md) for setup and [checks and known limitations](CHECKS.md) for the scope of existing evidence.
 
-Versions progress from `0.1.0-beta.1` through numbered betas to `0.1.0`. Beta status does not establish compatibility with every host or account, or measured learner outcomes. See [checks and known limitations](CHECKS.md).
+Faculty is in beta. Feedback informs changes to the maintained source and documentation. Updating installed skills does not silently migrate existing course rules or activated unit contracts.
 
 Where available, users can disable both persistent-memory use and contribution for Faculty work. Course files provide durable context. The skills do not change account settings automatically, and memory-off results do not establish universal isolation.
 

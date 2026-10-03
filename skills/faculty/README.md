@@ -4,7 +4,7 @@ This folder contains seven skills and their shared documentation. Each skill own
 
 ## Start a course
 
-1. [Install Faculty](docs/INSTALL.md) in your preferred tool, then open an empty course folder as your workspace.
+1. [Install all seven Faculty skills](docs/INSTALL.md) in your preferred tool, then open an empty course folder as your workspace.
 2. Select `init-course` to set up that folder.
 3. In a fresh session, select `academic-advisor` and describe your learning goal, starting point and available time.
 4. Follow the saved next action. Start a fresh session with the selected role at each handoff.
@@ -36,6 +36,5 @@ See [Usage](docs/USAGE.md) for examples of lessons, handoffs, submissions and re
 - **Proposing a fix:** [Maintenance](docs/MAINTENANCE.md) and [Contributing](../../CONTRIBUTING.md).
 - **Coverage and limitations:** [Checks](docs/CHECKS.md).
 - **Ideas behind the design:** [Education sources](docs/sources/README.md).
-- **Preparing a release:** [Releasing](docs/RELEASING.md).
 
 The role directories contain the maintained skill instructions and artifact formats. Keep changes there aligned with the design and relevant documentation; the maintenance guide explains ownership and course-record compatibility.

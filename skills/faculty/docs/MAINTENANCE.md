@@ -6,7 +6,7 @@ For issue and pull-request guidance, see [Contributing](../../../CONTRIBUTING.md
 
 ## Understand the problem
 
-Begin with the behavior someone expected, what actually happened and the smallest example that demonstrates the difference. Identify the affected role, release version, app and course state. A role problem, missing host capability and broken installation can produce similar symptoms but require different fixes.
+Begin with the behavior someone expected, what actually happened and the smallest example that demonstrates the difference. Identify the affected role, installed source or last update, tool and course state. A role problem, missing host capability and broken installation can produce similar symptoms but require different fixes.
 
 Use the current source and saved artifacts to establish what happened. Keep observed behavior separate from assumptions. If an example is incomplete, explain what information is needed to distinguish the possible causes. Request only relevant excerpts, with personal or work information removed.
 
@@ -14,7 +14,7 @@ Describe a proposed change in terms of its trigger and result. For example: “A
 
 ## Find the maintained files
 
-The seven skill directories under `skills/faculty/` are the maintained source. Make changes there. When preparing a release, rebuild desktop packages from the final source. A change to an installed cache or extracted download does not update the repository.
+The seven skill directories under `skills/faculty/` are the maintained source. Make changes there. Users install the published source through the skills CLI. A change to an installed copy or cache does not update the repository.
 
 | Concern | Relevant files |
 |---|---|
@@ -25,7 +25,7 @@ The seven skill directories under `skills/faculty/` are the maintained source. M
 | Source research and downloads | [Librarian](../librarian/SKILL.md) and SOURCE-FORMAT.md. |
 | Exploration and analogies | [Roommate](../roommate/SKILL.md). |
 | Initialization and shared course routing | [Initialization](../init-course/SKILL.md) and [course-rules.md](../init-course/course-rules.md). |
-| Package layout and version | Release configuration and templates under `packaging/faculty/`, with the builder under `scripts/`. |
+| Discovery and collection grouping | [marketplace.json](../../../.claude-plugin/marketplace.json) and its [catalog guide](../../../.claude-plugin/README.md). |
 | Installation and learner guidance | Faculty README and installation/usage documentation. |
 
 A format document defines what makes a saved artifact valid. It owns required fields, file naming, numbering, criteria references, coverage, verdict mechanics, routes and completion checks. Skill instructions define how to carry out the work: eligibility, evidence discovery, execution, recovery and handoff. Shared course rules own routing state.
@@ -55,7 +55,7 @@ Host metadata alone does not establish actual invocation behavior. An installati
 
 A skill description supports discovery; the body supports execution. Learner-invoked descriptions should be concise summaries. Librarian's description identifies its research purpose. Supporting material can remain ordinary documentation unless it needs independent invocation.
 
-Keep the Faculty category overview in README.md. Adding a parent SKILL.md can cause an installer to discover that parent instead of the nested roles.
+Keep the Faculty category overview in README.md. Adding a parent SKILL.md can cause an installer to discover that parent instead of the nested roles. Keep the catalog entry aligned with the seven role directories; its `name` supplies the installer group, and its paths point to the maintained source.
 
 ## Protect course records
 
@@ -87,14 +87,14 @@ For example, reproducing a button's event-handling defect can support an Editor 
 
 A pull request should state what was checked and what was not. Contributors can report useful issues without running a validation suite or changing the source.
 
-## Maintain documentation and releases
+## Maintain documentation and source updates
 
 Keep behavior, format documents and explanations aligned. If a change affects course routing, explain it in the design and usage documentation. If it changes a required host capability, update installation guidance and the limitations summary. Preserve source attribution and qualifications when shortening education notes.
 
-Both desktop packages use one version and the same seven canonical skills. Keep app-specific manifests and catalogs in packaging, with role behavior in the maintained skill files. A release groups the accepted changes; rebuild once from the intended final source before publishing it.
+Publish reviewed changes to the repository source used by the installation command. Keep the collection README, installation guide and catalog paths current. Each installed skill carries its format documents and other files from its skill directory; the shared explanatory documentation is available in this repository.
 
-Update the shared version, release notes and applicable learner-facing references together. Review the generated archive contents and entry instructions. Successful packaging is evidence of artifact generation, not a desktop installation result. See [the release guide](RELEASING.md) for publication steps.
+When adding another collection, give its skills unique names, add its catalog entry and link its README from the root overview. For Faculty, keep initialization and all six roles available together. A catalog entry groups skills; users still select the individual skills to install.
 
-Use matching numbered beta versions for both packages, followed by `0.1.0` for final release. The official ChatGPT directory listing is reserved for final release after real-use feedback. Source and download references must resolve to the published version before they are announced.
+[Installation](INSTALL.md#update-faculty) explains how users update their installed skills. Describe the behavior changed by an update and any effect on existing courses in the pull request. Source publication makes changes available; users choose when to update.
 
-Plugin updates and course migrations are separate changes. Existing courses hold copied rules and immutable contracts. Explain whether a fix affects those existing courses and provide explicit migration instructions when needed. Installing a newer plugin must not silently change what an earlier learner was required to demonstrate.
+Skill updates and course migrations are separate changes. Existing courses hold copied rules and immutable contracts. Explain whether a fix affects those courses and provide explicit migration instructions when needed. Installing newer skill instructions must not silently change what an earlier learner was required to demonstrate.
