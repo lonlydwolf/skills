@@ -1,0 +1,29 @@
+{
+  "name": "lonlydwolf-skills",
+  "description": "Skills I use in my own work, shared for others to use and improve.",
+  "owner": {
+    "name": "lonlydwolf",
+    "url": "https://github.com/lonlydwolf"
+  },
+  "plugins": [
+    {
+      "name": "faculty",
+      "description": "Course planning, teaching, evaluation, build review, research and exploration.",
+      "source": "./skills/faculty",
+      "category": "education",
+      "tags": [
+        "education",
+        "learning"
+      ],
+      "skills": [
+        "./init-course",
+        "./academic-advisor",
+        "./teacher",
+        "./tutor",
+        "./editor",
+        "./librarian",
+        "./roommate"
+      ]
+    }
+  ]
+}
