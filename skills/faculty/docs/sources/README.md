@@ -1,10 +1,22 @@
-# Education source library
+# Education sources
 
-These 15 shortened syntheses preserve Faculty's education-source lineage. Eleven supporting notes retain repository snapshots, attribution corrections, bibliographies and material evidence boundaries. They explain design inputs; the [confirmed design](../DESIGN.md) governs adopted Faculty behavior.
+This folder contains 15 source syntheses and 11 supporting notes explaining the ideas behind Faculty.
 
-The notes summarize the completed 2026-09-01 ingestion. Recorded publication dates and durations are source metadata, not a fresh check of availability. Source contributions, Faculty applications and evidence boundaries are separated so a creator's claim does not become a product guarantee. Linked research qualifies selected claims; it does not validate Faculty as a whole.
+## Read a source
 
-Raw captions, development traces and test files remain in the development workspace and are not shipped. The syntheses and maintenance instructions stand on their own. Source 3's historical writing framework was superseded during development; see the shipped [authoring guidance](../MAINTENANCE.md).
+Use the index below to find a topic. Each synthesis includes source metadata, its main ideas, possible Faculty applications and limitations. Files are named after the source's YouTube video ID.
+
+The `companions/` folder holds supporting material such as repository references, bibliographies, attribution corrections and qualifications of a source's claims.
+
+When investigating a design choice, read the relevant synthesis and supporting note, then compare them with [Faculty design](../DESIGN.md). The design describes Faculty's behavior; the source notes explain its influences. A source's claim is not a guarantee about Faculty's results.
+
+## Update a note
+
+Preserve the original attribution and distinguish the source's ideas from your interpretation. Update relevant metadata and links together. Keep qualifications beside the claim they limit, and update this index when adding a source or supporting note.
+
+For changes to skill instructions, use [Maintenance](../MAINTENANCE.md).
+
+## Source index
 
 | # | Source | Creator | Supporting note |
 |---|---|---|---|
