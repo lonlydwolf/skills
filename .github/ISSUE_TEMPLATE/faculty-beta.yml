@@ -1,0 +1,44 @@
+name: Faculty beta feedback
+description: Report a setup or course-workflow problem, or suggest an improvement.
+title: '[Faculty] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share the smallest useful example. Remove personal and work information from excerpts or screenshots.
+        For an improvement, describe a concrete situation and the behavior you would like.
+  - type: input
+    id: skill
+    attributes:
+      label: Affected skill or documentation
+      placeholder: teacher, init-course, installation guide, or the course workflow
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Tool, version and workspace setup
+      description: For a behavior problem, identify your tool and the course-folder setup. For a documentation suggestion, leave this blank if it does not apply.
+  - type: input
+    id: installation
+    attributes:
+      label: Last installation or update
+      description: Include the date and Project or Global scope if known. A source revision is optional.
+      placeholder: Installed October 3 with npx skills@latest add lonlydwolf/skills, Global scope
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected behavior and what happened
+      description: Explain the difference. For an improvement, describe the current behavior and the change you want.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Steps or a small example
+      description: Include the selected role, current required action and visible error when relevant. Add only the file excerpts or screenshots needed to explain the problem.
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Relevant tool, access or memory limitations
+      description: Include unavailable capabilities or memory-use and contribution settings only when they help explain the behavior.
