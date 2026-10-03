@@ -13,11 +13,11 @@ The talk treats a skill as instructions encountered at different times: discover
 - Give each skill a specific job and an observable stopping point.
 - Keep descriptions useful for routing and body instructions useful for execution.
 - Put detailed artifact contracts beside their owning role and link them where needed.
-- Provide context that an agent cannot infer from a filename alone.
+- Provide context that a filename alone cannot convey.
 - Split work only at a genuine responsibility or context boundary.
 
 ## Evidence boundaries
 
-The older writing-great-skills framework is historical lineage. The installed writing-for-agents skill superseded it during Faculty development. The shipped maintenance guide preserves the operative writing rules without requiring that installation. This is practitioner guidance, not controlled proof that wording causes reliable reasoning or that visible reasoning reveals internal cognition.
+The [supporting note](companions/UNzCG3lw6O0-writing-for-agents.md) connects the talk to practical skill-writing principles. This is practitioner guidance, not controlled proof that wording causes reliable reasoning or that visible reasoning reveals internal cognition.
 
 [Supporting note](companions/UNzCG3lw6O0-writing-for-agents.md)

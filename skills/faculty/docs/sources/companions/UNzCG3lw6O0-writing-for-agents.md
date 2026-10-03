@@ -1,11 +1,11 @@
-# Writing-authority lineage
+# Skill-writing principles
 
 [Video synthesis](../UNzCG3lw6O0.md)
 
-The talk's writing-great-skills framework was superseded during development by the installed writing-for-agents skill. Preserve this lineage without treating an unavailable local skill as a runtime dependency.
+The talk distinguishes discovery metadata from execution instructions. A skill should have a specific job, sufficient context, meaningful responsibility boundaries and observable completion conditions.
 
-The operative method is documented in [Maintenance](../../MAINTENANCE.md): write the agent's job, the context it needs, meaningful responsibility boundaries, completion conditions and artifact pointers; use useful leading words; co-locate related constraints; keep descriptions accurate for routing; and remove repetition that does not change behavior.
+Useful principles include clear leading concepts, progressive disclosure, scoped links to detailed formats and keeping related rules together. A reference should explain when it is needed, rather than rely on a filename to attract attention.
 
-Progressive disclosure means the body links details when needed. It does not mean deleting a rule that protects a known failure boundary. Environment assertions must match available tools. Host metadata and body policy complement each other; one is not proof that the other is enforced.
+Progressive disclosure keeps the main process readable while retaining the details required for each branch. Pruning should remove repetition and stale explanation while preserving rules that address known failures. Instructions about available tools must match the actual environment.
 
-New maintainers should use these shipped principles directly. If they also have a newer writing authority installed, apply it within the confirmed Faculty design and preserve the failure-prevention rules described in the checks summary.
+The [maintenance guide](../../MAINTENANCE.md) applies these principles to Faculty contributions. Host metadata and skill instructions complement each other, but their presence alone does not establish that a host enforces the intended behavior.
