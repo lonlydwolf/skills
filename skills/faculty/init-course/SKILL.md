@@ -24,7 +24,7 @@ For each core role:
 
 - **Entrypoint:** Locate its installed `SKILL.md` in a skill location this host loads for this folder, using the host's documented or reported skill locations. Read it and confirm its `name` matches the role.
 - **Required resources:** Confirm every file its `SKILL.md` links inside its own skill directory is readable, such as its format documents.
-- **Selectable:** When the host provides an inventory of selectable skills (a skill picker, command list or skills listing), confirm the role appears there. Five roles are manual-only (`disable-model-invocation: true`, `allow_implicit_invocation: false`), so a host may omit them from the skills it offers for automatic use. Absence from that automatic list is expected and does not make a role missing. Librarian has no manual-only policy because Advisor and Teacher invoke it.
+- **Selectable:** When the host provides an inventory of selectable skills (a skill picker, command list or skills listing), confirm the role appears there. Five roles are manual-only (`disable-model-invocation: true`, `allow_implicit_invocation: false`), so a host may omit them from the skills it offers for automatic use. Absence from that automatic list is expected and does not make a role missing. Librarian has no manual-only policy because Advisor and Teacher invoke it, so check it against the skills this session could invoke itself rather than asking the learner.
 
 If the entrypoint and resources are readable but the host offers no inventory you can check, record selectability as unverified and ask the learner to confirm they can select each manual-only role in their tool.
 
