@@ -28,6 +28,6 @@ Curiosity deserves space without turning every tangent into curriculum or evalua
 
 ## Initialization and shared rules
 
-Initialization creates a consistent workspace only after checking that every required role is available. The shared ledger carries enough routing state for fresh sessions, while instructional evidence stays in owned records. Saved read-back and fresh UTC timestamps address observed publication failures; a single bundled rules file keeps the fix consistent across writers.
+Initialization creates a consistent workspace only after checking that every required role is available. Host-provided inventories and readable installed files are better evidence than catalog listings, and checking research and state-loading support at setup surfaces a host limitation before the learner depends on it. The shared ledger carries enough routing state for fresh sessions, while instructional evidence stays in owned records. Saved read-back and fresh UTC timestamps address observed publication failures; a single bundled rules file keeps the fix consistent across writers.
 
 The [source library](sources/README.md) records intellectual inputs and their limits. Useful Japanese practice terms, Socratic questioning, TILT, GRASPS and Oxford-inspired defense remain local teaching concepts, with domain-specific limits rather than universal effectiveness claims.
