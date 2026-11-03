@@ -16,7 +16,7 @@ They serve a dual purpose: they allow the Teacher to maintain continuous context
 **Lesson:** `[Course-root-relative path to notes.html]`
 **Session Type:** `[Lesson | Remediation | Follow-up]`
 **Lesson Complete:** `[Yes | No | N/A]`
-**Criteria Source:** `[This record | Course-root-relative path to the earlier learning record whose Lesson Outcomes govern this lesson | None]`
+**Criteria Source:** `[This record | Course-root-relative path to the earlier learning record whose Lesson Outcomes govern this lesson | Legacy: course-root-relative path to the lesson's earliest record | None]`
 **Remediation Source:** `[Course-root-relative path to originating Tutor evaluation or Editor review | None]`
 
 ---
@@ -83,7 +83,7 @@ Lesson Outcomes save the outcome, depth, and standards Teacher and the learner a
 
 ### Records without Lesson Outcomes
 
-Records written before this section existed remain unchanged. Clarify outcomes only when a lesson still needs them: before remediating a failed LESSON evaluation, or when closing a lesson whose LESSON check is still due. Reconstruct them from the earliest record's stated focus, the lesson as first taught, and, for a failed evaluation, that report's Criteria Coverage. Do not add distinctions introduced by later remediation. Confirm them with the learner, save them in the new record with `Criteria Source: This record`, and note in O that they were clarified from legacy records. Lessons already passed with no pending check need no clarification.
+Records written before this section existed remain unchanged. Clarify outcomes only when a lesson still needs them: before remediating a failed LESSON evaluation, or when closing a lesson whose LESSON check is still due. Reconstruct them from the earliest record's stated focus, the lesson as first taught, and, for a failed evaluation, that report's Criteria Coverage. Do not add distinctions introduced by later remediation. Confirm them with the learner, save them in the new record with `Criteria Source: This record`, and note in O that they were clarified from legacy records. Lessons already passed with no pending check need no clarification. A Follow-up about such a lesson uses `Criteria Source: Legacy: <path to the lesson's earliest record>` and adds no Lesson Outcomes. The `Legacy:` form is valid only for that case: a Follow-up record with `Lesson Complete: N/A` about a lesson whose LESSON check has passed. Any later Lesson or Remediation session for that lesson clarifies outcomes as described above.
 
 ## Numbering and Immutability
 
@@ -102,4 +102,4 @@ Write a learning record at the end of every active teaching session, including r
 ## Completion
 
 Before handoff, verify that all S.O.A.P. sections are populated, observations are distinguishable from interpretations, referenced local artifacts exist, pending work is explicit, and earlier records remain unchanged.
-Confirm that Session Type is set, Lesson Complete is `Yes` or `No` for Lesson and Remediation records and `N/A` for Follow-ups, Criteria Source resolves to a record containing Lesson Outcomes (or is `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
+Confirm that Session Type is set, Lesson Complete is `Yes` or `No` for Lesson and Remediation records and `N/A` for Follow-ups, Criteria Source resolves to a record containing Lesson Outcomes (except the `Legacy:` follow-up form above, or `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
