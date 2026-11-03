@@ -6,7 +6,7 @@ Save completed evaluations under the active unit's `evaluations/` directory usin
 
 Filename: `NNNN-<lesson|milestone|unit>-<target-id>.md`. Increment the four-digit sequence across the entire directory.
 
-Completed reports are immutable. A reevaluation creates a new report with the same evaluation type and target, the next target-specific attempt number, and a pointer to the preceding evaluation.
+Completed reports are immutable. A reevaluation creates a new report with the same evaluation type, target, and criteria, the next target-specific attempt number, and a pointer to the preceding evaluation.
 
 ## Template
 
@@ -16,13 +16,13 @@ Completed reports are immutable. A reevaluation creates a new report with the sa
 **Date:** `[YYYY-MM-DD]`
 **Evaluation Type:** `[LESSON | MILESTONE | UNIT]`
 **Target:** `[Lesson path | milestone ID | unit ID]`
-**Criteria Source:** `[Exact source paths and section or milestone identifiers]`
+**Criteria Source:** `[LESSON: learning-record path with Lesson Outcomes IDs, or the legacy sources used | MILESTONE: unit.md milestone ID | UNIT: unit.md objectives and milestone IDs]`
 **Attempt:** `[Number for this evaluation type and target, starting at 1]`
 **Prior Evaluation:** `[Previous report path | None]`
 
 ## S — Situation
 
-[Evaluated capability, scope, and conditions, including permitted aids.]
+[Evaluated capability, scope, and conditions, including permitted aids and the learner's aid disclosure at the start.]
 
 ## B — Background
 
@@ -30,27 +30,37 @@ Completed reports are immutable. A reevaluation creates a new report with the sa
 
 | Critical criterion | Directly observed evidence | Status |
 |---|---|---|
-| [Capability and required conditions] | [Independent demonstration or specific missing evidence] | [MET | NOT MET] |
+| [Outcome ID when recorded; capability and required conditions] | [Independent demonstration, observed gap, or specific missing evidence] | [MET | NOT MET | NOT ASSESSED] |
 
 ## A — Assessment
 
 **Outcome:** `[PASS | FAIL]`
 
-**Gaps:** [Specific gap for each NOT MET criterion, or None.]
+**Gaps:** [The observed gap for each NOT MET criterion and the missing demonstration for each NOT ASSESSED criterion, or None.]
 
 ## R — Recommendation
 
 **Next Route:** `[One route selected below]`
-**Required Action:** `[One concise action with its target and completion condition]`
+**Required Action:** `[Immediate action with its target and completion condition, then any retained obligations in order]`
 ```
 
 ## Criteria Coverage
 
-Include every critical criterion from the declared criteria source. Track essential capabilities rather than individual prompts or inconsequential mistakes.
+Include every critical criterion from the declared criteria source, using its stable outcome ID when one exists. Supporting outcomes may be recorded but do not affect the outcome. Track essential capabilities rather than individual prompts or superficial slips.
 
-Evidence records what the learner independently demonstrated during this attempt. Identify missing demonstrations explicitly.
+Evidence records what the learner independently demonstrated during this attempt. Earlier reports are context, not current evidence.
 
-Every criterion `MET` produces `PASS`. Any criterion `NOT MET` produces `FAIL` and a corresponding remediation gap in Assessment.
+| Status | Meaning |
+|---|---|
+| `MET` | This attempt produced an independent demonstration under the criterion's conditions. |
+| `NOT MET` | This attempt directly observed a material gap, such as a misconception that persisted after neutral clarification. |
+| `NOT ASSESSED` | No adequate independent demonstration was obtained: the attempt ended first, the prompt was discarded or supplied the reasoning, or independence was uncertain and no fresh demonstration followed. |
+
+- **PASS:** every critical criterion is `MET`.
+- **FAIL:** at least one critical criterion is `NOT MET`. Remaining `NOT ASSESSED` criteria stay listed for the reevaluation.
+- **No report:** a critical criterion is `NOT ASSESSED` and none is `NOT MET`. The attempt is unfinished and returns to Tutor for a fresh attempt.
+
+Reports written before `NOT ASSESSED` existed remain unchanged. When one is the prior evaluation, a `NOT MET` whose evidence records a demonstration that was not obtained guides the reevaluation as missing evidence rather than an observed gap.
 
 ## Recommendation
 
@@ -89,4 +99,4 @@ Required Action names the immediate action, its target and completion condition,
 
 ## Completion
 
-Read back the saved report. Verify complete metadata and criteria coverage, agreement between coverage and outcome, one route selected by the precedence rules with retained obligations in Required Action, and correct sequence and prior-report linkage. Preserve earlier reports.
+Read back the saved report. Verify complete metadata, criteria that match the target's agreed set and earlier attempts, a status for every critical criterion, recorded aid disclosure, agreement between statuses and outcome, one route selected by the precedence rules with retained obligations in Required Action, and correct sequence and prior-report linkage. Preserve earlier reports.
