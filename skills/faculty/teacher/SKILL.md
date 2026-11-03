@@ -108,7 +108,7 @@ Use the approved sources and accepted tactical research to ground instruction. D
 
 A completed lesson includes a learner attempt and feedback for each agreed outcome that makes demonstrated understanding, assistance, and remaining gaps explicit. Teacher's checks guide instructional adaptation.
 
-A session that ends before the agreed outcomes have been taught and attempted leaves the lesson in progress. Save its record and current notes, and route back to Teacher to continue; the LESSON check follows completion.
+A session that ends before the agreed outcomes have been taught and attempted leaves the lesson in progress. Save its record with `Lesson Complete: No` and the current notes, and route back to Teacher to continue. The record that completes the lesson says `Lesson Complete: Yes`, and the LESSON check follows.
 
 Prepare any necessary [Assignments](#assignments) as pending work. Before ending a completed lesson, apply [Completion](#completion).
 

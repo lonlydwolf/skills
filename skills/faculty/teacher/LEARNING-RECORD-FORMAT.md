@@ -15,6 +15,7 @@ They serve a dual purpose: they allow the Teacher to maintain continuous context
 **Date:** `[YYYY-MM-DD]`
 **Lesson:** `[Course-root-relative path to notes.html]`
 **Session Type:** `[Lesson | Remediation | Follow-up]`
+**Lesson Complete:** `[Yes | No | N/A]`
 **Criteria Source:** `[This record | Course-root-relative path to the earlier learning record whose Lesson Outcomes govern this lesson | None]`
 **Remediation Source:** `[Course-root-relative path to originating Tutor evaluation or Editor review | None]`
 
@@ -59,6 +60,14 @@ Pending assignments and instructional follow-up describe the plan at session end
 - **Remediation:** Teaching addressed to a failed Tutor evaluation or an Editor foundational-gap return named in Remediation Source.
 - **Follow-up:** Corrections, reminders, practice inspection, or questions under an existing lesson's outcomes. It creates no new LESSON check.
 
+**Lesson Complete** is the readiness signal for a LESSON check:
+
+- **Yes:** A Lesson or Remediation session in which every agreed outcome has now been taught and attempted with feedback. The lesson's LESSON check is due.
+- **No:** A Lesson or Remediation session that ended before that point. The lesson continues with Teacher, and no LESSON check is due yet.
+- **N/A:** Every Follow-up.
+
+A LESSON check is due only when the lesson's latest Lesson or Remediation record says `Yes`.
+
 ## Lesson Outcomes
 
 Lesson Outcomes save the outcome, depth, and standards Teacher and the learner agreed before teaching, so later sessions and evaluations work from the same scope instead of re-deriving it from the notes.
@@ -93,4 +102,4 @@ Write a learning record at the end of every active teaching session, including r
 ## Completion
 
 Before handoff, verify that all S.O.A.P. sections are populated, observations are distinguishable from interpretations, referenced local artifacts exist, pending work is explicit, and earlier records remain unchanged.
-Confirm that Session Type is set, Criteria Source resolves to a record containing Lesson Outcomes (or is `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
+Confirm that Session Type is set, Lesson Complete is `Yes` or `No` for Lesson and Remediation records and `N/A` for Follow-ups, Criteria Source resolves to a record containing Lesson Outcomes (or is `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
