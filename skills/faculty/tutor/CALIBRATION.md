@@ -12,7 +12,7 @@ A CSV-cleaning course records these Lesson Outcomes for lesson 03:
 | `LO2` | Choose between dropping and filling missing values for a stated summary and justify the effect on the result. | Closed-book; no execution. | Critical |
 | `LO3` | Name the pandas methods for dropping and filling. | Documentation allowed. | Supporting |
 
-Prompt for `LO1`: a `price` column reads `10`, blank, `20`. What does `df["price"].mean()` return, and why?
+Prompt for `LO1`: pandas reads a CSV with columns `item,price` and three data rows `A,10`, `B,`, `C,20` using default missing-value handling. What does `df["price"].mean()` return, and why? The middle row has a nonempty item, so it is not an empty CSV line.
 
 ## Judging responses
 

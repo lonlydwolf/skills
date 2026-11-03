@@ -64,7 +64,7 @@ Reports written before `NOT ASSESSED` existed remain unchanged. When one is the 
 
 ## Recommendation
 
-Select one Next Route. A FAIL routes to `Teacher remediation → Tutor reevaluation` of the same type and target. A UNIT PASS routes to `Advisor`. For a LESSON or MILESTONE PASS, apply the first rule that matches the course evidence:
+Select one Next Route. A FAIL routes to `Teacher remediation → Tutor reevaluation` of the same type and target. A UNIT PASS routes to `Advisor`. For a LESSON or MILESTONE PASS, apply the first rule that matches the course evidence, including the current attempt’s PASS when resolving earlier failures. A completed remediation lesson is not the same as completed remediation: required practice, supporting LESSON checks and retained repair obligations must also be satisfied.
 
 1. **Outstanding reevaluation.** A MILESTONE or UNIT target has a FAIL and no later PASS. When the latest remediation learning record shows that remediation complete, route `Tutor reevaluation`. Otherwise route released remediation PRACTICE as `Learner completes practice → Teacher`, or route `Teacher`. Other pending work waits for the reevaluation.
 2. **Editor return.** The latest review of a BUILD routed `Teacher → Tutor → Editor` and has no later review. When the remediation is complete, route `Learner revision → Editor`; otherwise route as in rule 1.
@@ -78,7 +78,7 @@ Select one Next Route. A FAIL routes to `Teacher remediation → Tutor reevaluat
    | BUILD for a final BUILD or COMBINED milestone | `Learner completes build → Editor` |
 
    A non-final COMBINED build without its MILESTONE PASS stays pending; continue to rule 4. A final milestone build's Required Action names Editor approval followed by Tutor UNIT evaluation.
-4. **Conceptual gate due.** The latest learning record shows the supporting instruction complete for the next non-final CONCEPTUAL or COMBINED milestone: `Tutor MILESTONE evaluation`. For a final CONCEPTUAL milestone: `Tutor UNIT evaluation`.
+4. **Conceptual gate due.** The latest applicable records show the supporting instruction and all required LESSON checks complete, and the contract’s preceding gates passed, for the next non-final CONCEPTUAL or COMBINED milestone: `Tutor MILESTONE evaluation`. For a final CONCEPTUAL milestone with the same readiness conditions: `Tutor UNIT evaluation`.
 5. **Otherwise:** `Teacher`.
 
 Work is released when its `task.md` has `Status: Released`. An assignment without a Status field counts as released when Teacher's latest applicable learning record names it as the Pending Assignment without deferring its start. A `Preview` assignment is not pending work: Teacher releases it after the supporting instruction, so a PASS with only a Preview build routes `Teacher`. Released work stays pending until a later review or record shows it completed. A `task.md` that exists does not by itself make work pending or ready.

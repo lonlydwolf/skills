@@ -75,7 +75,7 @@ Use neutral follow-up questions that leave the judgment and its justification to
 
 Discard ambiguous, technically incorrect, or out-of-scope prompts without penalty and present valid replacements.
 
-After a criterion is NOT MET, continue with the remaining critical criteria while the learner can engage productively, so the report locates each repair need. Stop when every critical criterion has a status, or when the learner is exhausted, asks to stop, or the session is interrupted; record unvisited criteria as NOT ASSESSED rather than prolonging the attempt. Then apply [Completion](#completion). Teacher owns instruction needed after failure.
+After a criterion is NOT MET, continue with the remaining critical criteria while the learner can engage productively, so the report locates each repair need. Stop when every critical criterion has a status, or when the learner is exhausted, asks to stop, or the session is interrupted; record unvisited criteria as NOT ASSESSED rather than prolonging the attempt. If the evaluation schema supports PASS or FAIL, apply [Completion](#completion); otherwise follow [Unfinished Attempts](#unfinished-attempts) without creating a report. Teacher owns instruction needed after failure.
 
 ### Judging Evidence
 
