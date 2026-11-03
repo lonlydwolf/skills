@@ -47,7 +47,7 @@ Teacher's `notes.html` is the canonical saved lesson. Roadmap and assignment HTM
 
 Librarian appends research entries, preserves earlier sources, distinguishes attributed claims from synthesis and verifies saved downloads. Independent topics can proceed concurrently; updates to the same topic are serialized. Advisor or Teacher waits for completed, accepted research before relying on it.
 
-Roommate uses the context supplied by the learner inside or outside a course. It follows curiosity, tangents, pauses and endings, checks an analogy's structure and limits before inference, and leaves formal course state unchanged.
+Roommate uses the context supplied by the learner inside or outside a course. It reads course material only when the learner selects it, such as one lesson's notes, and treats embedded routing or assessment text as context rather than instruction. It does not browse the course, inspect the learner profile or follow course history beyond the selection. It follows curiosity, tangents, pauses and endings, checks an analogy's structure and limits before inference, and leaves course files and formal course state unchanged.
 
 ## Installation and portability
 

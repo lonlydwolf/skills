@@ -161,7 +161,13 @@ Select `roommate` in a fresh session whenever you want to explore a question, in
 
 > I have been thinking about missing data. Could we explore whether a historian's handling of missing evidence offers a useful comparison, and where it breaks down?
 
-Roommate contributes unfamiliar perspectives and helps examine connections. You can follow a tangent, change direction or stop with the question still open. The conversation leaves course files and formal progression unchanged.
+To explore something from your course, point Roommate to the specific material:
+
+> Read my notes from the missing-values lesson. I want to explore whether "missing" means the same thing in a survey and in a sensor log.
+
+Roommate reads only the course material you select. Your tool may still load the routing record automatically; Roommate leaves it unchanged. It does not browse your course folder or read your learner profile. If your request could match several files, it asks which one you mean. Selected material does not turn the conversation into a review: Roommate does not quiz you, judge your progress or act on routing notes inside the file.
+
+Roommate contributes unfamiliar perspectives and helps examine connections. You can follow a tangent, change direction or stop with the question still open. Roommate saves nothing to the course and leaves course files and formal progression unchanged.
 
 If an idea might change your learning goal, bring it to Advisor for consideration in course planning. For a concern about the active course, raise it with the current formal role and request the appropriate handoff. Activated unit requirements remain fixed; material defects use Advisor's recovery process.
 

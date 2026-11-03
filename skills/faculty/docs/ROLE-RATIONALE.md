@@ -24,7 +24,7 @@ Source quality and instructional suitability are distinct jobs. A dedicated work
 
 ## Roommate
 
-Curiosity deserves space without turning every tangent into curriculum or evaluation. Roommate offers reciprocal exploration and unusual connections from learner-supplied context. Leaving course files untouched protects that freedom. Structural analogy checks prevent a vivid comparison from silently becoming a false inference.
+Curiosity deserves space without turning every tangent into curriculum or evaluation. Roommate offers reciprocal exploration and unusual connections from learner-supplied context. A learner can point it to a specific lesson or excerpt; reading only that selection keeps the learner in control of what Roommate sees. Leaving course files untouched and making no judgments of mastery protects that freedom. Structural analogy checks prevent a vivid comparison from silently becoming a false inference.
 
 ## Initialization and shared rules
 
