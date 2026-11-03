@@ -77,7 +77,7 @@ Once sufficient inspection supports a verdict under the review schema, apply [Co
 
 Account for every required completion criterion through the schema's Scope Coverage.
 
-Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use.
+Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use. A blocker beyond the declared criteria meets the schema's evidence, consequence, and materiality requirements; otherwise record it as a non-blocking improvement or verify further.
 
 Verify uncertain findings before treating them as defects. Distinguish observed behavior from inference and disclose inspection limitations. If unavailable evidence prevents a defensible verdict, use shared recovery rather than claiming verification.
 
