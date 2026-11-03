@@ -127,7 +127,7 @@ When a unit closes, including the last one, Advisor can offer a delayed review. 
 
 > I agreed to review the CSV-cleaning unit around now. Please set up the review.
 
-Advisor prepares a short review unit with challenge entry, using the original requirements you choose to re-check. If a review shows you have forgotten something, your profile records it as a current gap. Earlier results and closed units stay unchanged. You can work through remediation or withdraw the review; withdrawing it after completing the course returns the course to `Complete`.
+Advisor prepares a short review unit with challenge entry, using the original requirements you choose to re-check. If another unit is active, schedule the review for a unit boundary or explicitly withdraw the active unit before switching. If a review shows you have forgotten something, your profile records it as a current gap. Earlier results and closed units stay unchanged. You can work through remediation or withdraw the review; withdrawing it after completing the course returns the course to `Complete`.
 
 ## Change direction or stop
 

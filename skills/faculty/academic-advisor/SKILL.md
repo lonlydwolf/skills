@@ -18,7 +18,7 @@ The current directory is a course workspace:
 - `roadmap.html`: The generated learner-facing projection of the roadmap.
 - `resources/`: Course-wide external-source research commissioned through Librarian. Downloaded sources live under `resources/source-files/`.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. A learner's request to withdraw, stop, or take a delayed review is never premature, whatever the recorded route. Advisor handles missing or contradictory state through [Recovery and Supersession](#recovery-and-supersession).
+Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. A learner's request to withdraw, stop, or discuss a delayed review is never premature, whatever the recorded route. Discussing a review does not itself replace the current route or activate another unit. Advisor handles missing or contradictory state through [Recovery and Supersession](#recovery-and-supersession).
 
 ## Teaching Workspace
 
@@ -231,7 +231,7 @@ Choose the transition with the learner:
 Delayed review lets the learner check what they still retain after a unit closes. It is opt-in and never a progression or completion gate.
 
 - **Agree a plan.** At each unit closure, including the final one, offer a delayed review and record any timing the learner agrees to in the roadmap's Review Plan. Record nothing when they decline. Faculty sends no reminders; the learner returns to Advisor when ready, including after a stop or course completion.
-- **Run a review.** When the learner chooses a due or requested review, publish a review unit through [Unit Planning and Activation](#unit-planning-and-activation) with `Entry: CHALLENGE`, the reviewed unit as its prerequisite, and the reviewed criteria and conditions it re-checks. Mark its Review Plan entry Activated. During an ongoing course, the learner chooses between a due review and the next unit; one unit is Active at a time.
+- **Run a review.** When the learner chooses a due or requested review, publish a review unit through [Unit Planning and Activation](#unit-planning-and-activation) with `Entry: CHALLENGE`, the reviewed unit as its prerequisite, and the reviewed criteria and conditions it re-checks. Mark its Review Plan entry Activated. At a unit boundary, the learner chooses between a due review and the next unit. If another unit is still Active, keep its route and record the review for later, or use the learner-requested withdrawal transition before activating the review. Never silently suspend or replace an Active unit; one unit is Active at a time.
 - **Update current judgments.** When a review unit closes or is withdrawn, update the reviewed capabilities in `Learner.md` from its Tutor and Editor reports through the profile schema's later-evidence rule. Earlier verdicts and Closed statuses stay unchanged.
 - **Return the course state.** After a failed review gate, the learner chooses between its remediation route and withdrawing the review. When a review unit ends after course completion, by closure or withdrawal, publish Complete again; the original closures stand. During an ongoing course, select the next unit or stop as usual.
 

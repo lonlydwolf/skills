@@ -38,14 +38,14 @@ At initialization, record relevant self-reported background and Advisor diagnost
 
 At completed-unit consolidation, revisit baseline entries against course evidence. Remove resolved or superseded entries, consolidate supported conclusions into the appropriate C.A.M.S. category, and retain still-relevant untested information as provisional.
 
-Rewrite the profile after reviewing a completed unit's learning records, evaluations, and reviews, before activating the next unit. During a unit, new evidence remains in that unit's records.
+Rewrite the profile after reviewing a completed unit's learning records, evaluations, and reviews, before activating the next unit. During a unit, new evidence remains in that unit's records. When an optional review unit ends by closure or withdrawal, consolidate its later evidence through the rule below.
 
 - **C:** Only passing UNIT evaluations support a conceptual mastery entry. It describes capability at the assessed scope, conditions, and time, not proven long-term retention. Lesson and milestone passes are immediate evidence: they stay in unit records and can inform M and S, never C.
 - **A:** Describe what approved artifacts demonstrate without generalizing beyond their scope or conditions.
 - **M:** Retain unresolved gaps; remove resolved misconceptions. Add the resulting capability to C or A only when its evidence requirement is met.
 - **S:** Describe actionable observations and constraints rather than fixed learner identities or broad learning-style labels.
 
-Later evidence updates current entries without changing earlier verdicts. A later passing UNIT evaluation or APPROVED review of the same capability refreshes its month. An observed NOT MET criterion or blocking finding on a capability in C or A moves it to M as a current gap. Missing evidence, such as an unattempted gate or a withdrawal before a verdict, changes nothing.
+Later evidence updates current entries without changing earlier verdicts. A later passing UNIT evaluation or APPROVED review of the same capability refreshes its month. An observed NOT MET criterion or blocking finding updates the affected capability only when the evidence tests the same scope under comparable conditions. Record the specific unsupported aspect in M and narrow or qualify the affected C or A entry; preserve independently supported aspects. Failure on a harder extension or under different aids does not by itself establish loss of the earlier capability. Missing evidence, such as an unattempted gate or a withdrawal before a verdict, changes nothing.
 
 Preserve supported current entries when new evidence does not justify a change. Consolidate entries by capability or instructional need; evidence paths, session history, and consolidation markers remain outside the profile.
 
