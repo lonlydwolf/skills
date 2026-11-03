@@ -63,7 +63,7 @@ Perform a lightweight acceptance check:
 
 - Does the research cover the request and fit its scope?
 - Are claims traceable and uncertainty disclosed?
-- Are the saved topic file and referenced local files accessible?
+- Are the saved topic file, its Existing Record links, and referenced local files accessible?
 - Is the source set pedagogically suitable?
 
 Inspect primary evidence directly for high-consequence claims when warranted; acceptance does not repeat the research.
