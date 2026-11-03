@@ -119,6 +119,16 @@ Advisor checks the applicable reports, closes the unit when justified, and updat
 
 You can inspect `roadmap.html` for orientation and `Learner.md` for the current learner profile. An intake finding is provisional; completed unit evidence supports later consolidation.
 
+## Change direction or stop
+
+Your goals can change. Start `academic-advisor` and say what you want instead:
+
+> I no longer want to finish the current unit. I would rather focus on reporting summaries, or stop the course for now.
+
+Advisor checks whether a break, different pacing or a revised route would serve you better, then follows your decision. The current unit becomes `Withdrawn` on the roadmap with your stated reason. Its contract, notes and results stay in its folder. A withdrawn unit is not completed: it does not unlock later units or count toward finishing the course.
+
+You can switch to a newly planned unit, stop with no active unit, or later ask Advisor to resume the withdrawn unit under its original requirements. After a stop, the routing record shows `Waiting` with Advisor as the next role; it does not show `Complete`.
+
 ## Find your saved work
 
 These paths are inside your course folder. Unit and assignment names vary with your course; directories and files appear as the relevant work is completed.

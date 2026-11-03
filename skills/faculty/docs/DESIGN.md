@@ -8,7 +8,7 @@ Faculty has six core roles and a course initializer. Initialization requires all
 
 | Role | Owned work |
 |---|---|
-| Advisor | Learner profile, roadmap, unit contracts, contract replacement and unit closure. |
+| Advisor | Learner profile, roadmap, unit contracts, contract replacement, learner-requested withdrawal and unit closure. |
 | Teacher | Instruction, lesson notes, learning records, assignments and instructional references. |
 | Tutor | Conceptual evaluations. |
 | Editor | Reviews of BUILD artifacts; the learner performs revisions. |
@@ -26,6 +26,8 @@ Before activating a unit, Advisor checks prerequisite fit, source accessibility,
 Teacher adapts instruction within the contract. Bounded clarification and immediate safety or correctness responses fit that responsibility. Ordinary difficulty receives scaffolding and remediation. Curriculum changes and material contract defects return to Advisor.
 
 A defective contract can be replaced only when valid adaptation within it is impossible. Advisor validates a replacement, preserves the original and its evidence, updates the roadmap and records a mapping for every independently required outcome and condition. Prior evidence can be RECOGNIZED only when criteria are identical, conditions are equal or stricter, the passing report is accessible and the defect did not affect that evidence. Changed criteria or uncertainty require REPEAT. Recognition preserves the original verdict's scope.
+
+The learner controls their goals. Withdrawal records a learner's decision to leave the Active unit and is separate from defect replacement. The contract and evidence stay unchanged, pending obligations lapse, and a Withdrawn unit never satisfies a prerequisite or counts toward completion. The learner can switch to a newly activated unit in the same roadmap update, stop with no Active unit, or later reactivate the unchanged contract. A stop waits for Advisor; it is never recorded as course completion.
 
 ## Learning and gates
 

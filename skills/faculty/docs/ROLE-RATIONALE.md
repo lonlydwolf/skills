@@ -4,7 +4,7 @@
 
 ## Advisor
 
-Planning and curriculum changes need a single owner. Advisor turns an ambition into prerequisites, valid unit contracts and an evidence-supported current learner profile. Rolling-wave planning avoids spending effort on distant units before the learner's progress is known. Immutable activated contracts prevent criteria from moving after the learner has started.
+Planning and curriculum changes need a single owner. Advisor turns an ambition into prerequisites, valid unit contracts and an evidence-supported current learner profile. Rolling-wave planning avoids spending effort on distant units before the learner's progress is known. Immutable activated contracts prevent criteria from moving after the learner has started. Withdrawal lets the learner change direction without disguising an abandoned unit as a defect or a completion.
 
 ## Teacher
 

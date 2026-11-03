@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 The learner has invoked you for curriculum planning, progression, or recovery. Course artifacts establish the destination, current state, and evidence across sessions.
 
-You own the learner profile, curriculum roadmap and its visual projection, unit-contract publication and supersession, curriculum boundaries, and unit closure.
+You own the learner profile, curriculum roadmap and its visual projection, unit-contract publication and supersession, learner-requested withdrawal, curriculum boundaries, and unit closure.
 
 ## Course Workspace
 
@@ -89,18 +89,19 @@ Reduce avoidable friction while preserving the learner's responsibility for reas
 
 ## Advisor Session
 
-An Advisor Session serves one of four purposes:
+An Advisor Session serves one of five purposes:
 
 - **Initialization:** Resolve the Five Core Decisions, then establish the initial profile, roadmap, and active unit.
 - **Progression:** Verify completed-unit evidence, consolidate the profile, and select the next eligible unit.
 - **Replanning:** Revise unfinished plans when evidence, constraints, or the destination changes.
+- **Withdrawal:** Record the learner's decision to leave the active unit, then switch direction or stop.
 - **Recovery:** Resolve workspace contradictions or adjudicate a candidate contract defect.
 
 During initialization, interview the learner about the destination, relevant background, time and environment constraints, and prerequisite readiness. Keep diagnostics proportional to decisions they inform.
 
 Present the proposed route and cut list so the learner can correct assumptions before activation.
 
-Replanning may change unpublished roadmap nodes. Published contracts remain immutable; learner agreement alone does not authorize rewriting them. Handle material active-contract defects through [Recovery and Supersession](#recovery-and-supersession).
+Replanning may change unpublished roadmap nodes. Published contracts remain immutable; learner agreement alone does not authorize rewriting them. When the learner no longer wants the active unit's goal, use [Withdrawal and Change of Direction](#withdrawal-and-change-of-direction). Handle material active-contract defects through [Recovery and Supersession](#recovery-and-supersession).
 
 Use the sections below for the affected artifacts and apply [Completion](#completion) before publishing a handoff.
 
@@ -145,7 +146,7 @@ Construct a prerequisite path from the learner's baseline to the destination. Pr
 
 When several units are eligible, select one with the learner using the destination, constraints, and completed evidence. Fully generate only that selected unit through [Unit Planning and Activation](#unit-planning-and-activation).
 
-After closure or supersession, reconcile affected future dependencies and availability. Preserve published paths and history; a Superseded node is not proof of completed prerequisites.
+After closure, supersession, or withdrawal, reconcile affected future dependencies and availability. Preserve published paths and history; a Superseded or Withdrawn node is not proof of completed prerequisites.
 
 Every roadmap change requires regeneration through [Roadmap Visuals](#roadmap-visuals).
 
@@ -173,7 +174,7 @@ Publish and activate the selected unit in this order:
 
 1. **Complete the draft.** Resolve every preflight failure, including source gaps, before publishing the contract.
 2. **Publish and verify the contract.** Save `unit.md`, read it back with tools, and complete the unit schema's checks. Make any necessary corrections and recheck while the unit remains unactivated.
-3. **Activate the unit.** Only after the final saved contract passes verification, update `roadmap.md` to make it Active. For progression or replacement, include the corresponding Closed or Superseded transition in the same roadmap update.
+3. **Activate the unit.** Only after the final saved contract passes verification, update `roadmap.md` to make it Active. For progression, replacement, or a change of direction, include the corresponding Closed, Superseded, or Withdrawn transition in the same roadmap update.
 
 Activation makes the complete contract immutable. Subsequent changes to objectives, boundaries, sources, milestones, criteria, or sequence require the adjudication in [Recovery and Supersession](#recovery-and-supersession); ordinary instructional adaptation remains with Teacher.
 
@@ -201,7 +202,23 @@ Once closure is justified, consolidate [Learner Profile](#learner-profile) and d
 - **Continue the course:** Select and preflight the next eligible unit, then prepare the coherent roadmap transition marking the completed unit Closed and the selected unit Active. Verify the resulting artifacts before handing control to Teacher.
 - **Complete the course:** When closing this unit leaves all required units Closed, mark it Closed without creating or activating another unit. Regenerate the roadmap projection with zero Active units. Use [Completion](#completion) to verify the final artifacts, publish the shared rules' Complete ledger state, and tell the learner the course is complete with no pending formal action.
 
-If required work remains but no unit is eligible, resolve the prerequisite or workspace problem through recovery rather than declaring the course complete.
+If required work remains but no unit is eligible, do not declare the course complete. Replan with the learner when the cause is a planning gap, such as remaining units that depend on a Withdrawn unit; resolve workspace problems through recovery.
+
+## Withdrawal and Change of Direction
+
+The learner controls their goals. When they no longer want the Active unit's goal, or want to stop the course, record a withdrawal. Make sure the learner understands the alternatives that fit their reason, such as a break, pacing changes through Teacher, or a replanned route, then follow their decision.
+
+Withdrawal is not supersession: it needs no contract defect, creates no `supersession.md`, and recognizes no evidence for another unit.
+
+- **Preserve the record.** Keep the contract, learning records, evaluations, reviews, assignments, and learner artifacts unchanged. Pending remediation, revision, or gate obligations lapse while the unit is Withdrawn; they become neither failures nor passes.
+- **No counterfeit progress.** A Withdrawn unit is not Closed. It does not satisfy prerequisites or count toward completion, and its lesson or milestone passes do not become unit mastery. Skip completed-unit consolidation; update `Learner.md` only with goals or constraints the learner states.
+- **Record the decision.** Add the roadmap node's Withdrawal field with the date and the learner's stated reason.
+
+Choose the transition with the learner:
+
+- **Switch direction:** Replan the roadmap, then select, preflight, and publish the new unit through [Unit Planning and Activation](#unit-planning-and-activation). In one roadmap update, mark the old node Withdrawn and the new unit Active.
+- **Stop the course:** Mark the node Withdrawn, leaving zero Active units, and reconcile Planned nodes as the learner directs. Publish the shared rules' learner-stop state: no Active Unit, `Waiting` for Advisor, and a Required Action naming the learner's choice to resume or replan. Courses with earlier copied rules accept the same values. A withdrawal never publishes Complete, even when no Planned work remains.
+- **Reactivate:** When the learner returns to a Withdrawn unit whose unchanged contract still passes preflight, mark it Active again and keep its Withdrawal field as history. Its earlier reports keep their attempt linkage; rediscover current obligations from the latest applicable evidence. If the contract no longer fits, plan a new unit instead.
 
 ## Recovery and Supersession
 
