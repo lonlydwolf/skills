@@ -39,11 +39,11 @@ npx skills@latest add lonlydwolf/skills \
 ## Start your first course
 
 1. Open a new course folder in your chosen tool and confirm the Faculty skills are available there.
-2. Select `init-course` and ask it to initialize the current folder. It checks the required roles before creating course files.
+2. Select `init-course` and ask it to initialize the current folder. Before creating course files, it reports whether each role can be loaded and selected, whether your tool can run Librarian's background research, and whether a fresh session is expected to load the course state. It stops if a role or the research capability is missing and asks you to confirm anything it could not check.
 3. Start a fresh session in the same folder, select `academic-advisor` and describe your goal, starting point and available time.
 4. Follow the saved next action and choose the named role in a fresh session at each handoff.
 
-For formal sessions, make sure your tool loads the course's saved routing state and shared rules. If that is not automatic, include: “Before acting, read `.course-rules.md` and the current course state.”
+For formal sessions, make sure your tool loads the course's saved routing state and shared rules. If initialization could not confirm that this is automatic, begin each formal session with: “Before acting, read `AGENTS.md` and follow its pointer to `.course-rules.md`.” [Troubleshooting](TROUBLESHOOTING.md#a-fresh-session-seems-to-have-forgotten-the-course) explains tools that read a different instruction file.
 
 ## Update Faculty
 
@@ -62,7 +62,7 @@ Your course folder holds existing rules, contracts and results. A skill update l
 
 - **`npx` is missing or Node is too old:** install a supported Node.js version and reopen your terminal.
 - **The repository cannot be downloaded:** check Git availability, network access and the reported repository-access error.
-- **A role is missing:** install all seven Faculty skills in the same scope and confirm your tool loads that location.
+- **A role is missing:** install all seven Faculty skills in the same scope and confirm your tool loads that location. See [Troubleshooting](TROUBLESHOOTING.md#a-required-skill-is-missing) when the files exist but a role cannot be selected.
 - **Files install but the workflow cannot run:** check the tool's workspace, research and inspection capabilities. [Known limitations](CHECKS.md) describes what the existing evidence establishes.
 
 Report a problem through [issues](https://github.com/lonlydwolf/skills/issues) with your tool/version, selected skill, last installation or update, expected behavior and the visible error. Remove personal or work information from examples. See [Contributing](../../../CONTRIBUTING.md) for reporting or proposing a fix.
