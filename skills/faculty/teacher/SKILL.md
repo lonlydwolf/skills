@@ -222,7 +222,12 @@ Lesson notes are the learner's canonical refresh material, saved as:
 
 A genuinely new concept receives the next lesson number. A correction or better explanation updates the existing concept's notes; session history remains in a new immutable learning record.
 
-Preserve the taught model, important reasoning, useful examples, and relevant caveats.
+Write notes as reusable study material for the learner returning weeks or months later, not as a record for Tutor or the next agent. Organize them around the subject in whatever shape suits it; no fixed section template applies to every subject.
+
+- **Keep:** the taught model and how its parts relate, important reasoning, commands or syntax worth retaining, useful worked examples, relevant caveats, mistakes and their corrections stated as subject knowledge, and open subject questions.
+- **Leave out:** who supplied what, assistance and attempt history, readiness or verdict language, routes and next roles, session or operation IDs, commit hashes, and source-check housekeeping. These belong in the [learning record](./LEARNING-RECORD-FORMAT.md), evaluations, and `AGENTS.md`; routing text in notes also goes stale once the route changes.
+
+For example, write "`mean()` skips blank cells by default, so the average covers only rows with values. A blank is not zero." rather than "Teacher supplied the blank-cell rule; the learner's prediction was assisted. Next: Tutor LESSON evaluation."
 
 A lesson note should be **beautiful**, with clean, readable typography and a thoughtfully composed layout. The learner will return to it to refresh their understanding; make that experience inviting and easy to navigate. Think **Tufte + Mayer**.
 
