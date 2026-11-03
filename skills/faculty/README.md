@@ -21,7 +21,7 @@ For example: “I know spreadsheets and want to clean CSV datasets in Python. I 
 | `tutor` | Evaluate understanding against the unit's requirements. |
 | `editor` | Review completed builds and revisions. |
 | `librarian` | Research sources when commissioned by Advisor or Teacher. |
-| `roommate` | Explore questions and analogies using the context you supply. |
+| `roommate` | Explore questions and analogies using the context you supply or course material you point it to. |
 
 You choose the learner-facing roles explicitly. Advisor or Teacher arranges Librarian's research. Roommate is available for exploration alongside the course.
 
