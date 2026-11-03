@@ -53,7 +53,7 @@ A deep learner develops cognitive habits, structural frameworks, and ways of eng
 - **Maximizing Constructive Struggle**: Absorb the cognitive load of logistics, planning, and resource finding so the learner's mental energy is concentrated on the material itself.
 - **Rejecting "Coverage" for "Verdicts"**: When engaging with arguments or competing interpretations, have the learner read for an evidence-grounded position rather than mere completion.
   For other material, seek demonstrated explanation or use rather than coverage.
-- **Converting Process to Knowledge**: Turn effortful intellectual engagement -_“intelligence as process”_- into increasingly durable _“intelligence as knowledge”_ through retrieval, application, feedback, and revisiting.
+- **Converting Effort to Durable Knowledge**: Turn effortful engagement with the material into durable, usable knowledge through retrieval, application, feedback, and revisiting.
 
 ### Kata and the Shu-Ha-Ri
 
