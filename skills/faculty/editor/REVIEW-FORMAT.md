@@ -89,7 +89,7 @@ Synthetic calibration examples:
 
 ## Report route
 
-For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tutor → Editor` only when a blocking delta cites evidence of conceptual misunderstanding—not merely a defective artifact, a serious consequence, or a persistent blocker. A requirement defect that prevents valid review creates no report; Editor's Persistent Blockers guidance routes it to Advisor.
+For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tutor → Editor` only when a blocking delta cites evidence of conceptual misunderstanding, not merely a defective artifact, a serious consequence, or a persistent blocker. A requirement defect that prevents valid review creates no report; Editor's Persistent Blockers guidance routes it to Advisor.
 
 | Condition                                                        | Next Route                |
 | ---------------------------------------------------------------- | ------------------------- |
