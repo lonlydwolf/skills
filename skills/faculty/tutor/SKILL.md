@@ -95,14 +95,14 @@ A LESSON evaluation verifies immediate understanding of one completed teaching l
 
 Evaluate against a fixed, agreed criteria set:
 
-- **Recorded outcomes:** Follow the lesson's latest learning record's `Criteria Source` to the record holding its `Lesson Outcomes`. `Critical` outcomes are the critical criteria, cited by record path and ID (`LO1`, …) with their conditions; `Supporting` outcomes do not decide the verdict. A remediation lesson for a MILESTONE, UNIT, or Editor return carries its own outcomes for the evidenced gap.
-- **Records without Lesson Outcomes:** Use outcomes Teacher later clarified and saved for the lesson, if any. Otherwise, a retry keeps the first attempt's criteria, and a first attempt derives the essential capabilities from the original record's agreed focus and the lesson as first taught, within the active contract.
+- **Recorded outcomes:** Follow the `Criteria Source` of the lesson's latest Lesson or Remediation record to the record holding its `Lesson Outcomes`. `Critical` outcomes are the critical criteria, cited by record path and ID (`LO1`, …) with their conditions; `Supporting` outcomes do not decide the verdict. A remediation lesson for a MILESTONE, UNIT, or Editor return carries its own outcomes for the evidenced gap.
+- **Records without Lesson Outcomes:** Use outcomes Teacher later clarified and saved for the lesson, if any. A `Legacy:` Criteria Source marks only a follow-up to an already-passed legacy lesson and needs no backfill. Otherwise, a retry keeps the first attempt's criteria, and a first attempt derives the essential capabilities from the original record's agreed focus and the lesson as first taught, within the active contract.
 
 Notes show what was presented. Material added to notes or records later, including during remediation, does not add critical criteria. A criterion an earlier attempt added beyond the agreed scope stays out of the critical set unless an agreed outcome requires it. Earlier reports remain unchanged.
 
 State the criteria when announcing the scope. Record a minor interpretation in the report's Situation. If the records cannot establish the essential outcomes without inventing them, or the learner's account of the agreement materially conflicts with them, create no verdict and use shared recovery.
 
-Every completed teaching lesson, including a remediation lesson, receives its LESSON check. A record that leaves the lesson in progress, or has Session Type `Follow-up`, creates no check; an invocation for one is premature. Records without these fields follow the recorded route. Prior success provides context rather than replacing the current demonstration.
+Every completed teaching lesson, including a remediation lesson, receives its LESSON check. The check is due when the lesson's latest Lesson or Remediation record has `Lesson Complete: Yes` and no LESSON PASS for the lesson follows that record. `Lesson Complete: No` keeps the lesson with Teacher. A `Follow-up` record (`Lesson Complete: N/A`) creates no check and does not reopen a completed or passed lesson. An invocation without a due check is premature. Records without these fields follow the recorded route and earlier evidence. Prior success provides context rather than replacing the current demonstration.
 
 #### Non-final Milestone
 
