@@ -19,7 +19,7 @@ Format documents define valid saved artifacts: fields, naming, numbering, immuta
 
 ## Planning and contracts
 
-Advisor's rolling-wave prerequisite network is a branching plan with one Active unit during an ongoing course and none after completion. Only the selected unit is fully specified; future units remain concise roadmap entries. `roadmap.md` owns lifecycle state, and `roadmap.html` is its generated view. Prerequisites are canonical; reverse relationships are derived.
+Advisor's rolling-wave prerequisite network is a branching plan with one Active unit during an ongoing course and none after completion or a learner stop. Only the selected unit is fully specified; future units remain concise roadmap entries. `roadmap.md` owns lifecycle state, and `roadmap.html` is its generated view. Prerequisites are canonical; reverse relationships are derived.
 
 A learner who already has a unit's capability can request CHALLENGE entry. The contract keeps the same criteria and gates, and the learner attempts them without prior teaching lessons. Tutor and Editor still provide every conceptual and applied verdict; Advisor decides the route, not the result.
 

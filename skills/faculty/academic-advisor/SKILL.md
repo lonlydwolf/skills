@@ -18,7 +18,7 @@ The current directory is a course workspace:
 - `roadmap.html`: The generated learner-facing projection of the roadmap.
 - `resources/`: Course-wide external-source research commissioned through Librarian. Downloaded sources live under `resources/source-files/`.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. Advisor handles missing or contradictory state through [Recovery and Supersession](#recovery-and-supersession).
+Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. A learner's request to withdraw, stop, or take a delayed review is never premature, whatever the recorded route. Advisor handles missing or contradictory state through [Recovery and Supersession](#recovery-and-supersession).
 
 ## Teaching Workspace
 

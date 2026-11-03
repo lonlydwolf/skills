@@ -37,7 +37,7 @@ Unit IDs are unique and stable. Prerequisites are the sole canonical dependency 
 
 The network is an acyclic graph that supports branching and convergence. Every prerequisite references an existing node; roots explicitly record `None`. Phase grouping organizes the view rather than adding dependency gates.
 
-Several units may become available together, but an ongoing course has exactly one Active unit. A completed course has zero Active units once all required units are Closed. A stopped course has zero Active units with required work remaining. Superseded and Withdrawn nodes preserve history; they never count as completed prerequisites or required units.
+Several units may become available together, but an ongoing course has exactly one Active unit. A completed course has zero Active units once all required units are Closed. A stopped course has zero Active units after a learner-requested withdrawal, whether or not Planned work remains; the course ledger distinguishes it from completion. Superseded and Withdrawn nodes preserve history; they never count as completed prerequisites or required units.
 
 ## Lifecycle and rolling horizon
 
@@ -65,4 +65,4 @@ Availability and outgoing connections are derived views, not independently maint
 
 ## Completion check
 
-Read back `roadmap.md` and verify unique IDs, valid prerequisite references, acyclicity, lifecycle/path consistency, and accessible contracts for published nodes. Verify exactly one Active unit for an ongoing course, zero Active units with all required units Closed for a completed course, or zero Active units with required work remaining for a stopped course. Confirm each Withdrawn node has its Withdrawal field and an unchanged published path, and each Review Plan entry references a Closed unit and, when Activated, an existing review node.
+Read back `roadmap.md` and verify unique IDs, valid prerequisite references, acyclicity, lifecycle/path consistency, and accessible contracts for published nodes. Verify exactly one Active unit for an ongoing course, zero Active units with all required units Closed for a completed course, or zero Active units for a stopped course. Confirm each Withdrawn node has its Withdrawal field and an unchanged published path, and each Review Plan entry references a Closed unit and, when Activated, an existing review node.
