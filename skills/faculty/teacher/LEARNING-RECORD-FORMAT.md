@@ -44,14 +44,14 @@ They serve a dual purpose: they allow the Teacher to maintain continuous context
 
 ## P - Plan (Instructional Follow-up)
 
-- **Pending Assignment:** `[Course-root-relative task.md path | None]`
+- **Pending Assignment:** `[Course-root-relative task.md path of a Released assignment | None]`
 - **Instructional Follow-up:** `[What to revisit, continue, or adapt in subsequent teaching, and why | None]`
 - **Parked Tangents:** `[Optional out-of-scope questions for later Advisor consideration | None]`
 ```
 
 Keep all four S.O.A.P. headings. Use concise sentences or bullets to preserve demonstrated strengths, unresolved gaps, and their implications for subsequent instruction.
 Record only information supported by the session; use `None` or `Not reported` where appropriate.
-Pending assignments and instructional follow-up describe the plan at session end. This record remains unchanged as work progresses; AGENTS.md owns the current formal route.
+Pending assignments and instructional follow-up describe the plan at session end. A Preview BUILD is not yet pending work; mention it under Instructional Follow-up instead. This record remains unchanged as work progresses; AGENTS.md owns the current formal route.
 
 **Session Type** tells later readers whether the session completed or continued a lesson that needs its LESSON check, or followed up existing work:
 
