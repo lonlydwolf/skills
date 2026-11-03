@@ -72,7 +72,7 @@ A LESSON check is due only when the lesson's latest Lesson or Remediation record
 
 Lesson Outcomes save the outcome, depth, and standards Teacher and the learner agreed before teaching, so later sessions and evaluations work from the same scope instead of re-deriving it from the notes.
 
-- **Agree before teaching.** Derive outcomes from the unit objectives and milestone criteria the lesson supports, within the unchanged contract. They may be adjusted by agreement during the session, for example when a diagnostic shows part of the plan is already known. Closeout saves the final agreed set.
+- **Agree before teaching.** Derive outcomes from the unit objectives and milestone criteria the lesson supports, within the unchanged contract. Before the first criteria-bearing record is saved, they may be adjusted by agreement, for example when a diagnostic shows part of the plan is already known. Closeout saves that agreed set. Once saved, continuations and retries preserve it; a newly needed capability belongs in a separately scoped lesson rather than a rewritten or expanded criterion set.
 - **Describe capability, not content.** Each outcome states what the learner does and under which conditions: closed-book, documentation allowed, running tools, provided starting material. Keep the critical set small and essential. A detail mentioned in teaching is not automatically an outcome.
 - **Criticality:** `Critical` outcomes must be demonstrated for the lesson's LESSON check to pass. `Supporting` outcomes were taught and are worth practicing but do not decide that check.
 - **Stable IDs:** Number outcomes `LO1`, `LO2`, … within the record that defines them, and cite them with that record's path. Never renumber or reuse an ID.

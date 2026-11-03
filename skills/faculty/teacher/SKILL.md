@@ -172,7 +172,7 @@ Worked examples remain appropriate when modeling is the intended scaffold.
 
 Show a BUILD's destination early when it gives lessons a purpose: write it as a preview so the learner can see where the teaching leads. Release it once its supporting lessons are complete. At release, reread the task against what was actually taught and refresh its starting materials, links, and logistics without changing its criteria. Release does not bypass a gate: independent work still waits for the applicable Tutor gate.
 
-Lessons may use the learner's real project when practicing on it serves the capability better than a toy example. The learner makes the changes while Teacher models, explains, and gives feedback. Keep guided work in a separately named location such as a practice branch or directory, never in a BUILD's Artifact Location. Record in the learning record what was guided and what Teacher supplied. Assisted work is not independent evidence: where a criterion requires independent performance of something rehearsed under guidance, the BUILD asks for a fresh demonstration after release.
+Lessons may use the learner's real project when practicing on it serves the capability better than a toy example. The learner makes the changes while Teacher models, explains, and gives feedback. Keep guided work in a separately named practice branch or directory, distinct from the BUILD's designated submission branch, revision or path, and preserve previously collected independent evidence. Record in the learning record what was guided and what Teacher supplied. Assisted work is not independent evidence: where a criterion requires independent performance of something rehearsed under guidance, the BUILD asks for a fresh demonstration after release.
 
 ### Assignment HTML
 

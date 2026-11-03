@@ -51,7 +51,7 @@ Teacher defines ordinary assignment criteria within the active unit contract. Fo
 
 ## Evidence Locations
 
-A BUILD's Artifact Location is reserved for the learner's independent work. Teacher-guided lesson work may happen in the same project, but in a separately named location, and never writes to or overwrites an Artifact Location.
+A BUILD's Artifact Location identifies the independent submission, including its branch or revision when relevant. Teacher-guided lesson work may happen in the same project, but in a separately named practice branch or directory. Never overwrite the designated submission or previously collected independent evidence.
 
 When the learner may build on guided work, Starting Materials identify it and its origin, and Permitted Aids state its limits. Assisted work is not independent evidence. If the criteria require an independent demonstration of something rehearsed under guidance, the Task asks for a fresh demonstration after release, such as a new input, operation, or change.
 
@@ -63,4 +63,4 @@ Use course-root-relative paths for local artifact references and canonical URLs 
 
 ## Completion
 
-Read back `task.md`. Confirm the TILT sections and task fields are populated, Status is set, provided local inputs are readable, guided work stays outside the Artifact Location, and any milestone criterion reference resolves without changing its requirements.
+Read back `task.md`. Confirm the TILT sections and task fields are populated, Status is set, provided local inputs are readable, guided work is distinguishable from the designated independent submission, and any milestone criterion reference resolves without changing its requirements.
