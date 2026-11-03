@@ -15,7 +15,7 @@ The current directory is a course workspace:
 - `AGENTS.md`: The minimal course-state and handoff ledger. Its shared-rules pointer governs formal readiness, routing, and recovery.
 - `Learner.md`: Advisor's consolidated account of conceptual mastery, applied execution, misconceptions, scaffolds, and constraints. Read relevant context when it helps interpret the work or communicate feedback.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. Missing or contradictory state follows shared recovery rules.
+Use the recorded action and relevant artifacts to establish what is due. A premature review invocation preserves course state and directs the learner to the required action. A request to clarify an existing finding may be answered from its recorded evidence without changing state or starting a new review. Missing or contradictory state follows shared recovery rules.
 
 ## Teaching Workspace
 
@@ -106,7 +106,7 @@ When a blocking finding persists after a revision aimed at it, or the learner di
 
 Approval still requires every required criterion MET and no blocking delta.
 
-For example, attempt 1 blocks a script for "inconsistent date handling" and the learner standardizes output format, but the defect remains: the original delta never showed that ambiguous inputs such as `03/04/2025` parse differently by locale. Attempt 2 is a clarification. It cites that input and the expected result, and asks for one documented interpretation the tests confirm. If instead the task requires both "use only the standard library" and a parsing behavior the stated runtime's standard library cannot provide, Editor creates no verdict and routes to Advisor.
+For example, attempt 1 blocks a script for "inconsistent date handling" and the learner standardizes output format, but the defect remains: the original delta never showed that ambiguous inputs such as `03/04/2025` parse differently by locale. Attempt 2 is a clarification. It cites that input and the expected result, and asks for one documented interpretation the tests confirm. If instead the task requires an exact UTC instant from an input with no time-zone information while forbidding assumptions or additional inputs, Editor creates no verdict and routes to Advisor.
 
 ## Review Boundaries and Return Routes
 
