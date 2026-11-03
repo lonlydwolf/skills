@@ -52,9 +52,11 @@ Select `teacher` when the saved action calls for instruction, practice follow-up
 
 > Continue the current unit from its saved next action. I can read a CSV, but I am unsure how blank cells affect a calculation.
 
-Teacher works through a bounded concept with you, using questions, explanations and practice. Show your reasoning, attempt the problem and say when something is unclear. You can ask for a slower pace, another example or a break.
+Teacher first agrees with you what the lesson should let you do, such as "explain how blank cells affect a summary and handle them in a script", and checks what you already know. If you show you already understand something, say so; Teacher should move on to what is new. A lesson can cover several related ideas, with one question or step at a time. Show your reasoning, attempt the problem and say when something is unclear. You can ask for a slower pace, another example or a break.
 
-A completed lesson saves readable HTML notes and a learning record. Teacher may also prepare an assignment. The next formal step is a Tutor lesson evaluation before pending independent work proceeds.
+A completed lesson saves HTML study notes and a learning record of the session and its agreed outcomes. Teacher may also prepare an assignment. The next formal step is a Tutor lesson evaluation before pending independent work proceeds. If a session ends before the lesson is finished, the next step is to continue with Teacher.
+
+Returning to Teacher with a correction, a command you have forgotten or completed practice is a follow-up. It can update the notes but does not start a new lesson evaluation.
 
 When you return for remediation, identify the latest failed evaluation or review. Teacher uses its specific gap to guide instruction within the existing unit.
 
@@ -80,7 +82,7 @@ For an interrupted evaluation, see [Pause and resume](#pause-and-resume).
 
 ## Complete practice and builds
 
-Teacher's assignments state their purpose, work, constraints, permitted aids, artifact location and completion signal. Read the learner-facing `assignment.html`; its authoritative requirements are in `task.md` beside it.
+Teacher's assignments state their purpose, work, constraints, permitted aids, artifact location and completion signal. A BUILD marked `Preview` shows where the unit is heading; wait until it is `Released` and your saved next step allows it. Guided practice during lessons can use your real project, but keep it out of the build's artifact locations. Read the learner-facing `assignment.html`; its authoritative requirements are in `task.md` beside it.
 
 There are two assignment types:
 
