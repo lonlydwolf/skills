@@ -102,7 +102,7 @@ Notes show what was presented. Material added to notes or records later, includi
 
 State the criteria when announcing the scope. Record a minor interpretation in the report's Situation. If the records cannot establish the essential outcomes without inventing them, or the learner's account of the agreement materially conflicts with them, create no verdict and use shared recovery.
 
-Every completed teaching lesson, including a remediation lesson, receives its LESSON check; a record with Session Type `Follow-up` creates none. Prior success provides context rather than replacing the current demonstration.
+Every completed teaching lesson, including a remediation lesson, receives its LESSON check. A record that leaves the lesson in progress, or has Session Type `Follow-up`, creates no check; an invocation for one is premature. Records without these fields follow the recorded route. Prior success provides context rather than replacing the current demonstration.
 
 #### Non-final Milestone
 
