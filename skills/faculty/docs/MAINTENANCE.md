@@ -67,6 +67,10 @@ Missing evidence, failed evidence and unavailable tools are different outcomes. 
 
 A contract replacement requires a material defect that cannot be addressed within the existing criteria. Check each independent replacement requirement when deciding whether earlier evidence applies. RECOGNIZED requires identical criteria, equal-or-stricter conditions, an accessible passing report and no effect from the defect. Uncertainty requires REPEAT.
 
+A UNIT pass describes capability at its assessed conditions and time. Later review evidence updates the current profile; it never rewrites an earlier verdict or Closed status. Keep reviews optional rather than adding them as progression or completion gates.
+
+Learner-requested withdrawal is a separate route. It needs no defect and recognizes no evidence for another unit. Keep a Withdrawn unit's records unchanged, and never count it as Closed, as a satisfied prerequisite or as course completion.
+
 For a routing problem, inspect the current status, next action and shared rules. Saved routing state must contain workflow information only, use a fresh UTC observation and be read back before announcing the handoff. Learner observations, teaching methods and detailed findings belong in the appropriate role record.
 
 ## Investigate research and rendering problems

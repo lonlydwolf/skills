@@ -8,6 +8,7 @@
 # Unit Contract: [Title]
 
 **Unit ID:** `[Stable roadmap unit ID]`
+**Entry:** `[STANDARD | CHALLENGE]`
 
 ## Intent
 
@@ -55,6 +56,13 @@ Evidence states what demonstrates completion and under which conditions. It defi
 
 FINAL identifies the final gate, not a mandatory artifact. Position and Evidence Type determine routing through the shared course rules. Evaluation and review reports carry verdicts; the contract carries criteria.
 
+## Entry
+
+- **STANDARD:** Teacher instructs toward each gate.
+- **CHALLENGE:** The learner asked to demonstrate prior competence. The learner may attempt each gate without prior teaching lessons; teaching remains available on request and through remediation.
+
+Entry changes only whether teaching precedes the gates. Milestones, criteria, conditions, sequence, and required Tutor and Editor verdicts are identical. A contract without an Entry field is STANDARD.
+
 ## Scope and instructional guidance
 
 Core sources define the approved curriculum basis. Tactical sources may support instruction within the unchanged contract.
@@ -71,6 +79,6 @@ A replacement contract includes a pointer to the old unit's immutable `supersess
 
 ## Completion check
 
-Read back the contract and verify its roadmap identity, accessible core-source references, objective-to-milestone alignment, milestone count and stable IDs, sequence, evidence-type consistency, and observable criteria.
+Read back the contract and verify its roadmap identity, Entry value, accessible core-source references, objective-to-milestone alignment, milestone count and stable IDs, sequence, evidence-type consistency, and observable criteria.
 
 For a replacement, also verify the supersession-record pointer resolves.

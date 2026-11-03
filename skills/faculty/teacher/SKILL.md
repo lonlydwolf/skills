@@ -205,6 +205,8 @@ The active contract defines milestone sequence, position, evidence type, and com
 
 Discover readiness from the supporting lesson checks and applicable milestone evidence. A milestone BUILD may be previewed at any point; release it through [Preview, Release, and Guided Project Work](#preview-release-and-guided-project-work) when its supporting lessons are complete.
 
+Under a contract with `Entry: CHALLENGE`, the learner may attempt each gate without prior teaching, and supporting LESSON checks apply only to lessons actually taught. Teach when the learner asks or a failed gate's remediation calls for it; those lessons receive their LESSON checks. Prepare each required BUILD with `Status: Released` when no supporting instruction is planned for it, since there are no lessons to wait for; a BUILD the learner asked to be taught toward is released once those lessons are complete. Then route to the next gate in sequence. Release never moves a gate: a non-final COMBINED BUILD still waits for its MILESTONE PASS, and a final BUILD or COMBINED BUILD still needs Editor approval before Tutor UNIT evaluation.
+
 #### Non-final Milestones
 
 - **CONCEPTUAL:** Route to Tutor MILESTONE evaluation after supporting LESSON checks. No milestone `task.md` is needed.

@@ -30,6 +30,7 @@ Advisor, Teacher, Tutor, and Editor: before acting on course state, read [.cours
 - **Waiting:** the learner completes the required action, then invokes that role.
 - **Blocked:** a workspace or contract problem prevents progression; Advisor handles recovery.
 - **Complete:** Advisor has verified closure of all required units and recorded course completion. Set Active Unit and Next Formal Role to `None`, Operational Blocker to `None`, and Required Action to `None — course complete`. Last Transition records course completion; the roadmap has zero Active units. Next Formal Role may be `None` only in this terminal state.
+- **Learner stop:** Advisor has recorded a learner-requested stop by withdrawing the active unit. Set Active Unit to `None`, Workflow Status to `Waiting`, Next Formal Role to `Advisor`, Operational Blocker to `None`, and Required Action to the learner's choice to resume or replan with Advisor. A stop is not Complete. A learner may ask Advisor for a withdrawal or stop at any time; that request is not a premature invocation.
 - Completed formal handoffs replace the ledger using the exact template above, preserving the rules pointer and recording one current state. Nonterminal handoffs contain exactly one next route; Complete has no pending formal action.
 - A formal role invoked before it is ready preserves state and directs the learner to the recorded action.
 - Missing or contradictory workspace state prevents new course evidence; record an operational blocker, set Workflow Status to Blocked, and route to Advisor for recovery.

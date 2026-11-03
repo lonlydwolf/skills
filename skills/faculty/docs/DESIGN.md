@@ -8,7 +8,7 @@ Faculty has six core roles and a course initializer. Initialization requires all
 
 | Role | Owned work |
 |---|---|
-| Advisor | Learner profile, roadmap, unit contracts, contract replacement and unit closure. |
+| Advisor | Learner profile, roadmap, unit contracts, contract replacement, learner-requested withdrawal and unit closure. |
 | Teacher | Instruction, lesson notes, learning records, assignments and instructional references. |
 | Tutor | Conceptual evaluations. |
 | Editor | Reviews of BUILD artifacts; the learner performs revisions. |
@@ -19,13 +19,17 @@ Format documents define valid saved artifacts: fields, naming, numbering, immuta
 
 ## Planning and contracts
 
-Advisor's rolling-wave prerequisite network is a branching plan with one Active unit during an ongoing course and none after completion. Only the selected unit is fully specified; future units remain concise roadmap entries. `roadmap.md` owns lifecycle state, and `roadmap.html` is its generated view. Prerequisites are canonical; reverse relationships are derived.
+Advisor's rolling-wave prerequisite network is a branching plan with one Active unit during an ongoing course and none after completion or a learner stop. Only the selected unit is fully specified; future units remain concise roadmap entries. `roadmap.md` owns lifecycle state, and `roadmap.html` is its generated view. Prerequisites are canonical; reverse relationships are derived.
+
+A learner who already has a unit's capability can request CHALLENGE entry. The contract keeps the same criteria and gates, and the learner attempts them without prior teaching lessons. Tutor and Editor still provide every conceptual and applied verdict; Advisor decides the route, not the result.
 
 Before activating a unit, Advisor checks prerequisite fit, source accessibility, scope, alignment between objectives and milestones, observable criteria, evidence types, final-gate validity, reachable routes and constraints. Activated `unit.md` is immutable. A unit has at least one FINAL milestone and at most five milestones, each with a stable identifier and CONCEPTUAL, BUILD or COMBINED evidence.
 
 Teacher adapts instruction within the contract. Bounded clarification and immediate safety or correctness responses fit that responsibility. Ordinary difficulty receives scaffolding and remediation. Curriculum changes and material contract defects return to Advisor.
 
 A defective contract can be replaced only when valid adaptation within it is impossible. Advisor validates a replacement, preserves the original and its evidence, updates the roadmap and records a mapping for every independently required outcome and condition. Prior evidence can be RECOGNIZED only when criteria are identical, conditions are equal or stricter, the passing report is accessible and the defect did not affect that evidence. Changed criteria or uncertainty require REPEAT. Recognition preserves the original verdict's scope.
+
+The learner controls their goals. Withdrawal records a learner's decision to leave the Active unit and is separate from defect replacement. The contract and evidence stay unchanged, pending obligations lapse, and a Withdrawn unit never satisfies a prerequisite or counts toward completion. The learner can switch to a newly activated unit in the same roadmap update, stop with no Active unit, or later reactivate the unchanged contract. A stop waits for Advisor; it is never recorded as course completion.
 
 ## Learning and gates
 
@@ -35,11 +39,13 @@ Teacher labels work PRACTICE or BUILD before it starts. A BUILD can be previewed
 
 Editor records scope coverage, strengths and improvements with their consequences. Any blocking finding or unmet required criterion means REJECTED. A blocker beyond the required criteria must show inspectable evidence, its consequence in the intended use and why that consequence prevents acceptable completion. Nonblocking improvements can coexist with APPROVED. Learner revision followed by Editor review is the usual rejection route. A Teacher → Tutor → Editor route requires evidence of conceptual misunderstanding. When a blocker persists, Editor uses the review trail to distinguish unfinished revision, unclear feedback, a conceptual gap and a requirement defect; a defect creates no verdict and goes to Advisor. Earlier review attempts remain unchanged.
 
-Non-final CONCEPTUAL milestones use Tutor MILESTONE. Non-final COMBINED milestones pass that conceptual gate before their BUILD. Final CONCEPTUAL proceeds to Tutor UNIT; final BUILD or COMBINED requires Editor approval before Tutor UNIT. A final milestone does not need a redundant MILESTONE evaluation. Advisor checks required evidence, consolidates the learner profile and closes the unit. Only UNIT PASS supports durable conceptual mastery.
+Non-final CONCEPTUAL milestones use Tutor MILESTONE. Non-final COMBINED milestones pass that conceptual gate before their BUILD. Final CONCEPTUAL proceeds to Tutor UNIT; final BUILD or COMBINED requires Editor approval before Tutor UNIT. A final milestone does not need a redundant MILESTONE evaluation. Advisor checks required evidence, consolidates the learner profile and closes the unit. Only UNIT PASS supports a conceptual mastery entry, and it shows capability at the assessed conditions and time rather than proven long-term retention. Lesson and milestone passes remain immediate evidence in unit records.
+
+At each closure, including the last, Advisor can record delayed reviews the learner agrees to in the roadmap's Review Plan. A review runs as an optional CHALLENGE review unit through the normal gates, including after course completion. Its results update the current profile; earlier verdicts and Closed statuses stay unchanged. Reviews never gate progression or completion, and Faculty sends no reminders.
 
 ## Durable course state
 
-`Learner.md` is a concise current model maintained by Advisor. Its Provisional Baseline distinguishes self-report and intake findings from mastery. C.A.M.S. separates Conceptual Mastery, Applied Execution, Misconceptions and Gaps, and Scaffolding and Constraints. Unit evidence supports consolidation; observations stay in role records during the unit. Resolved gaps are removed. The profile describes capabilities and useful supports rather than identity labels. Its target is 1,500 words, with consolidation required above 2,250 words.
+`Learner.md` is a concise current model maintained by Advisor. Its Provisional Baseline distinguishes self-report and intake findings from mastery. C.A.M.S. separates Conceptual Mastery, Applied Execution, Misconceptions and Gaps, and Scaffolding and Constraints. C and A entries state when each capability was last demonstrated, and later comparable evidence of forgetting records the affected gap in M while preserving supported aspects. Unit evidence supports consolidation; observations stay in role records during the unit. Resolved gaps are removed. The profile describes capabilities and useful supports rather than identity labels. Its target is 1,500 words, with consolidation required above 2,250 words.
 
 The course routing record contains the current status, transition, blocker and next action. Advisor, Teacher, Tutor and Editor maintain it according to the shared course rules. Each write uses a fresh tool-observed UTC timestamp and saved read-back. Instructional details and evidence paths remain in role-owned records. Missing or contradictory state blocks new evidence and routes to Advisor. Course completion clears the active unit and next formal role.
 

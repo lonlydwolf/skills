@@ -14,6 +14,8 @@ Answer the intake questions one at a time. Explain what you can already do, wher
 
 Review the proposed destination and cut list before the first unit is activated. The roadmap shows the larger course; only the selected unit is planned in detail. Later units can change as evidence develops.
 
+If you can already do what a unit requires, ask Advisor for challenge entry. You go straight to the unit's evaluations and builds without lessons first, under the same requirements. A failed evaluation or rejected build leads to the usual remediation, and you can ask Teacher for instruction at any point.
+
 Advisor saves the learner profile, roadmap and active unit contract. The contract explains that unit's objectives, boundaries, milestones and required evidence. Once activated, its requirements stay fixed. Teacher can adapt explanations and pacing within them.
 
 ## Follow the saved next step
@@ -119,7 +121,25 @@ Once the required gates have passed, Tutor routes you to Advisor:
 
 Advisor checks the applicable reports, closes the unit when justified, and updates the learner profile. If course work remains, Advisor prepares the next eligible unit. When all required units are closed, Advisor records course completion with no active unit or next formal role.
 
-You can inspect `roadmap.html` for orientation and `Learner.md` for the current learner profile. An intake finding is provisional; completed unit evidence supports later consolidation.
+You can inspect `roadmap.html` for orientation and `Learner.md` for the current learner profile. An intake finding is provisional; completed unit evidence supports later consolidation. A passed unit shows what you could do when assessed, not that you will remember it.
+
+### Review later
+
+When a unit closes, including the last one, Advisor can offer a delayed review. Agree to a timing or decline; the roadmap's Review Plan records only what you accept. Faculty does not send reminders. When you want the review, start Advisor:
+
+> I agreed to review the CSV-cleaning unit around now. Please set up the review.
+
+Advisor prepares a short review unit with challenge entry, using the original requirements you choose to re-check. If another unit is active, schedule the review for a unit boundary or explicitly withdraw the active unit before switching. If a review shows you have forgotten something, your profile records it as a current gap. Earlier results and closed units stay unchanged. You can work through remediation or withdraw the review; withdrawing it after completing the course returns the course to `Complete`.
+
+## Change direction or stop
+
+Your goals can change. Start `academic-advisor` and say what you want instead:
+
+> I no longer want to finish the current unit. I would rather focus on reporting summaries, or stop the course for now.
+
+Advisor checks whether a break, different pacing or a revised route would serve you better, then follows your decision. The current unit becomes `Withdrawn` on the roadmap with your stated reason. Its contract, notes and results stay in its folder. A withdrawn unit is not completed: it does not unlock later units or count toward finishing the course.
+
+You can switch to a newly planned unit, stop with no active unit, or later ask Advisor to resume the withdrawn unit under its original requirements. After a stop, the routing record shows `Waiting` with Advisor as the next role; it does not show `Complete`.
 
 ## Find your saved work
 

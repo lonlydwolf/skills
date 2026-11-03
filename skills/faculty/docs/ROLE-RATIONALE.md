@@ -4,7 +4,7 @@
 
 ## Advisor
 
-Planning and curriculum changes need a single owner. Advisor turns an ambition into prerequisites, valid unit contracts and an evidence-supported current learner profile. Rolling-wave planning avoids spending effort on distant units before the learner's progress is known. Immutable activated contracts prevent criteria from moving after the learner has started.
+Planning and curriculum changes need a single owner. Advisor turns an ambition into prerequisites, valid unit contracts and an evidence-supported current learner profile. Rolling-wave planning avoids spending effort on distant units before the learner's progress is known. Immutable activated contracts prevent criteria from moving after the learner has started. Withdrawal lets the learner change direction without disguising an abandoned unit as a defect or a completion.
 
 ## Teacher
 
@@ -12,7 +12,7 @@ Instruction needs room to adapt while keeping the target stable. Teacher chooses
 
 ## Tutor
 
-Familiarity and fluency can resemble understanding. Tutor asks the learner to demonstrate conceptual capability and records all critical criteria, including missing evidence. LESSON checks give timely repair, MILESTONE checks integrate intermediate concepts and UNIT checks support durable consolidation. New immutable attempts preserve progress without rewriting failures.
+Familiarity and fluency can resemble understanding. Tutor asks the learner to demonstrate conceptual capability and records all critical criteria, including missing evidence. LESSON checks give timely repair, MILESTONE checks integrate intermediate concepts and UNIT checks support consolidation of what the learner demonstrated at that time. Retention needs later evidence, so delayed reviews reuse the same gates rather than a separate evaluation type. New immutable attempts preserve progress without rewriting failures.
 
 Fixed lesson outcomes keep a retry measuring the same capability, and separating missing evidence from observed gaps keeps a narrow repair narrow. Asking about aids, rather than guessing from how an answer looks, keeps integrity judgments grounded in evidence.
 
