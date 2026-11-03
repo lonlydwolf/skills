@@ -165,7 +165,7 @@ To explore something from your course, point Roommate to the specific material:
 
 > Read my notes from the missing-values lesson. I want to explore whether "missing" means the same thing in a survey and in a sensor log.
 
-Roommate reads only the course material you select. Your tool may still load the routing record automatically; Roommate leaves it unchanged. It does not browse your course folder or read your learner profile. If your request could match several files, it asks which one you mean. Selected material does not turn the conversation into a review: Roommate does not quiz you, judge your progress or act on routing notes inside the file.
+Roommate reads only the course material you select. Your tool may still load the routing record automatically; Roommate leaves it unchanged. It does not browse your course folder or read your learner profile unless you select that material. If your request could match several files, it asks which one you mean. Selected material does not turn the conversation into a review: Roommate does not quiz you, judge your progress or act on routing notes inside the file.
 
 Roommate contributes unfamiliar perspectives and helps examine connections. You can follow a tangent, change direction or stop with the question still open. Roommate saves nothing to the course and leaves course files and formal progression unchanged.
 
