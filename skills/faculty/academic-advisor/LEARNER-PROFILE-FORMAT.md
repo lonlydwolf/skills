@@ -15,11 +15,11 @@ Course-root `Learner.md` is a concise current-state model with a provisional bas
 
 ## C - Conceptual Mastery
 
-- `[Capability and demonstrated scope, supported by a passing Tutor UNIT evaluation.]`
+- `[Capability, demonstrated scope and conditions, and month last demonstrated, supported by a passing Tutor UNIT evaluation.]`
 
 ## A - Applied Execution
 
-- `[Applied capability and demonstrated conditions, supported by an APPROVED Editor review.]`
+- `[Applied capability, demonstrated conditions, and month last demonstrated, supported by an APPROVED Editor review.]`
 
 ## M - Misconceptions and Gaps
 
@@ -40,10 +40,12 @@ At completed-unit consolidation, revisit baseline entries against course evidenc
 
 Rewrite the profile after reviewing a completed unit's learning records, evaluations, and reviews, before activating the next unit. During a unit, new evidence remains in that unit's records.
 
-- **C:** Only passing UNIT evaluations establish durable conceptual mastery.
+- **C:** Only passing UNIT evaluations support a conceptual mastery entry. It describes capability at the assessed scope, conditions, and time, not proven long-term retention. Lesson and milestone passes are immediate evidence: they stay in unit records and can inform M and S, never C.
 - **A:** Describe what approved artifacts demonstrate without generalizing beyond their scope or conditions.
 - **M:** Retain unresolved gaps; remove resolved misconceptions. Add the resulting capability to C or A only when its evidence requirement is met.
 - **S:** Describe actionable observations and constraints rather than fixed learner identities or broad learning-style labels.
+
+Later evidence updates current entries without changing earlier verdicts. A later passing UNIT evaluation or APPROVED review of the same capability refreshes its month. An observed NOT MET criterion or blocking finding on a capability in C or A moves it to M as a current gap. Missing evidence, such as an unattempted gate or a withdrawal before a verdict, changes nothing.
 
 Preserve supported current entries when new evidence does not justify a change. Consolidate entries by capability or instructional need; evidence paths, session history, and consolidation markers remain outside the profile.
 
@@ -51,4 +53,4 @@ Preserve supported current entries when new evidence does not justify a change. 
 
 Target 1,500 words or fewer. Above 2,250 words, perform semantic pruning and consolidation while preserving critical current state.
 
-Before finishing, read back `Learner.md` and verify both evidence support and current-state wording. Each C.A.M.S. entry states a supported capability, unresolved gap, actionable scaffold, or constraint; assessment identifiers, verdict labels, and session chronology belong in the unit records. Rewrite entries that retain those historical details, then recheck the saved profile. Measure its size with a deterministic word-count tool and complete any required consolidation review.
+Before finishing, read back `Learner.md` and verify both evidence support and current-state wording. Each C.A.M.S. entry states a supported capability, unresolved gap, actionable scaffold, or constraint; assessment identifiers, verdict labels, and session chronology belong in the unit records; the month last demonstrated is the only date in C and A. Rewrite entries that retain those historical details, then recheck the saved profile. Measure its size with a deterministic word-count tool and complete any required consolidation review.

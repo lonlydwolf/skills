@@ -119,7 +119,15 @@ Once the required gates have passed, Tutor routes you to Advisor:
 
 Advisor checks the applicable reports, closes the unit when justified, and updates the learner profile. If course work remains, Advisor prepares the next eligible unit. When all required units are closed, Advisor records course completion with no active unit or next formal role.
 
-You can inspect `roadmap.html` for orientation and `Learner.md` for the current learner profile. An intake finding is provisional; completed unit evidence supports later consolidation.
+You can inspect `roadmap.html` for orientation and `Learner.md` for the current learner profile. An intake finding is provisional; completed unit evidence supports later consolidation. A passed unit shows what you could do when assessed, not that you will remember it.
+
+### Review later
+
+When a unit closes, including the last one, Advisor can offer a delayed review. Agree to a timing or decline; the roadmap's Review Plan records only what you accept. Faculty does not send reminders. When you want the review, start Advisor:
+
+> I agreed to review the CSV-cleaning unit around now. Please set up the review.
+
+Advisor prepares a short review unit with challenge entry, using the original requirements you choose to re-check. If a review shows you have forgotten something, your profile records it as a current gap. Earlier results and closed units stay unchanged. You can work through remediation or withdraw the review; withdrawing it after completing the course returns the course to `Complete`.
 
 ## Change direction or stop
 

@@ -68,7 +68,7 @@ Treat consolidation as an **ETL—Extract, Transform, Load—process**: extract 
 - **Diagnostic Specificity:** Describe demonstrated capabilities and bounded gaps rather than assigning broad ability or identity labels.
 - **Consolidation over Accumulation:** Preserve useful current state rather than growing a transcript of the learner's history. Completed unit directories retain the evidence; the profile supports future decisions.
 
-Placement diagnostics inform curriculum planning. Durable mastery claims follow the profile schema's evidence requirements.
+Placement diagnostics inform curriculum planning. Mastery claims follow the profile schema's evidence and recency requirements: a UNIT pass shows capability at its assessed conditions and time, not proven long-term retention.
 
 ### Pragmatic Skill Stacking
 
@@ -217,14 +217,23 @@ The learner controls their goals. When they no longer want the Active unit's goa
 Withdrawal is not supersession: it needs no contract defect, creates no `supersession.md`, and recognizes no evidence for another unit.
 
 - **Preserve the record.** Keep the contract, learning records, evaluations, reviews, assignments, and learner artifacts unchanged. Pending remediation, revision, or gate obligations lapse while the unit is Withdrawn; they become neither failures nor passes.
-- **No counterfeit progress.** A Withdrawn unit is not Closed. It does not satisfy prerequisites or count toward completion, and its lesson or milestone passes do not become unit mastery. Skip completed-unit consolidation; update `Learner.md` only with goals or constraints the learner states.
+- **No counterfeit progress.** A Withdrawn unit is not Closed. It does not satisfy prerequisites or count toward completion, and its lesson or milestone passes do not become unit mastery. Skip completed-unit consolidation; update `Learner.md` only with goals or constraints the learner states. Review units follow [Delayed Review](#delayed-review).
 - **Record the decision.** Add the roadmap node's Withdrawal field with the date and the learner's stated reason.
 
 Choose the transition with the learner:
 
 - **Switch direction:** Replan the roadmap, then select, preflight, and publish the new unit through [Unit Planning and Activation](#unit-planning-and-activation). In one roadmap update, mark the old node Withdrawn and the new unit Active.
-- **Stop the course:** Mark the node Withdrawn, leaving zero Active units, and reconcile Planned nodes as the learner directs. Publish the shared rules' learner-stop state: no Active Unit, `Waiting` for Advisor, and a Required Action naming the learner's choice to resume or replan. Courses with earlier copied rules accept the same values. A withdrawal never publishes Complete, even when no Planned work remains.
+- **Stop the course:** Mark the node Withdrawn, leaving zero Active units, and reconcile Planned nodes as the learner directs. Publish the shared rules' learner-stop state: no Active Unit, `Waiting` for Advisor, and a Required Action naming the learner's choice to resume or replan. Courses with earlier copied rules accept the same values. A withdrawal never publishes Complete, even when no Planned work remains; [Delayed Review](#delayed-review) covers ending a review after course completion.
 - **Reactivate:** When the learner returns to a Withdrawn unit whose unchanged contract still passes preflight, mark it Active again and keep its Withdrawal field as history. Its earlier reports keep their attempt linkage; rediscover current obligations from the latest applicable evidence. If the contract no longer fits, plan a new unit instead.
+
+## Delayed Review
+
+Delayed review lets the learner check what they still retain after a unit closes. It is opt-in and never a progression or completion gate.
+
+- **Agree a plan.** At each unit closure, including the final one, offer a delayed review and record any timing the learner agrees to in the roadmap's Review Plan. Record nothing when they decline. Faculty sends no reminders; the learner returns to Advisor when ready, including after a stop or course completion.
+- **Run a review.** When the learner chooses a due or requested review, publish a review unit through [Unit Planning and Activation](#unit-planning-and-activation) with `Entry: CHALLENGE`, the reviewed unit as its prerequisite, and the reviewed criteria and conditions it re-checks. Mark its Review Plan entry Activated. During an ongoing course, the learner chooses between a due review and the next unit; one unit is Active at a time.
+- **Update current judgments.** When a review unit closes or is withdrawn, update the reviewed capabilities in `Learner.md` from its Tutor and Editor reports through the profile schema's later-evidence rule. Earlier verdicts and Closed statuses stay unchanged.
+- **Return the course state.** After a failed review gate, the learner chooses between its remediation route and withdrawing the review. When a review unit ends after course completion, by closure or withdrawal, publish Complete again; the original closures stand. During an ongoing course, select the next unit or stop as usual.
 
 ## Recovery and Supersession
 
@@ -270,11 +279,11 @@ Verify the linked state before publishing the next route. Supersession does not 
 
 Make the roadmap beautiful, readable, and useful for orientation. Think **Wayfinding + Transit Map + Tufte**.
 
-Present the destination, current phase, cut list, unit nodes, and prerequisite connections. Distinguish lifecycle status from derived availability, using labels as well as color.
+Present the destination, current phase, cut list, review plan, unit nodes, and prerequisite connections. Distinguish lifecycle status from derived availability, using labels as well as color.
 
 Provide navigable links to published units, a clear legend, keyboard-accessible navigation, a narrow-screen layout, and a semantic text fallback.
 
-Check semantic parity for the destination, cut list, phases, units, statuses, and derived edges. Verify local links and inspect rendered output where tools permit; disclose validation limitations.
+Check semantic parity for the destination, cut list, review plan, phases, units, statuses, and derived edges. Verify local links and inspect rendered output where tools permit; disclose validation limitations.
 
 ## Completion
 

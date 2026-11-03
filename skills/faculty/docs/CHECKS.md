@@ -28,7 +28,9 @@ The last workflow used fresh sessions and synthetic learner replies. It exercise
 
 ## Beta limitations
 
-Long-term retention, transfer and real learner outcomes remain unmeasured. Teacher-commissioned research in real use and all combinations of practice, remediation, contract replacement and recovery are not exhaustively covered.
+Long-term retention, transfer and real learner outcomes remain unmeasured. Delayed review records later evidence; it does not measure retention across learners.
+
+Learner-requested withdrawal, challenge entry and delayed review were checked only by source walkthroughs of synthetic course states. No live agent session has exercised them. Teacher-commissioned research in real use and all combinations of practice, remediation, contract replacement and recovery are not exhaustively covered.
 
 No installer compatibility result is claimed for the beta. Role discovery, saved-state loading, research-worker availability and HTML inspection depend on the app, account and available tools. Installing the skills does not establish those capabilities.
 

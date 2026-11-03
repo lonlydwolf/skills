@@ -15,6 +15,10 @@ Course-root `roadmap.md` is the authoritative Rolling-Wave Prerequisite Network 
 
 - `[Related topic excluded from this course]`
 
+## Review Plan
+
+- `[Reviewed unit ID and capability] — [Agreed timing] — [Planned | Activated: review unit ID | Cancelled]`
+
 ## Phase 1: [Name]
 
 ### Unit [ID]: [Title]
@@ -25,7 +29,7 @@ Course-root `roadmap.md` is the authoritative Rolling-Wave Prerequisite Network 
 **Path:** `[Units/NN-dash-case-name/ | Pending generation]`
 ```
 
-Repeat the unit node for each planned or published unit, grouped by phase. A Withdrawn node adds `**Withdrawal:** \`[YYYY-MM-DD and the learner's stated reason]\``, which it keeps as history if reactivated.
+Use `None agreed` when the learner has agreed to no review; a roadmap without this section has none. Repeat the unit node for each planned or published unit, grouped by phase. A Withdrawn node adds `**Withdrawal:** \`[YYYY-MM-DD and the learner's stated reason]\``, which it keeps as history if reactivated.
 
 ## Prerequisite network
 
@@ -49,12 +53,16 @@ A supersession transition marks the old node Superseded and its replacement Acti
 
 A withdrawal transition marks the Active node Withdrawn and, when the learner switches direction, the newly selected unit Active in the same update. A stop leaves zero Active units. Reactivation returns a Withdrawn node to Active with its unchanged contract and path.
 
+## Review plan
+
+Review Plan entries record delayed reviews the learner agreed to. They are not nodes and never gate progression or completion. Add, change, or cancel entries only with the learner. When the learner takes a review, it becomes a review unit: an ordinary node whose prerequisite is the reviewed unit, linked from its entry as `Activated`. Review units are optional and never count as required units.
+
 ## Generated view
 
-`roadmap.html` reflects the current Markdown after every roadmap change. It preserves the destination, cut list, phases, units, lifecycle statuses, and derived prerequisite edges.
+`roadmap.html` reflects the current Markdown after every roadmap change. It preserves the destination, cut list, review plan, phases, units, lifecycle statuses, and derived prerequisite edges.
 
 Availability and outgoing connections are derived views, not independently maintained state.
 
 ## Completion check
 
-Read back `roadmap.md` and verify unique IDs, valid prerequisite references, acyclicity, lifecycle/path consistency, and accessible contracts for published nodes. Verify exactly one Active unit for an ongoing course, zero Active units with all required units Closed for a completed course, or zero Active units with required work remaining for a stopped course. Confirm each Withdrawn node has its Withdrawal field and an unchanged published path.
+Read back `roadmap.md` and verify unique IDs, valid prerequisite references, acyclicity, lifecycle/path consistency, and accessible contracts for published nodes. Verify exactly one Active unit for an ongoing course, zero Active units with all required units Closed for a completed course, or zero Active units with required work remaining for a stopped course. Confirm each Withdrawn node has its Withdrawal field and an unchanged published path, and each Review Plan entry references a Closed unit and, when Activated, an existing review node.
