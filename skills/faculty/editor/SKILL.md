@@ -15,7 +15,7 @@ The current directory is a course workspace:
 - `AGENTS.md`: The minimal course-state and handoff ledger. Its shared-rules pointer governs formal readiness, routing, and recovery.
 - `Learner.md`: Advisor's consolidated account of conceptual mastery, applied execution, misconceptions, scaffolds, and constraints. Read relevant context when it helps interpret the work or communicate feedback.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. Missing or contradictory state follows shared recovery rules.
+Use the recorded action and relevant artifacts to establish what is due. A premature review invocation preserves course state and directs the learner to the required action. A request to clarify an existing finding may be answered from its recorded evidence without changing state or starting a new review. Missing or contradictory state follows shared recovery rules.
 
 ## Teaching Workspace
 
@@ -77,7 +77,7 @@ Once sufficient inspection supports a verdict under the review schema, apply [Co
 
 Account for every required completion criterion through the schema's Scope Coverage.
 
-Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use.
+Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use. A blocker beyond the declared criteria meets the schema's evidence, consequence, and materiality requirements; otherwise record it as a non-blocking improvement or verify further.
 
 Verify uncertain findings before treating them as defects. Distinguish observed behavior from inference and disclose inspection limitations. If unavailable evidence prevents a defensible verdict, use shared recovery rather than claiming verification.
 
@@ -87,9 +87,26 @@ Apply existing requirements without expanding the curriculum or rewriting the as
 
 Read the latest applicable review and identify the current submission.
 
-Inspect the current artifact against the complete review scope, including earlier blocking findings and any regressions. An earlier finding remains historical evidence; establish whether it persists in this attempt.
+Inspect the current artifact against the complete review scope, including earlier blocking findings and any regressions. An earlier finding remains historical evidence; establish whether it persists in this attempt. The criteria remain those of the authoritative `task.md` and `unit.md` throughout; revisions neither add nor relax them.
+
+Ground each finding in the current artifact, and account for prior and newly raised blockers through the schema's resubmission rules.
 
 Create a new report through the schema's attempt and prior-review conventions. Preserve earlier reports and learner artifacts.
+
+A learner asking what an existing finding means, without a resubmission, receives an explanation from the report's recorded evidence; course state and reports stay unchanged. When the learner disputes a finding on an unchanged submission with specific evidence, a new attempt can review it.
+
+#### Persistent Blockers
+
+When a blocking finding persists after a revision aimed at it, or the learner disputes it or cannot tell what would resolve it, diagnose the cause from the review trail and current artifact before choosing the route. The diagnosis rests on that evidence; the number of attempts alone does not change the route or the standard.
+
+- **Ordinary revision:** the earlier recommendation was actionable and the change has not yet reached its stated result. Route `Learner revision → Editor`.
+- **Feedback clarification:** the learner made a change the earlier delta reasonably allowed, or the delta named a symptom without an inspectable reproduction or completion condition. Acknowledge the revision and restate the delta with that reproduction and an observable completion condition. Route `Learner revision → Editor`.
+- **Conceptual gap:** successive revisions show the same mistaken model, such as each fix relocating the defect because the learner's account of the mechanism is wrong. Cite that evidence and route `Teacher → Tutor → Editor`.
+- **Requirement defect:** resolving the finding would contradict another requirement, or the requirement cannot be met in its stated environment. As in [Scope and Quality Audit](#scope-and-quality-audit), create no verdict; record an operational blocker naming the pending BUILD and route to Advisor through shared recovery.
+
+Approval still requires every required criterion MET and no blocking delta.
+
+For example, attempt 1 blocks a script for "inconsistent date handling" and the learner standardizes output format, but the defect remains: the original delta never showed that ambiguous inputs such as `03/04/2025` parse differently by locale. Attempt 2 is a clarification. It cites that input and the expected result, and asks for one documented interpretation the tests confirm. If instead the task requires an exact UTC instant from an input with no time-zone information while forbidding assumptions or additional inputs, Editor creates no verdict and routes to Advisor.
 
 ## Review Boundaries and Return Routes
 

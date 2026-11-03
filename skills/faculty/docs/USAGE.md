@@ -105,7 +105,7 @@ For resubmission, identify the current artifacts and prior review:
 
 > I have revised the submitted files to address the latest review. Please review the full current submission, including the earlier blocking findings.
 
-Editor creates a new report and preserves the previous attempt. Approval of an ordinary or non-final build returns you to Teacher. A final build's approval proceeds to Tutor's cumulative UNIT evaluation.
+Editor creates a new report and preserves the previous attempt. It lists each earlier blocking finding as resolved, persisting or not reproduced, and explains any newly raised blocker against the same requirements. If you cannot tell what would resolve a finding, ask Editor to explain it; that conversation changes no course state. A blocker that persists because the feedback was unclear receives a clearer restatement, and a requirement that cannot be satisfied goes to Advisor rather than another rejection. Approval of an ordinary or non-final build returns you to Teacher. A final build's approval proceeds to Tutor's cumulative UNIT evaluation.
 
 ## Finish a unit
 

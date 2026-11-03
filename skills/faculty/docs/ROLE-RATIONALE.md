@@ -16,7 +16,7 @@ Familiarity and fluency can resemble understanding. Tutor asks the learner to de
 
 ## Editor
 
-A correct explanation does not ensure a useful artifact. Editor inspects BUILD outputs in their intended context, records consequences and derives a verdict from material findings. Keeping revisions with the learner preserves the learning task. Requiring conceptual evidence for a foundational referral prevents every implementation mistake from becoming a reteaching detour.
+A correct explanation does not ensure a useful artifact. Editor inspects BUILD outputs in their intended context, records consequences and derives a verdict from material findings. Keeping revisions with the learner preserves the learning task. Requiring conceptual evidence for a foundational referral prevents every implementation mistake from becoming a reteaching detour. Requiring evidence, consequence and materiality for blockers beyond the criteria keeps rejection tied to the agreed use rather than a reviewer's general preferences. Diagnosing why a blocker persists, rather than capping attempts, keeps the standard fixed while routing unclear feedback, conceptual gaps and defective requirements to the right owner.
 
 ## Librarian
 
