@@ -81,7 +81,7 @@ Select one Next Route. A FAIL routes to `Teacher remediation → Tutor reevaluat
 4. **Conceptual gate due.** The latest learning record shows the supporting instruction complete for the next non-final CONCEPTUAL or COMBINED milestone: `Tutor MILESTONE evaluation`. For a final CONCEPTUAL milestone: `Tutor UNIT evaluation`.
 5. **Otherwise:** `Teacher`.
 
-Work is released when Teacher's latest applicable learning record names it as pending without deferring its start, and no later review or record shows it completed. A `task.md` that exists, including one shown early as a preview, does not by itself make work pending or ready.
+Work is released when its `task.md` has `Status: Released`. An assignment without a Status field counts as released when Teacher's latest applicable learning record names it as the Pending Assignment without deferring its start. A `Preview` assignment is not pending work: Teacher releases it after the supporting instruction, so a PASS with only a Preview build routes `Teacher`. Released work stays pending until a later review or record shows it completed. A `task.md` that exists does not by itself make work pending or ready.
 
 Required Action names the immediate action, its target and completion condition, then each retained obligation in the order it becomes due.
 
@@ -92,7 +92,7 @@ Required Action names the immediate action, its target and completion condition,
 | Lesson 04 supports non-final COMBINED M02. Its record releases `assignments/02` (M02) and shows M02 instruction complete. No M02 evaluation exists. | `Tutor MILESTONE evaluation` | Tutor MILESTONE evaluation of M02; `assignments/02` stays pending until M02 PASS, then Editor. |
 | Same, but lesson 04's record plans lesson 05 before M02. | `Teacher` | Teacher continues M02 instruction; `assignments/02` waits for M02 PASS. |
 | Final COMBINED M03. Lesson 06's record releases `assignments/03`. | `Learner completes build → Editor` | Complete `assignments/03`; Editor approval, then Tutor UNIT evaluation. No final MILESTONE evaluation. |
-| Final BUILD `task.md` was shown as a preview after lesson 02. Lesson 03's record defers its start until lessons 04 and 05. | `Teacher` | Teacher continues preparation for the final build. |
+| Final BUILD `assignments/03` has `Status: Preview`. Lesson 03's record plans lessons 04 and 05 first. An older assignment without Status, whose start the latest record defers, routes the same way. | `Teacher` | Teacher completes final-build preparation and releases `assignments/03`. |
 | M02 MILESTONE attempt 1 failed. Remediation lesson 05 released remediation PRACTICE `assignments/04`. | `Learner completes practice → Teacher` | Complete `assignments/04` and return to Teacher; Tutor MILESTONE reevaluation of M02 remains due; `assignments/02` waits for M02 PASS. |
 | Review 0003 rejected ordinary BUILD `assignments/01` with `Teacher → Tutor → Editor`. Remediation lesson 06's record shows remediation complete. | `Learner revision → Editor` | Revise `assignments/01` against review 0003, then request Editor attempt 2. |
 | UNIT attempt 1 failed after final build approval. Remediation lesson 08's record shows remediation complete. | `Tutor reevaluation` | Tutor UNIT reevaluation, attempt 2. |
