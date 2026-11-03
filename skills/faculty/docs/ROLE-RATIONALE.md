@@ -12,7 +12,7 @@ Instruction needs room to adapt while keeping the target stable. Teacher chooses
 
 ## Tutor
 
-Familiarity and fluency can resemble understanding. Tutor asks the learner to demonstrate conceptual capability and records all critical criteria, including missing evidence. LESSON checks give timely repair, MILESTONE checks integrate intermediate concepts and UNIT checks support durable consolidation. New immutable attempts preserve progress without rewriting failures.
+Familiarity and fluency can resemble understanding. Tutor asks the learner to demonstrate conceptual capability and records all critical criteria, including missing evidence. LESSON checks give timely repair, MILESTONE checks integrate intermediate concepts and UNIT checks support durable consolidation. New immutable attempts preserve progress without rewriting failures. Fixed lesson outcomes keep a retry measuring the same capability, and separating missing evidence from observed gaps keeps a narrow repair narrow. Asking about aids, rather than guessing from how an answer looks, keeps integrity judgments grounded in evidence.
 
 ## Editor
 

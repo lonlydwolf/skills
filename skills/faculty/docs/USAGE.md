@@ -64,7 +64,7 @@ Select `tutor` when the course calls for conceptual evaluation:
 
 > Carry out the evaluation recorded in the current next action. Establish its scope and permitted aids before starting.
 
-Tutor asks one prompt at a time and gathers evidence from your answers. Expect to explain, predict, diagnose or apply the material in changed examples. Conceptual retrieval is closed-book by default; Tutor states when references or tools belong to the capability being assessed.
+Tutor states the criteria and permitted aids, then asks which aids you have open; your answer is recorded neutrally. Tutor asks one prompt at a time and gathers evidence from your answers. Expect to explain, predict, diagnose or apply the material in changed examples. Conceptual retrieval is closed-book by default; Tutor states when references or tools belong to the capability being assessed.
 
 Tutor uses three evaluation types:
 
@@ -74,7 +74,7 @@ Tutor uses three evaluation types:
 | `MILESTONE` | Integrated understanding for a non-final conceptual or combined milestone. |
 | `UNIT` | Cumulative conceptual understanding at the final unit gate. |
 
-A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion and a next route. A failure identifies what needs attention. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target. Earlier reports remain as history.
+A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion and a next route. Each criterion is `MET`, `NOT MET` or `NOT ASSESSED`; a slip in wording does not fail a criterion when your reasoning shows the capability. A failure identifies each gap. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target against the same criteria. It focuses on what was missing and briefly rechecks the rest. Earlier reports remain as history.
 
 For an interrupted evaluation, see [Pause and resume](#pause-and-resume).
 
@@ -89,7 +89,7 @@ There are two assignment types:
 | `PRACTICE` | Predict how a small dataset's missing values affect a summary, then explain your answer. | Teacher for instructional follow-up. |
 | `BUILD` | Create a reusable CSV-cleaning script and the outputs required by its assignment. | Editor for formal review. |
 
-Follow the saved route and any conceptual prerequisites before starting pending independent work. Save file-based outputs at the assignment's stated locations. For work delivered in the conversation, use the specified completion signal.
+Follow the saved route and any conceptual prerequisites before starting pending independent work. For example, a build for a non-final milestone that also requires conceptual evidence waits for Tutor's milestone evaluation. Save file-based outputs at the assignment's stated locations. For work delivered in the conversation, use the specified completion signal.
 
 ### Submit a build
 
