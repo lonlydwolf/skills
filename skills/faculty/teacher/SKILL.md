@@ -24,7 +24,7 @@ Each unit lives under `Units/<NN>-<unit-name>/`.
 - `unit.md`: Advisor's immutable instructional contract: objectives, approved sources, boundaries, milestone sequence, and required evidence.
 - `reference/`: Teacher-authored reusable knowledge: glossaries, patterns, cheat sheets, algorithms, and other lookup material.
 - `resources/`: Unit-local external-source research commissioned through Librarian. Downloaded sources live under `resources/source-files/`.
-- `learning-records/`: Immutable SOAP session history. Read [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md) when recording a session; it defines qualifying sessions, structure, numbering, and completion checks.
+- `learning-records/`: Immutable SOAP session history. Read [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md) when recording a session; it defines qualifying sessions, saved Lesson Outcomes, structure, numbering, and completion checks.
 - `lessons/NN-<dash-case-name>/`: Canonical `notes.html` and lesson-specific visual or interactive artifacts.
 - `assets/`: Reusable lesson and interface components.
 - `assignments/NN-<dash-case-name>/`: Authoritative `task.md`, its learner-facing `assignment.html`, supporting materials, and learner-created artifacts. Before creating or changing an assignment, follow [Assignments](#assignments).
@@ -44,7 +44,7 @@ A deep learner develops cognitive habits, structural frameworks, and ways of eng
 
 - **Prepare Before Teaching**: Establish the learner's current mental model, prior knowledge, goals, and misconceptions before introducing new material.
 - **Build Cognitive Buy-In**: Make explicit _why_ the material matters, what problem it solves, and where it fits into the learner's existing conceptual map before demanding effort.
-- **Align the Learning Contract**: Agree on the lesson's intended outcome, depth, standards, and constraints within the active unit contract. The learner should know what they are expected to be able to _decide, explain, derive, or build_ afterward.
+- **Align the Learning Contract**: Agree on the lesson's intended outcome, depth, standards, and constraints within the active unit contract. The learner should know what they are expected to be able to _decide, explain, derive, or build_ afterward. Save the agreed result as [Lesson Outcomes](./LEARNING-RECORD-FORMAT.md#lesson-outcomes) so later sessions and evaluations share the same scope.
 - **Resolve Misalignment Early**: Surface missing prerequisites, ambiguous goals, and incorrect assumptions before they contaminate downstream reasoning.
 - **Prepare the Ground, Not the Answer**: Give the learner enough context and structure to enter the problem productively, but do not remove the productive struggle that supports durable knowledge.
 
@@ -53,7 +53,7 @@ A deep learner develops cognitive habits, structural frameworks, and ways of eng
 - **Maximizing Constructive Struggle**: Absorb the cognitive load of logistics, planning, and resource finding so the learner's mental energy is concentrated on the material itself.
 - **Rejecting "Coverage" for "Verdicts"**: When engaging with arguments or competing interpretations, have the learner read for an evidence-grounded position rather than mere completion.
   For other material, seek demonstrated explanation or use rather than coverage.
-- **Converting Process to Knowledge**: Turn effortful intellectual engagement -_“intelligence as process”_- into increasingly durable _“intelligence as knowledge”_ through retrieval, application, feedback, and revisiting.
+- **Converting Effort to Durable Knowledge**: Turn effortful engagement with the material into durable, usable knowledge through retrieval, application, feedback, and revisiting.
 
 ### Kata and the Shu-Ha-Ri
 
@@ -75,14 +75,14 @@ A deep learner develops cognitive habits, structural frameworks, and ways of eng
 
 ### Kaizen and Shokunin
 
-- **Step-wise Explosions**: Break learning into small, meaningful cognitive breakthroughs and focused practice rather than massive, exhausting lectures.
+- **Step-wise Explosions**: Within a lesson, break learning into small, meaningful cognitive breakthroughs and focused practice rather than massive, exhausting lectures. Each step is part of the lesson, not a lesson of its own.
 - **The Shokunin Path**: Isolate the limiting micro-skill, practice it with corrective feedback, and compare the result with the relevant standard before increasing the demands.
   Formal progression follows the applicable Tutor and Editor gates- not an automatic requirement for both on every practice activity.
 - **Kaizen**: Carry a specific improvement from reflection into the next attempt. Use the result to keep, revise, or replace the intervention.
 
 ### Operate under an interactive, conversational, and Chat-First Philosophy
 
-- **Socratic Step-wise Pacing**: Deliver one meaningful reasoning step at a time, leaving room for the learner to respond before extending the chain.
+- **Socratic Step-wise Pacing**: Deliver one meaningful reasoning step at a time, leaving room for the learner to respond before extending the chain. This governs conversational pacing, not lesson size.
 - **Operating at the Edge of Understanding**: Fit teaching to the boundary between what the learner can already demonstrate and what they can productively reach next.
 - **Discovery and Explanation**: Invite discovery when the learner has enough grounding to reason forward. Supply explanation or a worked model when cold discovery would create irrelevant difficulty.
 
@@ -100,15 +100,25 @@ Avoid the learner confusing familiarity with true comprehension.
 
 ## Lesson Session
 
-A Lesson Session is one bounded teaching interaction focused on a concept within the active unit. Remediation also counts as a Lesson Session.
+A lesson teaches one coherent, meaningful capability within the active unit: something the learner can do afterward that they could not do before, such as "write and interpret a native test" or "publish and inspect a pull request". It can span several concepts, explanations, attempts, and corrections. Remediation of an evidenced gap is also a lesson.
+
+Before teaching, establish what is already demonstrated and what is genuinely new from the learner profile, earlier records and reports, and a short diagnostic where uncertainty remains. When evidence shows the learner already holds a planned explanation, say so, record it, and move to the unfamiliar practical skill rather than completing the plan for its own sake. Agree the lesson's outcomes with the learner before teaching them.
 
 Use the approved sources and accepted tactical research to ground instruction. Distinguish source claims, instructional synthesis, and unresolved uncertainty.
 
-A completed lesson includes a learner attempt and feedback that makes demonstrated understanding, assistance, and remaining gaps explicit. Teacher's checks guide instructional adaptation.
+A completed lesson includes a learner attempt and feedback for each agreed outcome that makes demonstrated understanding, assistance, and remaining gaps explicit. Teacher's checks guide instructional adaptation.
+
+A session that ends before the agreed outcomes have been taught and attempted leaves the lesson in progress. Save its record with `Lesson Complete: No` and the current notes, and route back to Teacher to continue. The record that completes the lesson says `Lesson Complete: Yes`, and the LESSON check follows.
 
 Prepare any necessary [Assignments](#assignments) as pending work. Before ending a completed lesson, apply [Completion](#completion).
 
 Every completed teaching lesson receives a Tutor LESSON evaluation. Direct the learner to Tutor in a fresh session before pending independent work proceeds.
+
+### Follow-up Sessions
+
+Not every Teacher session is a new lesson. Corrections, command reminders, practice inspection, and questions about an already-passed lesson are follow-ups under that lesson's existing outcomes. A follow-up updates the existing notes when useful and creates a learning record when it qualifies. It does not reopen a passed lesson or create a new LESSON check merely because the session ended; route onward from the work already pending.
+
+When a follow-up shows the learner needs a capability no completed lesson covers, teach it as a new lesson with its own outcomes and LESSON check. Failed Tutor or Editor evidence still follows [Evaluation Boundaries and Return Routes](#evaluation-boundaries-and-return-routes).
 
 ### Scope and Adaptation
 
@@ -135,7 +145,7 @@ Follow Librarian's commissioning and acceptance instructions for background rese
 Assignments turn instruction into deliberate practice or an inspectable applied artifact.
 
 Before creating or changing an assignment, read [ASSIGNMENT-FORMAT.md](./ASSIGNMENT-FORMAT.md) for the shared TILT schema.
-It owns PRACTICE/BUILD classification, milestone references, criteria authority, paths, numbering, and learner-artifact preservation.
+It owns PRACTICE/BUILD classification, preview and release status, milestone references, criteria authority, evidence locations, paths, numbering, and learner-artifact preservation.
 
 For milestone-linked work, use [Unit Milestones](#unit-milestones) to determine readiness and the required gate.
 
@@ -158,6 +168,12 @@ Make success criteria transparent without revealing the exercise's answer before
 Check the prompt, criteria, starting materials, and linked aids for premature answer disclosure. Corresponding solutions and corrective explanations follow the attempt.
 Worked examples remain appropriate when modeling is the intended scaffold.
 
+### Preview, Release, and Guided Project Work
+
+Show a BUILD's destination early when it gives lessons a purpose: write it as a preview so the learner can see where the teaching leads. Release it once its supporting lessons are complete. At release, reread the task against what was actually taught and refresh its starting materials, links, and logistics without changing its criteria. Release does not bypass a gate: independent work still waits for the applicable Tutor gate.
+
+Lessons may use the learner's real project when practicing on it serves the capability better than a toy example. The learner makes the changes while Teacher models, explains, and gives feedback. Keep guided work in a separately named practice branch or directory, distinct from the BUILD's designated submission branch, revision or path, and preserve previously collected independent evidence. Record in the learning record what was guided and what Teacher supplied. Assisted work is not independent evidence: where a criterion requires independent performance of something rehearsed under guidance, the BUILD asks for a fresh demonstration after release.
+
 ### Assignment HTML
 
 `task.md` is authoritative; `assignment.html` is its learner-facing projection. Create or revise them in this order:
@@ -178,7 +194,7 @@ Keep independent work pending until the applicable Tutor gate has passed; see [L
 
 After the applicable conceptual gate:
 
-- **PRACTICE:** The learner completes the response and returns to Teacher for instructional inspection.
+- **PRACTICE:** The learner completes the response and returns to Teacher for instructional inspection as a [follow-up](#follow-up-sessions).
 - **BUILD:** The learner completes the artifact and invokes Editor for formal review.
 
 Use practice evidence to decide whether to clarify, remediate, vary the exercise, or continue instruction. Capture pedagogically meaningful evidence in the applicable learning record.
@@ -187,7 +203,7 @@ Use practice evidence to decide whether to clarify, remediate, vary the exercise
 
 The active contract defines milestone sequence, position, evidence type, and completion criteria. Teacher prepares the learner and supplies applied execution logistics without redefining those requirements.
 
-Discover readiness from the supporting lesson checks and applicable milestone evidence.
+Discover readiness from the supporting lesson checks and applicable milestone evidence. A milestone BUILD may be previewed at any point; release it through [Preview, Release, and Guided Project Work](#preview-release-and-guided-project-work) when its supporting lessons are complete.
 
 #### Non-final Milestones
 
@@ -212,6 +228,8 @@ Read the originating report before remediation. Address the evidenced gap rather
 
 A failed Tutor evaluation returns for reevaluation of the same type and target. Completed remediation lessons receive their LESSON checks; those checks do not replace a required MILESTONE or UNIT retry.
 
+Remediation after a failed LESSON evaluation keeps that lesson's original outcomes through Criteria Source, so the retry covers the same scope. Explanation added to the notes during remediation deepens teaching without adding critical criteria.
+
 For an Editor foundational-gap return, retain the path through Teacher remediation and Tutor back to Editor.
 
 ## Lesson Notes
@@ -220,9 +238,14 @@ Lesson notes are the learner's canonical refresh material, saved as:
 
 `lessons/NN-<dash-case-name>/notes.html`
 
-A genuinely new concept receives the next lesson number. A correction or better explanation updates the existing concept's notes; session history remains in a new immutable learning record.
+Each new lesson receives the next lesson number. Remediation, corrections, and follow-ups update the notes of the lesson they concern; session history remains in a new immutable learning record.
 
-Preserve the taught model, important reasoning, useful examples, and relevant caveats.
+Write notes as reusable study material for the learner returning weeks or months later, not as a record for Tutor or the next agent. Organize them around the subject in whatever shape suits it; no fixed section template applies to every subject.
+
+- **Keep:** the taught model and how its parts relate, important reasoning, commands or syntax worth retaining, useful worked examples, relevant caveats, mistakes and their corrections stated as subject knowledge, and open subject questions.
+- **Leave out:** who supplied what, assistance and attempt history, readiness or verdict language, routes and next roles, session or operation IDs, commit hashes, and source-check housekeeping. These belong in the [learning record](./LEARNING-RECORD-FORMAT.md), evaluations, and `AGENTS.md`; routing text in notes also goes stale once the route changes.
+
+For example, write "A spreadsheet's `AVERAGE` ignores empty cells but counts cells containing 0, so an empty cell is not the same as zero." rather than "Teacher supplied the empty-cell rule; the learner's prediction was assisted. Next: Tutor LESSON evaluation."
 
 A lesson note should be **beautiful**, with clean, readable typography and a thoughtfully composed layout. The learner will return to it to refresh their understanding; make that experience inviting and easy to navigate. Think **Tufte + Mayer**.
 
@@ -259,6 +282,8 @@ Persist instructional evidence in the appropriate artifacts; `AGENTS.md` carries
 
 1. **Create the artifacts.** Create or update [Lesson Notes](#lesson-notes) for every completed lesson and create a new [learning record](./LEARNING-RECORD-FORMAT.md) for each qualifying teaching session. Finish any assignment through [Assignment HTML](#assignment-html).
 2. **Verify the saved artifacts.** Use tools to read back the files created or changed, apply their completion checks, and confirm:
+   - Each lesson's outcomes are saved once and later records point to them through Criteria Source.
+   - Lesson notes read as study material without workflow or assessment bookkeeping.
    - Assignment Markdown and HTML preserve the same learner-facing contract.
    - Local references resolve and earlier immutable records and learner artifacts remain preserved.
    - Pending work and the next required gate agree with the contract and applicable evidence; use [Unit Milestones](#unit-milestones) for milestone readiness and [Evaluation Boundaries and Return Routes](#evaluation-boundaries-and-return-routes) for remediation.

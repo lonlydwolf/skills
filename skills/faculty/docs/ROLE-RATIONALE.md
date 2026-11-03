@@ -8,7 +8,7 @@ Planning and curriculum changes need a single owner. Advisor turns an ambition i
 
 ## Teacher
 
-Instruction needs room to adapt while keeping the target stable. Teacher chooses explanations, scaffolds and practice inside the contract, preserves observations and produces usable learner materials. Separating Teacher from Tutor prevents helpful instruction from being mistaken for independent evidence. Explicit assignment contracts let learners and reviewers work against the same requirements.
+Instruction needs room to adapt while keeping the target stable. Teacher chooses explanations, scaffolds and practice inside the contract, preserves observations and produces usable learner materials. Separating Teacher from Tutor prevents helpful instruction from being mistaken for independent evidence. Saving each lesson's agreed outcomes keeps retries assessed against the same scope instead of everything later added to the notes. Notes written for the learner, rather than for the next role, stay useful after the course moves on. Explicit assignment contracts let learners and reviewers work against the same requirements.
 
 ## Tutor
 
