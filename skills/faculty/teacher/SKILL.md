@@ -189,7 +189,7 @@ The active contract defines milestone sequence, position, evidence type, and com
 
 Discover readiness from the supporting lesson checks and applicable milestone evidence.
 
-Under a contract with `Entry: CHALLENGE`, the learner may attempt each gate without prior teaching, and supporting LESSON checks apply only to lessons actually taught. Prepare required BUILD assignments and route to the next gate in sequence. Teach when the learner asks or a failed gate's remediation calls for it.
+Under a contract with `Entry: CHALLENGE`, the learner may attempt each gate without prior teaching, and supporting LESSON checks apply only to lessons actually taught. Teach when the learner asks or a failed gate's remediation calls for it; those lessons receive their LESSON checks. Prepare each required BUILD with `Status: Released` when no supporting instruction is planned for it, since there are no lessons to wait for; a BUILD the learner asked to be taught toward is released once those lessons are complete. Then route to the next gate in sequence. Release never moves a gate: a non-final COMBINED BUILD still waits for its MILESTONE PASS, and a final BUILD or COMBINED BUILD still needs Editor approval before Tutor UNIT evaluation.
 
 #### Non-final Milestones
 
