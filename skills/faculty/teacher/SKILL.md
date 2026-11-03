@@ -145,7 +145,7 @@ Follow Librarian's commissioning and acceptance instructions for background rese
 Assignments turn instruction into deliberate practice or an inspectable applied artifact.
 
 Before creating or changing an assignment, read [ASSIGNMENT-FORMAT.md](./ASSIGNMENT-FORMAT.md) for the shared TILT schema.
-It owns PRACTICE/BUILD classification, milestone references, criteria authority, paths, numbering, and learner-artifact preservation.
+It owns PRACTICE/BUILD classification, preview and release status, milestone references, criteria authority, evidence locations, paths, numbering, and learner-artifact preservation.
 
 For milestone-linked work, use [Unit Milestones](#unit-milestones) to determine readiness and the required gate.
 
@@ -167,6 +167,12 @@ Make success criteria transparent without revealing the exercise's answer before
 
 Check the prompt, criteria, starting materials, and linked aids for premature answer disclosure. Corresponding solutions and corrective explanations follow the attempt.
 Worked examples remain appropriate when modeling is the intended scaffold.
+
+### Preview, Release, and Guided Project Work
+
+Show a BUILD's destination early when it gives lessons a purpose: write it as a preview so the learner can see where the teaching leads. Release it once its supporting lessons are complete. At release, reread the task against what was actually taught and refresh its starting materials, links, and logistics without changing its criteria. Release does not bypass a gate: independent work still waits for the applicable Tutor gate.
+
+Lessons may use the learner's real project when practicing on it serves the capability better than a toy example. The learner makes the changes while Teacher models, explains, and gives feedback. Keep guided work in a separately named location such as a practice branch or directory, never in a BUILD's Artifact Location. Record in the learning record what was guided and what Teacher supplied. Assisted work is not independent evidence: where a criterion requires independent performance of something rehearsed under guidance, the BUILD asks for a fresh demonstration after release.
 
 ### Assignment HTML
 
@@ -197,7 +203,7 @@ Use practice evidence to decide whether to clarify, remediate, vary the exercise
 
 The active contract defines milestone sequence, position, evidence type, and completion criteria. Teacher prepares the learner and supplies applied execution logistics without redefining those requirements.
 
-Discover readiness from the supporting lesson checks and applicable milestone evidence.
+Discover readiness from the supporting lesson checks and applicable milestone evidence. A milestone BUILD may be previewed at any point; release it through [Preview, Release, and Guided Project Work](#preview-release-and-guided-project-work) when its supporting lessons are complete.
 
 #### Non-final Milestones
 
