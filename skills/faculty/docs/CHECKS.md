@@ -30,6 +30,6 @@ The last workflow used fresh sessions and synthetic learner replies. It exercise
 
 Long-term retention, transfer and real learner outcomes remain unmeasured. Teacher-commissioned research in real use and all combinations of practice, remediation, contract replacement and recovery are not exhaustively covered.
 
-No installer compatibility result is claimed for the beta. Role discovery, saved-state loading, research-worker availability and HTML inspection depend on the app, account and available tools. Installing the skills does not establish those capabilities.
+No installer compatibility result is claimed for the beta. Role discovery, saved-state loading, research-worker availability and HTML inspection depend on the app, account and available tools. Installing the skills does not establish those capabilities. Initialization's host preflight was revised from a source review and a synthetic walkthrough; it has not yet been exercised in a live session on any host.
 
 Report unexpected behavior through [issues](https://github.com/lonlydwolf/skills/issues), with the affected skill, last installation or update, tool/version, expected result and a small redacted example. See [Contributing](../../../CONTRIBUTING.md) and [maintenance](MAINTENANCE.md) for preparing a useful report or fix.

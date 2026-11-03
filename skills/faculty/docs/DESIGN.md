@@ -53,7 +53,7 @@ Roommate uses the context supplied by the learner inside or outside a course. It
 
 The seven maintained skill directories under `skills/faculty/` are the distributed source. Users install them from the published repository with `npx skills@latest add lonlydwolf/skills` and choose a supported tool. The [catalog](../../../.claude-plugin/marketplace.json) names the Faculty group and points to each skill directory.
 
-Initialization requires all seven skills to be available together. Installing files and executing the course workflow are separate concerns. The chosen tool must support explicit skill selection, course-folder file access, fresh sessions, research commissioned through Librarian and appropriate inspection of saved materials. See [Installation](INSTALL.md) for setup and [checks and known limitations](CHECKS.md) for the scope of existing evidence.
+Initialization requires all seven skills to be available together. Installing files and executing the course workflow are separate concerns, so initialization checks role availability, the research worker and saved-state loading before writing, and reports a requirement it could not check separately from one it found missing. The chosen tool must support explicit skill selection, course-folder file access, fresh sessions, research commissioned through Librarian and appropriate inspection of saved materials. See [Installation](INSTALL.md) for setup and [checks and known limitations](CHECKS.md) for the scope of existing evidence.
 
 Faculty is in beta. Feedback informs changes to the maintained source and documentation. Updating installed skills does not silently migrate existing course rules or activated unit contracts.
 
