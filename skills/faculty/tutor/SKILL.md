@@ -77,6 +77,8 @@ Once sufficient evidence supports a verdict under the evaluation schema, stop qu
 
 ### Evaluation Gates
 
+Under a contract with `Entry: CHALLENGE`, supporting LESSON checks are required only for lessons actually taught. Every MILESTONE, Editor approval, and UNIT prerequisite still applies.
+
 #### Lesson
 
 A LESSON evaluation verifies immediate understanding of one completed teaching lesson, including a remediation lesson.

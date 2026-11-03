@@ -158,6 +158,12 @@ Define observable outcomes and conditions that demonstrate the intended capabili
 
 Keep exact Tutor prompts, Teacher lesson design, and Editor review execution with their owning roles.
 
+### Challenge Entry
+
+When the learner asks to demonstrate a unit's capability without instruction, publish its contract with `Entry: CHALLENGE`. Write the same criteria and conditions a STANDARD unit would require; a challenge never lightens or skips a gate. Advisor decides eligibility from the learner's request and placement context, not by assessing the learner.
+
+Route the first required gate: Tutor for a conceptual gate, or Teacher to prepare a required BUILD assignment. Failed gates follow their normal remediation routes. Closure still requires every gate in [Unit Closure and Progression](#unit-closure-and-progression); a UNIT pass alone does not establish BUILD capability.
+
 ### Poka-Yoke Preflight
 
 Before publication, verify:

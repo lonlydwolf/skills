@@ -21,6 +21,8 @@ Format documents define valid saved artifacts: fields, naming, numbering, immuta
 
 Advisor's rolling-wave prerequisite network is a branching plan with one Active unit during an ongoing course and none after completion. Only the selected unit is fully specified; future units remain concise roadmap entries. `roadmap.md` owns lifecycle state, and `roadmap.html` is its generated view. Prerequisites are canonical; reverse relationships are derived.
 
+A learner who already has a unit's capability can request CHALLENGE entry. The contract keeps the same criteria and gates, and the learner attempts them without prior teaching lessons. Tutor and Editor still provide every conceptual and applied verdict; Advisor decides the route, not the result.
+
 Before activating a unit, Advisor checks prerequisite fit, source accessibility, scope, alignment between objectives and milestones, observable criteria, evidence types, final-gate validity, reachable routes and constraints. Activated `unit.md` is immutable. A unit has at least one FINAL milestone and at most five milestones, each with a stable identifier and CONCEPTUAL, BUILD or COMBINED evidence.
 
 Teacher adapts instruction within the contract. Bounded clarification and immediate safety or correctness responses fit that responsibility. Ordinary difficulty receives scaffolding and remediation. Curriculum changes and material contract defects return to Advisor.

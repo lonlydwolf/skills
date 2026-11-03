@@ -189,6 +189,8 @@ The active contract defines milestone sequence, position, evidence type, and com
 
 Discover readiness from the supporting lesson checks and applicable milestone evidence.
 
+Under a contract with `Entry: CHALLENGE`, the learner may attempt each gate without prior teaching, and supporting LESSON checks apply only to lessons actually taught. Prepare required BUILD assignments and route to the next gate in sequence. Teach when the learner asks or a failed gate's remediation calls for it.
+
 #### Non-final Milestones
 
 - **CONCEPTUAL:** Route to Tutor MILESTONE evaluation after supporting LESSON checks. No milestone `task.md` is needed.

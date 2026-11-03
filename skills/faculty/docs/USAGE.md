@@ -14,6 +14,8 @@ Answer the intake questions one at a time. Explain what you can already do, wher
 
 Review the proposed destination and cut list before the first unit is activated. The roadmap shows the larger course; only the selected unit is planned in detail. Later units can change as evidence develops.
 
+If you can already do what a unit requires, ask Advisor for challenge entry. You go straight to the unit's evaluations and builds without lessons first, under the same requirements. A failed evaluation or rejected build leads to the usual remediation, and you can ask Teacher for instruction at any point.
+
 Advisor saves the learner profile, roadmap and active unit contract. The contract explains that unit's objectives, boundaries, milestones and required evidence. Once activated, its requirements stay fixed. Teacher can adapt explanations and pacing within them.
 
 ## Follow the saved next step
