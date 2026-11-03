@@ -19,6 +19,8 @@ Plus records demonstrated strengths. Delta records improvements, each with Diagn
 
 Judge materiality proportionately to the artifact and intended context. Any blocking delta means `REJECTED`; otherwise, `APPROVED`.
 
+A resubmission accounts for every blocking delta of the prior review in Prior Blocking Findings. A blocking delta first raised on resubmission states in its Diagnosis whether the revision introduced it or it was present in work an earlier review inspected, and in the latter case what the earlier review missed. This shows the learner that the standard is unchanged. A prior finding the current evidence does not support is `NOT REPRODUCED`, with the reason.
+
 ### Blockers beyond the required criteria
 
 A BLOCKING delta that no required criterion establishes carries three elements in its fields:
@@ -55,6 +57,14 @@ Synthetic calibration examples:
 | ---------------------- | ---------------------- | ------------- | --------------- |
 | [Criterion and source] | [Location and finding] | MET / NOT MET | [Delta ID or —] |
 
+## Prior Blocking Findings
+
+`[None for a first attempt; otherwise one row per blocking delta in the prior review.]`
+
+| Prior delta          | Status in this attempt                    | Current evidence       |
+| -------------------- | ----------------------------------------- | ---------------------- |
+| [Prior review + DNN] | RESOLVED / PERSISTS as DNN / NOT REPRODUCED | [Location and finding] |
+
 ## [+] Plus
 
 `[Evidence-grounded strengths, or None.]`
@@ -79,7 +89,7 @@ Synthetic calibration examples:
 
 ## Report route
 
-For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tutor → Editor` only when a blocking delta cites evidence of conceptual misunderstanding—not merely a defective artifact or a serious consequence.
+For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tutor → Editor` only when a blocking delta cites evidence of conceptual misunderstanding—not merely a defective artifact, a serious consequence, or a persistent blocker. A requirement defect that prevents valid review creates no report; Editor's Persistent Blockers guidance routes it to Advisor.
 
 | Condition                                                        | Next Route                |
 | ---------------------------------------------------------------- | ------------------------- |
@@ -90,4 +100,4 @@ For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tuto
 
 ## Completion check
 
-Read back the saved report. Verify task/artifact linkage, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality. Confirm prior reports remain unchanged.
+Read back the saved report. Verify task/artifact linkage, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality, and that a resubmission accounts for every prior blocking delta. Confirm prior reports remain unchanged.
