@@ -127,11 +127,9 @@ Before reevaluation, read the originating report and relevant remediation record
 
 Completed remediation lessons receive LESSON checks. Those checks do not replace a required MILESTONE or UNIT retry.
 
-For an Editor foundational-gap return, retain the pending return to Editor after Teacher remediation and the applicable Tutor check.
+Before routing a PASS, establish outstanding obligations from current state and the latest relevant reports, reviews, and learning records: MILESTONE or UNIT failures without a later PASS, Editor foundational-gap returns, and work Teacher has released. Read the corresponding `task.md` to establish PRACTICE or BUILD, milestone linkage, and completion requirements; its existence alone does not establish that work is pending or ready to start.
 
-Determine pending assignments from current state and the latest relevant records and reports. Read the corresponding `task.md` to establish PRACTICE or BUILD, milestone linkage, and completion requirements; existence alone does not establish pending work.
-
-Select the report's route through [EVAL-FORMAT.md](./EVAL-FORMAT.md). Preserve any subsequent retry or Editor-return obligation in its Required Action while publishing only the immediate formal route in the ledger.
+Select the report's route through the precedence rules in [EVAL-FORMAT.md](./EVAL-FORMAT.md#recommendation). A non-final COMBINED build waits for its MILESTONE PASS; a final BUILD or COMBINED milestone proceeds to Editor and then UNIT. Publish only the immediate formal route in the ledger; Required Action retains each later reevaluation, Editor return, and pending build.
 
 ## SBAR Report
 
