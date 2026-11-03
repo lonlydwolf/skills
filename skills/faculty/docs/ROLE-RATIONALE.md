@@ -14,6 +14,8 @@ Instruction needs room to adapt while keeping the target stable. Teacher chooses
 
 Familiarity and fluency can resemble understanding. Tutor asks the learner to demonstrate conceptual capability and records all critical criteria, including missing evidence. LESSON checks give timely repair, MILESTONE checks integrate intermediate concepts and UNIT checks support durable consolidation. New immutable attempts preserve progress without rewriting failures.
 
+Fixed lesson outcomes keep a retry measuring the same capability, and separating missing evidence from observed gaps keeps a narrow repair narrow. Asking about aids, rather than guessing from how an answer looks, keeps integrity judgments grounded in evidence.
+
 ## Editor
 
 A correct explanation does not ensure a useful artifact. Editor inspects BUILD outputs in their intended context, records consequences and derives a verdict from material findings. Keeping revisions with the learner preserves the learning task. Requiring conceptual evidence for a foundational referral prevents every implementation mistake from becoming a reteaching detour. Requiring evidence, consequence and materiality for blockers beyond the criteria keeps rejection tied to the agreed use rather than a reviewer's general preferences. Diagnosing why a blocker persists, rather than capping attempts, keeps the standard fixed while routing unclear feedback, conceptual gaps and defective requirements to the right owner.
