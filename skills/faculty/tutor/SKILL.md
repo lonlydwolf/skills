@@ -77,9 +77,9 @@ Once sufficient evidence supports a verdict under the evaluation schema, stop qu
 
 ### Evaluation Gates
 
-Under a contract with `Entry: CHALLENGE`, a gate's supporting instruction is complete when every lesson taught for it, including requested and remediation lessons, is complete and has its LESSON PASS. A gate with no taught lesson needs none. Every MILESTONE, Editor approval, and UNIT prerequisite still applies, in contract sequence.
+Under a contract with `Entry: CHALLENGE`, a gate's supporting instruction is complete when the latest learning record, if any, plans no further teaching for it and every lesson taught for it, including requested and remediation lessons, is complete and has its LESSON PASS. A gate with no taught or planned lesson needs none. Every MILESTONE, Editor approval, and UNIT prerequisite still applies, in contract sequence.
 
-When the evaluation schema would route a CHALLENGE LESSON or MILESTONE PASS to `Teacher`, route the next due gate instead if no remediation is outstanding and the latest learning record, if any, plans no further teaching for that gate: `Tutor MILESTONE evaluation` for a non-final CONCEPTUAL or COMBINED milestone, or `Tutor UNIT evaluation` for a final CONCEPTUAL milestone. A next BUILD without a released `task.md` stays with `Teacher` for preparation and release.
+When the evaluation schema would route a CHALLENGE LESSON or MILESTONE PASS to `Teacher`, route the next due gate instead if no remediation is outstanding and that gate's supporting instruction is complete: `Tutor MILESTONE evaluation` for a non-final CONCEPTUAL or COMBINED milestone, or `Tutor UNIT evaluation` for a final CONCEPTUAL milestone. A next BUILD without a released `task.md` stays with `Teacher` for preparation and release.
 
 #### Lesson
 
