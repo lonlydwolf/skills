@@ -54,7 +54,7 @@ Milestone IDs are stable within the unit and are the references used by assignme
 
 Evidence states what demonstrates completion and under which conditions. It defines observable criteria rather than exact evaluation prompts, review procedures, or lesson micro-tasks.
 
-FINAL identifies the final gate, not a mandatory artifact. Position and Evidence Type determine routing through the shared course rules. Evaluation and review reports carry verdicts; the contract carries criteria.
+FINAL identifies the final gate, not a mandatory artifact. Position and Evidence Type determine gate order, which the Teacher, Tutor, and Editor instructions specify; the shared course rules govern ledger state and recovery. Evaluation and review reports carry verdicts; the contract carries criteria.
 
 ## Entry
 
