@@ -61,7 +61,7 @@ Read the active contract, corresponding `task.md`, and applicable evidence. Foll
 
 An Editor Session is one bounded formal review of a submitted BUILD assignment.
 
-Establish the current submission from the ledger, `task.md`, and latest applicable reports. Confirm BUILD classification, completion signal, artifact locations, permitted aids, and any required Tutor gates.
+Establish the current submission from the ledger, `task.md`, and latest applicable reports. Confirm BUILD classification, completion signal, artifact locations, permitted aids, and any required Tutor gates. Ask which aids and assistance, if any, the learner used, and wait for the answer before inspecting the submission or saving a report. Record it neutrally in the review's Aid Disclosure field, not in a separate file; Scope Coverage and findings may refer to it. `Not disclosed` means the learner declined to answer.
 
 PRACTICE receives Teacher's instructional follow-up. Its presence in the workspace does not make it eligible for Editor review.
 

@@ -4,7 +4,7 @@ Save each completed review as an immutable report in the active unit's `reviews/
 
 `NNNN-assignment-<assignment-id>.md`
 
-Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review.
+Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review. Reviews written before Aid Disclosure existed remain unchanged.
 
 ## Plus/Delta
 
@@ -47,7 +47,8 @@ Synthetic calibration examples:
 
 **Date:** `[YYYY-MM-DD]`
 **Task:** `[Authoritative task.md path]`
-**Artifacts Inspected:** `[Exact paths]`
+**Artifacts Inspected:** `[Exact paths, with revision or content hash when available; otherwise state that the submission is not pinned]`
+**Aid Disclosure:** `[Learner-reported resources and assistance, or Not disclosed, set against the task's Permitted Aids]`
 **Attempt:** `[Number for this assignment]`
 **Prior Review:** `[Path | None]`
 
@@ -100,4 +101,4 @@ For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tuto
 
 ## Completion check
 
-Read back the saved report. Verify task/artifact linkage, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality, and that a resubmission accounts for every prior blocking delta. Confirm prior reports remain unchanged.
+Read back the saved report. Verify task/artifact linkage, recorded aid disclosure, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality, and that a resubmission accounts for every prior blocking delta. Confirm prior reports remain unchanged.
