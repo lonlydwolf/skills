@@ -78,7 +78,7 @@ Tutor uses three evaluation types:
 | `MILESTONE` | Integrated understanding for a non-final conceptual or combined milestone. |
 | `UNIT` | Cumulative conceptual understanding at the final unit gate. |
 
-A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion and a next route. Each criterion is `MET`, `NOT MET` or `NOT ASSESSED`; a slip in wording does not fail a criterion when your reasoning shows the capability. A failure identifies each gap. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target against the same criteria. It focuses on what was missing and briefly rechecks the rest. Earlier reports remain as history.
+A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion, excerpts quoting the prompts and your answers behind each status, or a note that no exchange occurred for a criterion that was not reached, and a next route. Each criterion is `MET`, `NOT MET` or `NOT ASSESSED`; a slip in wording does not fail a criterion when your reasoning shows the capability. A failure identifies each gap. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target against the same criteria. It focuses on what was missing and briefly rechecks the rest. Earlier reports remain as history.
 
 For an interrupted evaluation, see [Pause and resume](#pause-and-resume).
 
@@ -101,7 +101,7 @@ After completing a BUILD, start a fresh session with `editor`:
 
 > The build named in the current required action is ready. My files are at the assignment's stated artifact locations. Review the submission against its requirements.
 
-Editor inspects your work and saves a Plus/Delta report: demonstrated strengths, improvements, their consequences and an `APPROVED` or `REJECTED` verdict. A material defect or unmet required criterion blocks approval. Suggestions without a material consequence can accompany approval.
+Editor asks which aids and assistance you used and records your answer neutrally. If you disclose help the task's Permitted Aids clearly exclude, the work it produced is not counted and the review asks you to redo that part under the stated conditions; if the Permitted Aids are silent, `None`, or unclear about that help, Editor records the disclosure and reviews as usual. Editor then inspects your work and saves a Plus/Delta report: the version inspected when one can be identified, demonstrated strengths, improvements, their consequences and an `APPROVED` or `REJECTED` verdict. A material defect or unmet required criterion blocks approval. Suggestions without a material consequence can accompany approval.
 
 Read the report's **Required Action**. You make the revisions. A usual rejection asks you to revise and return to Editor; evidence of a conceptual gap can instead send you through Teacher and Tutor before another review.
 

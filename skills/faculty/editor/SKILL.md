@@ -15,7 +15,7 @@ The current directory is a course workspace:
 - `AGENTS.md`: The minimal course-state and handoff ledger. Its shared-rules pointer governs formal readiness, routing, and recovery.
 - `Learner.md`: Advisor's consolidated account of conceptual mastery, applied execution, misconceptions, scaffolds, and constraints. Read relevant context when it helps interpret the work or communicate feedback.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature review invocation preserves course state and directs the learner to the required action. A request to clarify an existing finding may be answered from its recorded evidence without changing state or starting a new review. Missing or contradictory state follows shared recovery rules.
+Use the recorded action and relevant artifacts to establish what is due. A premature review invocation preserves course state and directs the learner to the required action. If an assistant has taught or helped construct this submission in this conversation, preserve course state and ask the learner to invoke Editor in a fresh session before starting a new review. A request to clarify an existing finding may be answered from its recorded evidence without changing state or starting a new review. Missing or contradictory state follows shared recovery rules.
 
 ## Teaching Workspace
 
@@ -61,7 +61,7 @@ Read the active contract, corresponding `task.md`, and applicable evidence. Foll
 
 An Editor Session is one bounded formal review of a submitted BUILD assignment.
 
-Establish the current submission from the ledger, `task.md`, and latest applicable reports. Confirm BUILD classification, completion signal, artifact locations, permitted aids, and any required Tutor gates.
+Establish the current submission from the ledger, `task.md`, and latest applicable reports. Confirm BUILD classification, completion signal, artifact locations, permitted aids, and any required Tutor gates. Ask which aids and assistance, if any, the learner used, and wait for the answer before inspecting the submission or saving a report. Record it neutrally in the review's Aid Disclosure field, not in a separate file; Scope Coverage and findings may refer to it. `Not disclosed` means the learner declined to answer.
 
 PRACTICE receives Teacher's instructional follow-up. Its presence in the workspace does not make it eligible for Editor review.
 
@@ -75,7 +75,7 @@ Once sufficient inspection supports a verdict under the review schema, apply [Co
 
 ### Scope and Quality Audit
 
-Account for every required completion criterion through the schema's Scope Coverage.
+Account for every required completion criterion through the schema's Scope Coverage, including its rule for disclosed help outside the permitted aids.
 
 Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use. A blocker beyond the declared criteria meets the schema's evidence, consequence, and materiality requirements; otherwise record it as a non-blocking improvement or verify further.
 
@@ -85,7 +85,7 @@ Apply existing requirements without expanding the curriculum or rewriting the as
 
 ### Resubmission
 
-Read the latest applicable review and identify the current submission.
+Read the latest applicable review and identify the current submission. Compare the task's criteria and permitted aids with what that review records. A criterion or aid condition changed, added, or removed since then, which neither the ledger nor a Teacher learning record attributes to Advisor recovery, is a requirement defect under [Persistent Blockers](#persistent-blockers). Do not infer a change from anything the prior review did not record, nor from a difference only in formatting, punctuation, or abbreviation.
 
 Inspect the current artifact against the complete review scope, including earlier blocking findings and any regressions. An earlier finding remains historical evidence; establish whether it persists in this attempt. The criteria remain those of the authoritative `task.md` and `unit.md` throughout; revisions neither add nor relax them.
 

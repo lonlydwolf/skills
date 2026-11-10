@@ -4,13 +4,15 @@ Save each completed review as an immutable report in the active unit's `reviews/
 
 `NNNN-assignment-<assignment-id>.md`
 
-Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review.
+Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review. Reviews written before the Permitted Aids and Aid Disclosure fields existed remain unchanged.
 
 ## Plus/Delta
 
-Derive Scope Coverage from the authoritative `task.md`, using its referenced `unit.md` criteria for milestone builds. Each required completion criterion receives inspected evidence and `MET | NOT MET`. Every `NOT MET` links to a blocking delta.
+Derive Scope Coverage from the authoritative `task.md`, using its referenced `unit.md` criteria for milestone builds. Record each required completion criterion in the wording its source gives at review time, so a later review can tell whether it changed; each receives inspected evidence and `MET | NOT MET`. Every `NOT MET` links to a blocking delta.
 
 Record whether a `NOT MET` criterion's evidence is absent from the submission (for example, no output at the stated location) or present and failing. Evidence Editor cannot open or run because of tool or access limits is not a learner finding. If that limitation prevents a defensible verdict, create no report and follow shared recovery; otherwise disclose the inspection limit without inventing a defect.
+
+Assisted work is not independent evidence. When the learner's Aid Disclosure reports help that the task's Permitted Aids clearly exclude, do not count the work that help produced: mark each affected criterion `NOT MET` with a BLOCKING delta that names the affected part and asks the learner to redo it under the stated conditions. Record this without accusation or detector claims; it rests on the learner's disclosure, never on how polished the artifact looks. When the Permitted Aids are silent, `None`, or unclear about the disclosed help, record the disclosure and review as usual.
 
 Plus records demonstrated strengths. Delta records improvements, each with Diagnosis, Implication, Recommendation, and severity:
 
@@ -47,15 +49,17 @@ Synthetic calibration examples:
 
 **Date:** `[YYYY-MM-DD]`
 **Task:** `[Authoritative task.md path]`
-**Artifacts Inspected:** `[Exact paths]`
+**Artifacts Inspected:** `[Exact paths, with revision or content hash when available; otherwise state that the submission is not pinned]`
+**Permitted Aids:** `[The task's Permitted Aids as stated at review time]`
+**Aid Disclosure:** `[Learner-reported resources and assistance, or Not disclosed, set against the task's Permitted Aids]`
 **Attempt:** `[Number for this assignment]`
 **Prior Review:** `[Path | None]`
 
 ## Scope Coverage
 
-| Required criterion     | Evidence inspected     | Status        | Blocking delta  |
-| ---------------------- | ---------------------- | ------------- | --------------- |
-| [Criterion and source] | [Location and finding] | MET / NOT MET | [Delta ID or —] |
+| Required criterion                                   | Evidence inspected     | Status        | Blocking delta  |
+| ---------------------------------------------------- | ---------------------- | ------------- | --------------- |
+| [Criterion as worded at review time, and its source] | [Location and finding] | MET / NOT MET | [Delta ID or —] |
 
 ## Prior Blocking Findings
 
@@ -100,4 +104,4 @@ For a rejection, default to `Learner revision → Editor`. Use `Teacher → Tuto
 
 ## Completion check
 
-Read back the saved report. Verify task/artifact linkage, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality, and that a resubmission accounts for every prior blocking delta. Confirm prior reports remain unchanged.
+Read back the saved report. Verify task/artifact linkage, recorded aid disclosure, sequence and attempt metadata, complete criterion coverage, delta fields, and consistency among coverage, severity, verdict, and route. Confirm each blocker beyond the required criteria states its evidence, consequence, and materiality, and that a resubmission accounts for every prior blocking delta. Confirm prior reports remain unchanged.

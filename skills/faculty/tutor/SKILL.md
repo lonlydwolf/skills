@@ -15,7 +15,7 @@ The current directory is a course workspace:
 - `AGENTS.md`: The minimal course-state and handoff ledger. Its shared-rules pointer governs formal readiness, routing, and recovery.
 - `Learner.md`: Advisor's consolidated account of conceptual mastery, applied execution, misconceptions, scaffolds, and constraints.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. Missing or contradictory state follows shared recovery rules.
+Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. If an assistant has taught or helped solve work on the evaluation's target in this conversation, preserve course state and ask the learner to invoke Tutor in a fresh session before assessing. Missing or contradictory state follows shared recovery rules.
 
 ## Teaching Workspace
 
@@ -146,7 +146,7 @@ The fresh attempt uses newly generated, changed-context prompts and gathers its 
 
 Tutor verifies conceptual understanding. Teacher owns instruction and remediation; Editor reviews BUILD artifacts; Advisor checks required evidence and closes units.
 
-Before reevaluation, read the originating report and relevant remediation records. Retain the same evaluation type, target, and criteria. Focus fresh prompts on criteria that were NOT MET or NOT ASSESSED, and obtain concise fresh evidence for previously MET critical criteria, preferably through prompts that integrate them with the repaired capability. Earlier reports are context, not current evidence; a UNIT reevaluation remains cumulative.
+Before reevaluation, read the originating report and relevant remediation records. Retain the same evaluation type, target, and criteria. When the originating report has Evidence Excerpts, make the new prompts differ from those it records. Focus fresh prompts on criteria that were NOT MET or NOT ASSESSED, and obtain concise fresh evidence for previously MET critical criteria, preferably through prompts that integrate them with the repaired capability. Earlier reports are context, not current evidence; a UNIT reevaluation remains cumulative.
 
 Completed remediation lessons receive LESSON checks. Those checks do not replace a required MILESTONE or UNIT retry.
 
@@ -158,7 +158,7 @@ Select the report's route through the precedence rules in [EVAL-FORMAT.md](./EVA
 
 Each completed evaluation creates one immutable report under the active unit's `evaluations/`, following [EVAL-FORMAT.md](./EVAL-FORMAT.md).
 
-Record what the learner independently explained, decided, derived, predicted, or executed during this attempt. Identify any supplied premise or conclusion affecting the cited response, and count only the independently demonstrated portion toward the criterion. Prior reports and Teacher observations establish context rather than current-attempt proof.
+Record what the learner independently explained, decided, derived, predicted, or executed during this attempt. Identify any supplied premise or conclusion affecting the cited response, and count only the independently demonstrated portion toward the criterion. Quote the decisive exchanges in the report's Evidence Excerpts. Prior reports and Teacher observations establish context rather than current-attempt proof.
 
 Account for every critical criterion as MET, NOT MET, or NOT ASSESSED. Distinguish directly observed gaps from demonstrations not obtained; describe missing evidence without inventing responses or diagnoses.
 
