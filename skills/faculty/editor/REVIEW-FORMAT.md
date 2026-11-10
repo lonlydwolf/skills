@@ -8,7 +8,7 @@ Create the directory when first needed. Increment its highest sequence number fo
 
 ## Plus/Delta
 
-Derive Scope Coverage from the authoritative `task.md`, using its referenced `unit.md` criteria for milestone builds. Each required completion criterion receives inspected evidence and `MET | NOT MET`. Every `NOT MET` links to a blocking delta.
+Derive Scope Coverage from the authoritative `task.md`, using its referenced `unit.md` criteria for milestone builds. Record each required completion criterion in the wording its source gives at review time, so a later review can tell whether it changed; each receives inspected evidence and `MET | NOT MET`. Every `NOT MET` links to a blocking delta.
 
 Record whether a `NOT MET` criterion's evidence is absent from the submission (for example, no output at the stated location) or present and failing. Evidence Editor cannot open or run because of tool or access limits is not a learner finding. If that limitation prevents a defensible verdict, create no report and follow shared recovery; otherwise disclose the inspection limit without inventing a defect.
 
@@ -57,9 +57,9 @@ Synthetic calibration examples:
 
 ## Scope Coverage
 
-| Required criterion     | Evidence inspected     | Status        | Blocking delta  |
-| ---------------------- | ---------------------- | ------------- | --------------- |
-| [Criterion and source] | [Location and finding] | MET / NOT MET | [Delta ID or —] |
+| Required criterion                                   | Evidence inspected     | Status        | Blocking delta  |
+| ---------------------------------------------------- | ---------------------- | ------------- | --------------- |
+| [Criterion as worded at review time, and its source] | [Location and finding] | MET / NOT MET | [Delta ID or —] |
 
 ## Prior Blocking Findings
 
