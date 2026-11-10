@@ -4,7 +4,7 @@ Save each completed review as an immutable report in the active unit's `reviews/
 
 `NNNN-assignment-<assignment-id>.md`
 
-Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review. Reviews written before Aid Disclosure existed remain unchanged.
+Create the directory when first needed. Increment its highest sequence number for each new report. Count attempts per assignment and link resubmissions to their prior review. Reviews written before the Permitted Aids and Aid Disclosure fields existed remain unchanged.
 
 ## Plus/Delta
 
@@ -50,6 +50,7 @@ Synthetic calibration examples:
 **Date:** `[YYYY-MM-DD]`
 **Task:** `[Authoritative task.md path]`
 **Artifacts Inspected:** `[Exact paths, with revision or content hash when available; otherwise state that the submission is not pinned]`
+**Permitted Aids:** `[The task's Permitted Aids as stated at review time]`
 **Aid Disclosure:** `[Learner-reported resources and assistance, or Not disclosed, set against the task's Permitted Aids]`
 **Attempt:** `[Number for this assignment]`
 **Prior Review:** `[Path | None]`
