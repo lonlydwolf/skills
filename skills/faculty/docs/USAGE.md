@@ -78,7 +78,7 @@ Tutor uses three evaluation types:
 | `MILESTONE` | Integrated understanding for a non-final conceptual or combined milestone. |
 | `UNIT` | Cumulative conceptual understanding at the final unit gate. |
 
-A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion and a next route. Each criterion is `MET`, `NOT MET` or `NOT ASSESSED`; a slip in wording does not fail a criterion when your reasoning shows the capability. A failure identifies each gap. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target against the same criteria. It focuses on what was missing and briefly rechecks the rest. Earlier reports remain as history.
+A completed attempt saves a report with `PASS` or `FAIL`, the evidence for each critical criterion, excerpts quoting the prompts and your answers behind each status, and a next route. Each criterion is `MET`, `NOT MET` or `NOT ASSESSED`; a slip in wording does not fail a criterion when your reasoning shows the capability. A failure identifies each gap. Return to Teacher for remediation, then to Tutor for a fresh evaluation of the same type and target against the same criteria. It focuses on what was missing and briefly rechecks the rest. Earlier reports remain as history.
 
 For an interrupted evaluation, see [Pause and resume](#pause-and-resume).
 

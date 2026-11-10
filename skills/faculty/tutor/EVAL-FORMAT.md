@@ -32,6 +32,18 @@ Completed reports are immutable. A reevaluation creates a new report with the sa
 |---|---|---|
 | [Outcome ID when recorded; capability and required conditions] | [Independent demonstration, observed gap, or specific missing evidence] | [MET | NOT MET | NOT ASSESSED] |
 
+### Evidence Excerpts
+
+#### [Outcome ID or criterion]
+
+**Prompt:** [Exact prompt as asked, line breaks and code preserved]
+
+**Response:** [Learner's exact words, line breaks and code preserved | No response obtained]
+
+**Clarification or assistance:** [Exchange that affected the response, verbatim | None]
+
+[Repeat the three fields for each further exchange that supports the status, in conversation order.]
+
 ## A — Assessment
 
 **Outcome:** `[PASS | FAIL]`
@@ -61,6 +73,12 @@ Evidence records what the learner independently demonstrated during this attempt
 - **No report:** a critical criterion is `NOT ASSESSED` and none is `NOT MET`. The attempt is unfinished and returns to Tutor for a fresh attempt.
 
 Reports written before `NOT ASSESSED` existed remain unchanged. When one is the prior evaluation, a `NOT MET` whose evidence records a demonstration that was not obtained guides the reevaluation as missing evidence rather than an observed gap.
+
+## Evidence Excerpts
+
+Each critical criterion has one block holding the exchanges that support its status, in conversation order. Copy prompts and responses exactly, with their line breaks and code; do not paraphrase, summarize, or join them with narration. Interpretation belongs in Criteria Coverage. Include any clarification or assistance that affected a response, with enough of the exchange to tell the learner's own reasoning from supplied reasoning. Include responses that were not counted; explain their exclusion in Criteria Coverage. An excerpt is not a transcript. For a `NOT ASSESSED` criterion, include whatever exchange occurred; if none occurred, write `No exchange occurred` under its heading.
+
+Reports written before Evidence Excerpts existed remain unchanged and are not back-filled from memory.
 
 ## Recommendation
 
@@ -99,4 +117,4 @@ Required Action names the immediate action, its target and completion condition,
 
 ## Completion
 
-Read back the saved report. Verify complete metadata, criteria that match the target's agreed set and earlier attempts, a status for every critical criterion, recorded aid disclosure, agreement between statuses and outcome, one route selected by the precedence rules with retained obligations in Required Action, and correct sequence and prior-report linkage. Preserve earlier reports.
+Read back the saved report. Verify complete metadata, criteria that match the target's agreed set and earlier attempts, a status for every critical criterion, Evidence Excerpts that match the conversation and support each status, recorded aid disclosure, agreement between statuses and outcome, one route selected by the precedence rules with retained obligations in Required Action, and correct sequence and prior-report linkage. Preserve earlier reports.
