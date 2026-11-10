@@ -4,7 +4,9 @@ Faculty has been checked for instruction consistency, saved artifacts, role boun
 
 ## Existing coverage
 
-The final instruction and format review passed 88 checks, including 47 resolving instruction links. Shared course-state coverage exercised all four roles that write routing state, with 8 cases, 72 mechanical/runtime/preservation checks and 32 manual criteria passing after a correction.
+The results in this section were added in commit `9e89e34` on 2026-10-03. That is a documentation commit, not a record of what was tested: the tested revision, host and model, check definitions and raw results are not in the repository. Since then, 17 files across the seven skill directories have changed (as of `becbbf2`). These historical totals do not validate later changes. A future run should record the tested revision, host and model, settings, fixtures, expected and observed outcomes, and where its evidence is retained.
+
+The final instruction and format review reported 88 passing checks, including 47 resolving instruction links. Shared course-state coverage exercised all four roles that write routing state, with 8 cases, 72 mechanical/runtime/preservation checks and 32 manual criteria passing after a correction.
 
 Focused follow-ups covered these paths:
 
