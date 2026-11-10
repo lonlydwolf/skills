@@ -13,7 +13,7 @@ They serve a dual purpose: they allow the Teacher to maintain continuous context
 
 **Session ID:** `[Sequential, e.g., 0001]`
 **Date:** `[YYYY-MM-DD]`
-**Lesson:** `[Course-root-relative path to notes.html]`
+**Lesson:** `[Course-root-relative path to notes.html | None]`
 **Session Type:** `[Lesson | Remediation | Follow-up]`
 **Lesson Complete:** `[Yes | No | N/A]`
 **Criteria Source:** `[This record | Course-root-relative path to the earlier learning record whose Lesson Outcomes govern this lesson | Legacy: course-root-relative path to the lesson's earliest record | None]`
@@ -87,7 +87,7 @@ Records written before this section existed remain unchanged. Clarify outcomes o
 
 ## Numbering and Immutability
 
-Scan the unit's `./learning-records/` for the highest existing number and increment by one. Use `NNNN-<lesson-name>.md`; Session ID matches that sequence number.
+Scan the unit's `./learning-records/` for the highest existing number and increment by one. Use `NNNN-<lesson-name>.md`, or a short topic name for a record that concerns no lesson; Session ID matches that sequence number.
 Each qualifying teaching session, including remediation and follow-ups, creates a new record. Preserve earlier records unchanged. Corrections and improved explanations update the canonical lesson notes; the new record captures what changed during the session.
 
 ## When to write a learning record
