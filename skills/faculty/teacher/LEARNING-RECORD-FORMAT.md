@@ -13,7 +13,7 @@ They serve a dual purpose: they allow the Teacher to maintain continuous context
 
 **Session ID:** `[Sequential, e.g., 0001]`
 **Date:** `[YYYY-MM-DD]`
-**Lesson:** `[Course-root-relative path to notes.html | None]`
+**Lesson:** `[Course-root-relative path to notes.html | None, only for a Follow-up that concerns no lesson]`
 **Session Type:** `[Lesson | Remediation | Follow-up]`
 **Lesson Complete:** `[Yes | No | N/A]`
 **Criteria Source:** `[This record | Course-root-relative path to the earlier learning record whose Lesson Outcomes govern this lesson | Legacy: course-root-relative path to the lesson's earliest record | None]`
@@ -102,4 +102,4 @@ Write a learning record at the end of every active teaching session, including r
 ## Completion
 
 Before handoff, verify that all S.O.A.P. sections are populated, observations are distinguishable from interpretations, referenced local artifacts exist, pending work is explicit, and earlier records remain unchanged.
-Confirm that Session Type is set, Lesson Complete is `Yes` or `No` for Lesson and Remediation records and `N/A` for Follow-ups, Criteria Source resolves to a record containing Lesson Outcomes (except the `Legacy:` follow-up form above, or `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
+Confirm that Session Type is set, Lesson names the notes path on every Lesson and Remediation record, Lesson Complete is `Yes` or `No` for Lesson and Remediation records and `N/A` for Follow-ups, Criteria Source resolves to a record containing Lesson Outcomes (except the `Legacy:` follow-up form above, or `None` for an unrelated follow-up), and any Lesson Outcomes table has stable IDs, conditions, and criticality.
