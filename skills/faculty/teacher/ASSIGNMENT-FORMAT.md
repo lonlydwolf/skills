@@ -15,7 +15,7 @@ Use **TILT — Purpose, Task, Criteria for Success** to make the assignment's le
 - **Preview:** The destination is visible so lessons can point toward it. The learner does not start the independent work, and logistics may still change.
 - **Released:** Starting materials, links, and logistics have been refreshed against what was taught. Independent work starts once the gate recorded in `AGENTS.md` allows it.
 
-PRACTICE is usually Released when created. Releasing never changes the criteria. Assignments created before this field existed carry no Status; follow their recorded route and add Status the next time Teacher changes them.
+PRACTICE is usually Released when created. Releasing never changes the criteria. After release, Teacher does not change the criteria or Permitted Aids on its own, including between a review and its resubmission; logistics may still be corrected without changing the assessed standard. A material defect in a released requirement goes to Advisor through shared recovery and is corrected only as that recovery directs. The session that makes such a correction says so in its learning record and in the transition it publishes, so later roles can see why the task changed. Assignments created before this field existed carry no Status; follow their recorded route and add Status the next time Teacher changes them.
 
 ## Template
 

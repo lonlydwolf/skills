@@ -85,7 +85,7 @@ Apply existing requirements without expanding the curriculum or rewriting the as
 
 ### Resubmission
 
-Read the latest applicable review and identify the current submission.
+Read the latest applicable review and identify the current submission. Compare the task's criteria and permitted aids with what that review records. A criterion or aid condition added, removed, or relaxed since then, which neither the ledger nor a Teacher learning record attributes to Advisor recovery, is a requirement defect under [Persistent Blockers](#persistent-blockers). Do not infer a change from anything the prior review did not record.
 
 Inspect the current artifact against the complete review scope, including earlier blocking findings and any regressions. An earlier finding remains historical evidence; establish whether it persists in this attempt. The criteria remain those of the authoritative `task.md` and `unit.md` throughout; revisions neither add nor relax them.
 
