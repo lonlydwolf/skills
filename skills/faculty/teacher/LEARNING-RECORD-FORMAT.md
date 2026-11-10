@@ -58,7 +58,7 @@ Pending assignments and instructional follow-up describe the plan at session end
 
 - **Lesson:** Teaching toward a lesson's agreed outcomes, including a session that continues an unfinished lesson.
 - **Remediation:** Teaching addressed to a failed Tutor evaluation or an Editor foundational-gap return named in Remediation Source.
-- **Follow-up:** Corrections, reminders, practice inspection, or questions under an existing lesson's outcomes. It creates no new LESSON check.
+- **Follow-up:** Corrections, reminders, practice inspection, or questions under an existing lesson's outcomes, or work that concerns no lesson. It creates no new LESSON check.
 
 **Lesson Complete** is the readiness signal for a LESSON check:
 
@@ -87,7 +87,7 @@ Records written before this section existed remain unchanged. Clarify outcomes o
 
 ## Numbering and Immutability
 
-Scan the unit's `./learning-records/` for the highest existing number and increment by one. Use `NNNN-<lesson-name>.md`, or a short topic name for a record that concerns no lesson; Session ID matches that sequence number.
+Scan the unit's `./learning-records/` for the highest existing number and increment by one. Use `NNNN-<lesson-name>.md`, or `NNNN-<topic-name>.md` for a record that concerns no lesson; Session ID matches that sequence number.
 Each qualifying teaching session, including remediation and follow-ups, creates a new record. Preserve earlier records unchanged. Corrections and improved explanations update the canonical lesson notes; the new record captures what changed during the session.
 
 ## When to write a learning record
