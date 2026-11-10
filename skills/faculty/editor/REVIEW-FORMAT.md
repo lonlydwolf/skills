@@ -12,6 +12,8 @@ Derive Scope Coverage from the authoritative `task.md`, using its referenced `un
 
 Record whether a `NOT MET` criterion's evidence is absent from the submission (for example, no output at the stated location) or present and failing. Evidence Editor cannot open or run because of tool or access limits is not a learner finding. If that limitation prevents a defensible verdict, create no report and follow shared recovery; otherwise disclose the inspection limit without inventing a defect.
 
+Assisted work is not independent evidence. When the learner's Aid Disclosure reports help that the task's Permitted Aids clearly exclude, do not count the work that help produced: mark each affected criterion `NOT MET` with a BLOCKING delta that names the affected part and asks the learner to redo it under the stated conditions. Record this without accusation or detector claims; it rests on the learner's disclosure, never on how polished the artifact looks. When the Permitted Aids are silent, `None`, or unclear about the disclosed help, record the disclosure and review as usual.
+
 Plus records demonstrated strengths. Delta records improvements, each with Diagnosis, Implication, Recommendation, and severity:
 
 - **BLOCKING:** a material consequence for correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use.

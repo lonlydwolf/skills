@@ -101,7 +101,7 @@ After completing a BUILD, start a fresh session with `editor`:
 
 > The build named in the current required action is ready. My files are at the assignment's stated artifact locations. Review the submission against its requirements.
 
-Editor asks which aids and assistance you used and records your answer neutrally. It inspects your work and saves a Plus/Delta report: the version inspected, demonstrated strengths, improvements, their consequences and an `APPROVED` or `REJECTED` verdict. A material defect or unmet required criterion blocks approval. Suggestions without a material consequence can accompany approval.
+Editor asks which aids and assistance you used and records your answer neutrally. If you disclose help the task's Permitted Aids clearly exclude, the work it produced is not counted and the review asks you to redo that part under the stated conditions; if the Permitted Aids are silent, `None`, or unclear about that help, Editor records the disclosure and reviews as usual. Editor then inspects your work and saves a Plus/Delta report: the version inspected, demonstrated strengths, improvements, their consequences and an `APPROVED` or `REJECTED` verdict. A material defect or unmet required criterion blocks approval. Suggestions without a material consequence can accompany approval.
 
 Read the report's **Required Action**. You make the revisions. A usual rejection asks you to revise and return to Editor; evidence of a conceptual gap can instead send you through Teacher and Tutor before another review.
 

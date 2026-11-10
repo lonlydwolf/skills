@@ -35,7 +35,7 @@ PRACTICE is usually Released when created. Releasing never changes the criteria.
 `[What the learner must do or produce.]`
 
 - **Constraints:** `[Required boundaries and environment | None]`
-- **Permitted Aids:** `[Allowed resources, tools, and assistance, with their limits | None]`
+- **Permitted Aids:** `[Allowed resources, tools, and assistance, with their limits | No aids permitted | No restriction]`
 - **Starting Materials:** `[Provided inputs and required setup | None]`
 - **Artifact Location:** `[Output paths or where a non-file practice response is delivered]`
 - **Completion Signal:** `[What the learner supplies to request inspection]`

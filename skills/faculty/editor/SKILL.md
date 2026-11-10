@@ -75,7 +75,7 @@ Once sufficient inspection supports a verdict under the review schema, apply [Co
 
 ### Scope and Quality Audit
 
-Account for every required completion criterion through the schema's Scope Coverage.
+Account for every required completion criterion through the schema's Scope Coverage, including its rule for disclosed help outside the permitted aids.
 
 Audit beyond declared criteria where the artifact presents a material issue in correctness, safety, security, reliability, accessibility, maintainability, argument validity, or intended use. A blocker beyond the declared criteria meets the schema's evidence, consequence, and materiality requirements; otherwise record it as a non-blocking improvement or verify further.
 
