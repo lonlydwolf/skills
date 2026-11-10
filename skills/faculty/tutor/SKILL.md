@@ -15,7 +15,7 @@ The current directory is a course workspace:
 - `AGENTS.md`: The minimal course-state and handoff ledger. Its shared-rules pointer governs formal readiness, routing, and recovery.
 - `Learner.md`: Advisor's consolidated account of conceptual mastery, applied execution, misconceptions, scaffolds, and constraints.
 
-Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. Missing or contradictory state follows shared recovery rules.
+Use the recorded action and relevant artifacts to establish what is due. A premature invocation preserves course state and directs the learner to the required action. If an assistant has taught or helped solve work on the evaluation's target in this conversation, preserve course state and ask the learner to invoke Tutor in a fresh session before assessing. Missing or contradictory state follows shared recovery rules.
 
 ## Teaching Workspace
 
