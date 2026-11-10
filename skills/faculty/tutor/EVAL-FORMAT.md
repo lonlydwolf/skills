@@ -76,7 +76,7 @@ Reports written before `NOT ASSESSED` existed remain unchanged. When one is the 
 
 ## Evidence Excerpts
 
-Each critical criterion has one block holding the exchanges that support its status, in conversation order. Copy prompts and responses exactly, with their line breaks and code; do not paraphrase, summarize, or join them with narration. Interpretation belongs in Criteria Coverage. Include any clarification or assistance that affected a response, with enough of the exchange to tell the learner's own reasoning from supplied reasoning. Include responses that were not counted; explain their exclusion in Criteria Coverage. An excerpt is not a transcript. For a `NOT ASSESSED` criterion, include whatever exchange occurred; if none occurred, write `No exchange occurred` under its heading.
+Each critical criterion has one block holding the exchanges that support its status, in conversation order. Copy prompts and responses exactly, with their line breaks and code; do not paraphrase, summarize, or join them with narration. Put a multi-line prompt or response in a fenced block whose fence is longer than any fence inside it. Interpretation belongs in Criteria Coverage. Include any clarification or assistance that affected a response, with enough of the exchange to tell the learner's own reasoning from supplied reasoning. Include responses that were not counted; explain their exclusion in Criteria Coverage. An excerpt is not a transcript. For a `NOT ASSESSED` criterion, include whatever exchange occurred; if none occurred, write `No exchange occurred` under its heading.
 
 Reports written before Evidence Excerpts existed remain unchanged and are not back-filled from memory.
 
