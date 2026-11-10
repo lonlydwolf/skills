@@ -240,7 +240,7 @@ Lesson notes are the learner's canonical refresh material, saved as:
 
 `lessons/NN-<dash-case-name>/notes.html`
 
-Each new lesson receives the next lesson number. Remediation after a failed LESSON evaluation, corrections, and follow-ups update the notes of the lesson they concern without changing its outcomes. Remediation for a failed MILESTONE or UNIT evaluation, or for an Editor foundational-gap return, is a new numbered lesson with its own outcomes and notes; it does not redefine an earlier lesson. Session history remains in a new immutable learning record.
+Each new lesson receives the next lesson number. Remediation after a failed LESSON evaluation, corrections, and follow-ups update the notes of the lesson they concern without changing its outcomes. Remediation for a failed MILESTONE or UNIT evaluation, or for an Editor foundational-gap return, starts a new numbered lesson with its own outcomes and notes; it does not redefine an earlier lesson. A remediation already in progress continues in the lesson its latest record names, with the outcomes saved there. Session history remains in a new immutable learning record.
 
 Write notes as reusable study material for the learner returning weeks or months later, not as a record for Tutor or the next agent. Organize them around the subject in whatever shape suits it; no fixed section template applies to every subject.
 
