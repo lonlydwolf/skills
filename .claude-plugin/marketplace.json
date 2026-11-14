@@ -27,19 +27,21 @@
     },
     {
       "name": "in-progress",
-      "description": "Skills still being tried out: repository audit, review of finished work and pull request filing. They may change or be removed.",
+      "description": "Skills still being tried out: repository audit, review of finished work, pull request filing and jj change descriptions. They may change or be removed.",
       "source": "./skills/in-progress",
       "category": "development",
       "tags": [
         "in-progress",
         "audit",
         "code-review",
-        "pull-requests"
+        "pull-requests",
+        "jj"
       ],
       "skills": [
         "./audit",
         "./request-review",
-        "./file-pr"
+        "./file-pr",
+        "./jj-commit-message"
       ]
     }
   ]
