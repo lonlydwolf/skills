@@ -7,16 +7,34 @@ Skills that are still being tried out on real work. Each one is independent: ins
 | [audit](audit/SKILL.md) | Reads a repository or one area of it and reports how it works, what is wrong (with evidence) and what to do about each problem. It changes nothing. |
 | [request-review](request-review/SKILL.md) | A second model reviews a finished task or a whole change and only reports. Each author, you included, answers the findings on their own part (fixed, intentional or declined), and you get a report of what is still open. |
 | [file-pr](file-pr/SKILL.md) | Writes a pull request that says why the change exists, shows what changed, lists what was and was not verified, and states the merge risk. |
+| [jj-commit-message](jj-commit-message/SKILL.md) | Writes the description for one jj change from its diff: a title in the repository's convention and a body only when the reason is not obvious. It says when a change should be split. |
 
 ## Install
 
 ```sh
-npx skills@latest add lonlydwolf/skills --skill audit --skill request-review --skill file-pr
+npx skills@latest add lonlydwolf/skills --skill audit --skill request-review --skill file-pr --skill jj-commit-message
 ```
 
 Choose the tools you use when prompted. Add `-g` to install for every project instead of the current one.
 
-`audit` and `request-review` run only when you invoke them by name. How you do that depends on the tool: for example `/request-review` in Claude Code and `/skill:request-review` in Pi. `file-pr` can also be started by the agent when you ask it to file a pull request.
+`audit`, `request-review` and `jj-commit-message` run only when you invoke them by name. How you do that depends on the tool: for example `/request-review` in Claude Code and `/skill:request-review` in Pi. `file-pr` can also be started by the agent when you ask it to file a pull request.
+
+## jj-commit-message from the terminal
+
+The skill can draft a description without an agent session. Send the recent titles and the change's diff to a headless agent, invoke the skill by name, and hand the result to `jj describe --stdin --editor`. That opens the draft in your editor, and jj drops the `JJ:` notes when you save. Capture the draft first, so that a failed call never reaches `jj describe`. With Claude Code, for example:
+
+```sh
+draft="$({
+  echo "Recent titles in this repository:"
+  jj log --no-graph -r 'ancestors(@, 12) ~ @' -T 'description.first_line() ++ "\n"'
+  echo "The diff:"
+  jj diff -r @ --git
+} | claude -p --tools "" --no-session-persistence "/jj-commit-message I wrote this change myself. The titles and the diff are on standard input.")" \
+  && [ -n "$draft" ] \
+  && printf '%s\n' "$draft" | jj describe --stdin --editor
+```
+
+Wrap this in a jj alias or a shell function of your own. The skill must be installed where the agent looks for skills.
 
 ## What these skills assume
 
