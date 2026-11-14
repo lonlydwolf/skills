@@ -24,6 +24,23 @@
         "./librarian",
         "./roommate"
       ]
+    },
+    {
+      "name": "in-progress",
+      "description": "Skills still being tried out: repository audit, review of finished work and pull request filing. They may change or be removed.",
+      "source": "./skills/in-progress",
+      "category": "development",
+      "tags": [
+        "in-progress",
+        "audit",
+        "code-review",
+        "pull-requests"
+      ],
+      "skills": [
+        "./audit",
+        "./request-review",
+        "./file-pr"
+      ]
     }
   ]
 }
